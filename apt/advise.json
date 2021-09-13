@@ -1,20 +1,20 @@
 {
-    ":access:": {
-        ":public:": null,
-        ":restricted:": null,
-        ":grant:": {
-            ":read-only:": null,
-            ":read-write:": null
+    "access": {
+        "public": null,
+        "restricted": null,
+        "grant": {
+            "read-only": null,
+            "read-write": null
         },
-        ":revoke:": null,
-        ":2fa-required:": null,
-        ":2fa-not-required:": null,
-        ":ls-packages:": null,
-        ":ls-collaborators:": null,
-        ":edit:": null
+        "revoke": null,
+        "2fa-required": null,
+        "2fa-not-required": null,
+        "ls-packages": null,
+        "ls-collaborators": null,
+        "edit": null
     },
-    ":install:add:i:": {
-        ":--save-prod:--save-dev:--save-optional:": null,
+    "install:add:i": {
+        "--save-prod|--save-dev|--save-optional": null,
         "--save-exact": null,
         "--no-save": null
     }
