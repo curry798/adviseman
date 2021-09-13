@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+printf "{\n"
+
+for i in "$@"; do
+    case "$i" in
+        -*)
+            i="${i#-}"
+            while read -r -n1 ch; do
+                [ -z "$ch" ] && continue
+                printf "  \"%s\": null,\n" "-$ch"
+            done <<<"$i"
+            ;;
+        --*)
+            printf "  \"%s\": null,\n" "$i"
+            ;;
+    esac
+done
+
+printf "}\n"
