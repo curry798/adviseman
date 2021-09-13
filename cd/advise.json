@@ -1,5 +1,5 @@
 {
     "-L": null,
     "-P": null,
-    "#1": "ls -d \"${cur}*/\""
+    "#1": "eval ls -d \"${cur}*/\" 2>/dev/null"
 }
