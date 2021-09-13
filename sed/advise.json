@@ -1,7 +1,7 @@
 {
-    "-C|-c|-s|-u": null,
-    "-d": null,
-    "-s": null,
-    "-ds": null,
-    "#n": [ "[:upper:]", "[:lower:]", "[:alnum:]" ]
+    "-E|-a|-l|-n|-r|-u": null,
+    "-i": null,
+    "-e": null,
+    "-f": null,
+    "#1": "ls"
 }
