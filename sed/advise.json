@@ -1,7 +1,12 @@
 {
-    "-E|-a|-l|-n|-r|-u": null,
-    "-i": null,
-    "-e": null,
-    "-f": null,
+    "-E": null,
+    "-a": null,
+    "-l": null,
+    "-n": null,
+    "-r": null,
+    "-u": null,
+    "-i": [],
+    "-e": [],
+    "-f": "___advise_ls",
     "#1": "___advise_ls"
 }
