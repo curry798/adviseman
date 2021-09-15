@@ -8,5 +8,6 @@
     "-v": null,
     "-X": null,
     "-c": null,
-    "#1": "___advise_ls"
+    "#1": "___advise_ls",
+    "#n": "___advise_lsd"
 }
