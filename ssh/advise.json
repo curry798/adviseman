@@ -37,7 +37,7 @@
     "-m": null,
     "-O": null,
     "-o": null,
-    "-p": null,
+    "-p": "___advise_seq 1/65535",
     "-Q": null,
     "-R": null,
     "-S": null,

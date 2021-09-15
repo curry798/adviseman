@@ -1,0 +1,11 @@
+{
+    "-A": [ "[-][[hh]mm]SS" ],
+    "-a": null,
+    "-c": null,
+    "-f": null,
+    "-h": null,
+    "-m": null,
+    "-r": "___advise_ls",
+    "-t": [ "[[CC]YY]MMDDhhmm[.SS]" ],
+    "#1": "___advise_ls"
+}
