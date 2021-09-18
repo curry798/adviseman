@@ -13,7 +13,7 @@
         "ls-collaborators": null,
         "edit": null
     },
-    "install:add:i": {
+    "install|add|i": {
         "--save-prod|--save-dev|--save-optional": null,
         "--save-exact": null,
         "--no-save": null
