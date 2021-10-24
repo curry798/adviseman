@@ -1,0 +1,7 @@
+{
+    "#1": "___advise_ls",
+    "-h|--help|--add-suffix": null,
+    "-f|--fix|-x|--nofix": null,
+    "-j|--processes": null,
+    "-o|--output-dir": "___advise_ls"
+}

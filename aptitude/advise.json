@@ -1,0 +1,11 @@
+{
+    "install|hold|markauto|unmarkauto|dist-upgrade|full-upgrade|safe-upgrade|download|show|changelog|why|why-not|build-dep|add-user-tag|remove-user-tag|versions": "_xfunc apt-cache _apt_cache_packages",
+    "reinstall|remove|purge|forbid-version": "_xfunc dpkg _comp_dpkg_installed_packages ''",
+    "unhold": null,
+    "update|upgrade|forget-new|clean|autoclean|search|keep-all": null,
+    "keep": null,
+    "--display-format|--width|-w|-F|-o": null,
+    "--sort|-O": ["installsize", "installsizechange", "debsize", "name", "priority", "version"],
+    "--target-release|--default-release|-t": null,
+    "-S": "___advise_ls"
+}
