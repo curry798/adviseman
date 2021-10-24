@@ -1,7 +1,7 @@
 {
-    ":-c:--context:": [],
-    ":-D:--debug:": [],
-    ":run:": {
+    "-c|--context": [],
+    "-D|--debug": [],
+    "run": {
 
     }
 }
