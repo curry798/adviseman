@@ -24,7 +24,7 @@
     "--read-only=": ["ignore", "warn", "fail"],
     "--verbose": null,
     "--directory=|-d": null,
-    "--input=|-i": null,
+    "--input=|-i": "___advise_ls ''",
     "--version": null,
     "--dry-run": null,
     "--merge": null,

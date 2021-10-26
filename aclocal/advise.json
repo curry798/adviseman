@@ -1,6 +1,6 @@
 {
     "--help|--print-ac-dir|--version": null,
-    "--acdir|-I": "___advise_ls",
+    "--acdir|-I": "___advise_lsd",
     "--output": "___advise_ls",
     "--warnings|-W": ["all", "no-unsupported", "unsupported", "error", "none", "no-syntax", "syntax"]
 }

@@ -1,8 +1,8 @@
 {
     "update": null,
     "upgrade": null,
-    "install|info|source": "_xfunc apt-cache _apt_cache_packages",
-    "remove": "_xfunc dpkg _comp_dpkg_installed_packages",
+    "install|info|source": null,
+    "remove": null,
     "dist-upgrade": null,
     "world": null,
     "clean": null,
