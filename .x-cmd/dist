@@ -1,0 +1,49 @@
+#! /usr/bin/env bash
+
+WSROOT="${BASH_SOURCE[0]}"
+
+if [ "${WSROOT#/}" = "$WSROOT" ]; then
+    WSROOT="$(pwd)/${BASH_SOURCE[0]}"
+fi
+
+# printf "%s\n" "$WSROOT"
+
+WSROOT="${WSROOT%/.x-cmd/*}"
+
+dist_ls()(
+    cd "$WSROOT/src" && ls
+)
+
+dist_wc()(
+    cd "$WSROOT/src" &&
+        dist_ls | xargs wc
+)
+
+dist_tar()(
+    cd "$WSROOT/src" &&
+    mkdir -p "$WSROOT/dist" &&
+        eval "tar cvf all.tar $(dist_ls | tr '\n' ' ')" &&
+        mv all.tar "$WSROOT/dist/all.tar" &&
+        ls -alh "$WSROOT/dist/all.tar"
+)
+
+dist_tgz()(
+    cd "$WSROOT/src" &&
+    mkdir -p "$WSROOT/dist" &&
+        eval "tar czvf all.tgz $(dist_ls | tr '\n' ' ')" &&
+        mv all.tgz "$WSROOT/dist/all.tgz" &&
+        ls -alh "$WSROOT/dist/all.tgz"
+)
+
+# dist_7z(){
+#     cd "$WSROOT/src" && \
+#         mkdir -p dist \
+#         eval "7z a $WSROOT/dist/all.tar.7z $(dist_ls | tr '\n' ' ')" \
+#         ls -alh dist/all.tar.7z
+# }
+
+if [ "$#" -gt 0 ]; then
+    op="$1"
+    shift
+    "dist_$op" "$@"
+fi
