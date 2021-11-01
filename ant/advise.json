@@ -1,0 +1,9 @@
+{
+    "-h|-help|--h|--help|-projecthelp|-p|-version|-diagnostics": null,
+    "-logger|-listener|-inputhandler|-main|-find|-s": null,
+    "-buildfile|-file|-f": "___advise_ls 'xml$'",
+    "-logfile|-l": "___advise_ls",
+    "-propertyfile": "___advise_ls",
+    "-nice": "printf %s 1,2,3,4,5,6,7,8,9,10 | tr ',' '\n' | xargs -n 1 printf \"$cur%s\n\"",
+    "-lib": "___advise_lsd"
+}

@@ -1,0 +1,4 @@
+{
+    "--help|--version|-|-hv": null,
+    "--directory|-d": "___advise_lsd"
+}

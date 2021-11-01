@@ -1,0 +1,5 @@
+{
+    "-r|-d|--regular-members-file|--digest-members-file": "___advise_ls",
+    "-w|-a|--welcome-msg|--admin-notify": ["n", "y"],
+    "--help": null
+}

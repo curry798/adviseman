@@ -5,5 +5,14 @@
     "-s": null,
     "-t": null,
     "-u": null,
-    "-v": null
+    "-v": null,
+    "--help": null,
+    "--show-all": null,
+    "--show-tabs": null,
+    "--number": null,
+    "--show-ends": null,
+    "--squeeze-blank": null,
+    "--number-nonblank": null,
+    "--show-nonprinting": null,
+    "--version": null
 }
