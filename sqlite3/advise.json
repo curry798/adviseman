@@ -1,0 +1,15 @@
+{
+    "-help": null,
+    "-version": null,
+    "-lookaside": null,
+    "-maxsize": null,
+    "-mmap": null,
+    "-newline": null,
+    "-nullvalue": null,
+    "-pagecache": null,
+    "-scratch": null,
+    "-separator": null,
+    "-vfs": null,
+    "-init": "___advise_ls",
+    "-cmd": null
+}
