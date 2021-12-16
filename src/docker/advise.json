@@ -1,7 +1,1667 @@
 {
-    "-c|--context": [],
-    "-D|--debug": [],
+    "--config": null,
+    "-c|--context": null,
+    "-D|--debug": null,
+    "-H|--host": null,
+    "-l|--log-level": null,
+    "--tls": null,
+    "--tlscacert": null,
+    "--tlscert": null,
+    "--tlskey": null,
+    "--tlsverify": null,
+    "-v|--version": null,
+    "builder": {
+        "build": {
+            "--add-host": null,
+            "--build-arg": null,
+            "--cache-from": null,
+            "--disable-content-trust": null,
+            "-f|--file": null,
+            "--iidfile": null,
+            "--isolation": null,
+            "--label": null,
+            "--network": null,
+            "--no-cache": null,
+            "-o|--output": null,
+            "--platform": null,
+            "--progress": null,
+            "--pull": null,
+            "-q|--quiet": null,
+            "--secret": null,
+            "--ssh": null,
+            "-t|--tag": null,
+            "--target": null
+        },
+        "prune": {
+            "-a|--all": null,
+            "--filter": null,
+            "-f|--force": null,
+            "--keep-storage": null
+        }
+    },
+    "buildx": {
+        "--builder": null,
+        "imagetools": {
+            "--builder": null,
+            "create": {
+                "--append": null,
+                "--builder": null,
+                "--dry-run": null,
+                "-f|--file": null,
+                "-t|--tag": null
+            },
+            "inspect": {
+                "--builder": null,
+                "--raw": null
+            }
+        },
+        "bake": {
+            "--builder": null,
+            "-f|--file": null,
+            "--load--set=*.output=type=docker": null,
+            "--metadata-file": null,
+            "--no-cache": null,
+            "--print": null,
+            "--progress": null,
+            "--pull": null,
+            "--push--set=*.output=type=registry": null,
+            "--set": null
+        },
+        "build": {
+            "--add-host": null,
+            "--allow": null,
+            "--build-arg": null,
+            "--builder": null,
+            "--cache-from": null,
+            "--cache-to": null,
+            "--cgroup-parent": null,
+            "-f|--file": null,
+            "--iidfile": null,
+            "--label": null,
+            "--load--output=type=docker": null,
+            "--metadata-file": null,
+            "--network": null,
+            "--no-cache": null,
+            "-o|--output": null,
+            "--platform": null,
+            "--progress": null,
+            "--pull": null,
+            "--push--output=type=registry": null,
+            "-q|--quiet": null,
+            "--secret": null,
+            "--shm-size": null,
+            "--ssh": null,
+            "-t|--tag": null,
+            "--target": null,
+            "--ulimit": null
+        },
+        "create": {
+            "--append": null,
+            "--bootstrap": null,
+            "--buildkitd-flags": null,
+            "--config": null,
+            "--driver": null,
+            "--driver-opt": null,
+            "--leave": null,
+            "--name": null,
+            "--node": null,
+            "--platform": null,
+            "--use": null
+        },
+        "du": {
+            "--builder": null,
+            "--filter": null,
+            "--verbose": null
+        },
+        "inspect": {
+            "--bootstrap": null,
+            "--builder": null
+        },
+        "ls": null,
+        "prune": {
+            "-a|--all": null,
+            "--builder": null,
+            "--filter": null,
+            "-f|--force": null,
+            "--keep-storage": null,
+            "--verbose": null
+        },
+        "rm": {
+            "--builder": null,
+            "--keep-state": null
+        },
+        "stop": {
+            "--builder": null
+        },
+        "use": {
+            "--builder": null,
+            "--default": null,
+            "--global": null
+        },
+        "version": null
+    },
+    "compose": {
+        "--ansi": null,
+        "--compatibility": null,
+        "--env-file": null,
+        "-f|--file": null,
+        "--profile": null,
+        "--project-directory": null,
+        "-p|--project-name": null,
+        "build": {
+            "--build-arg": null,
+            "--no-cache": null,
+            "--progress": null,
+            "--pull": null,
+            "-q|--quiet": null
+        },
+        "convert": {
+            "--format": null,
+            "--hash": null,
+            "--images": null,
+            "--no-interpolate": null,
+            "--no-normalize": null,
+            "-o|--output": null,
+            "--profiles": null,
+            "-q|--quiet": null,
+            "--resolve-image-digests": null,
+            "--services": null,
+            "--volumes": null
+        },
+        "cp": {
+            "--all": null,
+            "-a|--archive": null,
+            "-L|--follow-link": null,
+            "--index": null
+        },
+        "create": {
+            "--build": null,
+            "--force-recreate": null,
+            "--no-build": null,
+            "--no-recreate": null
+        },
+        "down": {
+            "--remove-orphans": null,
+            "--rmi": null,
+            "-t|--timeout": null,
+            "-v|--volumes": null
+        },
+        "events": {
+            "--json": null
+        },
+        "exec": {
+            "-d|--detach": null,
+            "-e|--env": null,
+            "--index": null,
+            "-T|--no-TTY": null,
+            "--privileged": null,
+            "-u|--user": null,
+            "-w|--workdir": null
+        },
+        "images": {
+            "-q|--quiet": null
+        },
+        "kill": {
+            "-s|--signal": null
+        },
+        "logs": {
+            "-f|--follow": null,
+            "--no-color": null,
+            "--no-log-prefix": null,
+            "--since": null,
+            "--tail": null,
+            "-t|--timestamps": null,
+            "--until": null
+        },
+        "ls": {
+            "-a|--all": null,
+            "--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "pause": null,
+        "port": {
+            "--index": null,
+            "--protocol": null
+        },
+        "ps": {
+            "-a|--all": null,
+            "--format": null,
+            "-q|--quiet": null,
+            "--services": null,
+            "--status": null
+        },
+        "pull": {
+            "--ignore-pull-failures": null,
+            "--include-deps": null,
+            "-q|--quiet": null
+        },
+        "push": {
+            "--ignore-push-failures": null
+        },
+        "restart": {
+            "-t|--timeout": null
+        },
+        "rm": {
+            "-f|--force": null,
+            "-s|--stop": null,
+            "-v|--volumes": null
+        },
+        "run": {
+            "-d|--detach": null,
+            "--entrypoint": null,
+            "-e|--env": null,
+            "-l|--label": null,
+            "--name": null,
+            "-T|--no-TTY": null,
+            "--no-deps": null,
+            "-p|--publish": null,
+            "--quiet-pull": null,
+            "--rm": null,
+            "--service-ports": null,
+            "--use-aliases": null,
+            "-u|--user": null,
+            "-v|--volume": null,
+            "-w|--workdir": null
+        },
+        "start": null,
+        "stop": {
+            "-t|--timeout": null
+        },
+        "top": null,
+        "unpause": null,
+        "up": {
+            "--abort-on-container-exit": null,
+            "--always-recreate-deps": null,
+            "--attach": null,
+            "--attach-dependencies": null,
+            "--build": null,
+            "-d|--detach": null,
+            "--exit-code-from": null,
+            "--force-recreate": null,
+            "--no-build": null,
+            "--no-color": null,
+            "--no-deps": null,
+            "--no-log-prefix": null,
+            "--no-recreate": null,
+            "--no-start": null,
+            "--quiet-pull": null,
+            "--remove-orphans": null,
+            "-V|--renew-anon-volumes": null,
+            "--scale": null,
+            "-t|--timeout": null,
+            "--wait": null
+        },
+        "version": {
+            "-f|--format": null,
+            "--short": null
+        }
+    },
+    "config": {
+        "create": {
+            "-l|--label": null,
+            "--template-driver": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "--pretty": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "rm": null
+    },
+    "container": {
+        "attach": {
+            "--detach-keys": null,
+            "--no-stdin": null,
+            "--sig-proxy": null
+        },
+        "commit": {
+            "-a|--author": null,
+            "-c|--change": null,
+            "-m|--message": null,
+            "-p|--pause": null
+        },
+        "cp": {
+            "-a|--archive": null,
+            "-L|--follow-link": null
+        },
+        "create": {
+            "--add-host": null,
+            "-a|--attach": null,
+            "--blkio-weight": null,
+            "--blkio-weight-device": null,
+            "--cap-add": null,
+            "--cap-drop": null,
+            "--cgroup-parent": null,
+            "--cgroupns": null,
+            "--cidfile": null,
+            "--cpu-period": null,
+            "--cpu-quota": null,
+            "--cpu-rt-period": null,
+            "--cpu-rt-runtime": null,
+            "-c|--cpu-shares": null,
+            "--cpus": null,
+            "--cpuset-cpus": null,
+            "--cpuset-mems": null,
+            "--device": null,
+            "--device-cgroup-rule": null,
+            "--device-read-bps": null,
+            "--device-read-iops": null,
+            "--device-write-bps": null,
+            "--device-write-iops": null,
+            "--disable-content-trust": null,
+            "--dns": null,
+            "--dns-option": null,
+            "--dns-search": null,
+            "--domainname": null,
+            "--entrypoint": null,
+            "-e|--env": null,
+            "--env-file": null,
+            "--expose": null,
+            "--gpus": null,
+            "--group-add": null,
+            "--health-cmd": null,
+            "--health-interval": null,
+            "--health-retries": null,
+            "--health-start-period": null,
+            "--health-timeout": null,
+            "--help": null,
+            "-h|--hostname": null,
+            "--init": null,
+            "-i|--interactive": null,
+            "--ip": null,
+            "--ip6": null,
+            "--ipc": null,
+            "--isolation": null,
+            "--kernel-memory": null,
+            "-l|--label": null,
+            "--label-file": null,
+            "--link": null,
+            "--link-local-ip": null,
+            "--log-driver": null,
+            "--log-opt": null,
+            "--mac-address": null,
+            "-m|--memory": null,
+            "--memory-reservation": null,
+            "--memory-swap": null,
+            "--memory-swappiness": null,
+            "--mount": null,
+            "--name": null,
+            "--network": null,
+            "--network-alias": null,
+            "--no-healthcheck": null,
+            "--oom-kill-disable": null,
+            "--oom-score-adj": null,
+            "--pid": null,
+            "--pids-limit": null,
+            "--platform": null,
+            "--privileged": null,
+            "-p|--publish": null,
+            "-P|--publish-all": null,
+            "--pull": null,
+            "--read-only": null,
+            "--restart": null,
+            "--rm": null,
+            "--runtime": null,
+            "--security-opt": null,
+            "--shm-size": null,
+            "--stop-signal": null,
+            "--stop-timeout": null,
+            "--storage-opt": null,
+            "--sysctl": null,
+            "--tmpfs": null,
+            "-t|--tty": null,
+            "--ulimit": null,
+            "-u|--user": null,
+            "--userns": null,
+            "--uts": null,
+            "-v|--volume": null,
+            "--volume-driver": null,
+            "--volumes-from": null,
+            "-w|--workdir": null
+        },
+        "diff": null,
+        "exec": {
+            "-d|--detach": null,
+            "--detach-keys": null,
+            "-e|--env": null,
+            "--env-file": null,
+            "-i|--interactive": null,
+            "--privileged": null,
+            "-t|--tty": null,
+            "-u|--user": null,
+            "-w|--workdir": null
+        },
+        "export": {
+            "-o|--output": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "-s|--size": null
+        },
+        "kill": {
+            "-s|--signal": null
+        },
+        "logs": {
+            "--details": null,
+            "-f|--follow": null,
+            "--since": null,
+            "-n|--tail": null,
+            "-t|--timestamps": null,
+            "--until": null
+        },
+        "ls": {
+            "-a|--all": null,
+            "-f|--filter": null,
+            "--format": null,
+            "-n|--last": null,
+            "-l|--latest": null,
+            "--no-trunc": null,
+            "-q|--quiet": null,
+            "-s|--size": null
+        },
+        "pause": null,
+        "port": null,
+        "prune": {
+            "--filter": null,
+            "-f|--force": null
+        },
+        "rename": null,
+        "restart": {
+            "-t|--time": null
+        },
+        "rm": {
+            "-f|--force": null,
+            "-l|--link": null,
+            "-v|--volumes": null
+        },
+        "run": {
+            "--add-host": null,
+            "-a|--attach": null,
+            "--blkio-weight": null,
+            "--blkio-weight-device": null,
+            "--cap-add": null,
+            "--cap-drop": null,
+            "--cgroup-parent": null,
+            "--cgroupns": null,
+            "--cidfile": null,
+            "--cpu-period": null,
+            "--cpu-quota": null,
+            "--cpu-rt-period": null,
+            "--cpu-rt-runtime": null,
+            "-c|--cpu-shares": null,
+            "--cpus": null,
+            "--cpuset-cpus": null,
+            "--cpuset-mems": null,
+            "-d|--detach": null,
+            "--detach-keys": null,
+            "--device": null,
+            "--device-cgroup-rule": null,
+            "--device-read-bps": null,
+            "--device-read-iops": null,
+            "--device-write-bps": null,
+            "--device-write-iops": null,
+            "--disable-content-trust": null,
+            "--dns": null,
+            "--dns-option": null,
+            "--dns-search": null,
+            "--domainname": null,
+            "--entrypoint": null,
+            "-e|--env": null,
+            "--env-file": null,
+            "--expose": null,
+            "--gpus": null,
+            "--group-add": null,
+            "--health-cmd": null,
+            "--health-interval": null,
+            "--health-retries": null,
+            "--health-start-period": null,
+            "--health-timeout": null,
+            "--help": null,
+            "-h|--hostname": null,
+            "--init": null,
+            "-i|--interactive": null,
+            "--ip": null,
+            "--ip6": null,
+            "--ipc": null,
+            "--isolation": null,
+            "--kernel-memory": null,
+            "-l|--label": null,
+            "--label-file": null,
+            "--link": null,
+            "--link-local-ip": null,
+            "--log-driver": null,
+            "--log-opt": null,
+            "--mac-address": null,
+            "-m|--memory": null,
+            "--memory-reservation": null,
+            "--memory-swap": null,
+            "--memory-swappiness": null,
+            "--mount": null,
+            "--name": null,
+            "--network": null,
+            "--network-alias": null,
+            "--no-healthcheck": null,
+            "--oom-kill-disable": null,
+            "--oom-score-adj": null,
+            "--pid": null,
+            "--pids-limit": null,
+            "--platform": null,
+            "--privileged": null,
+            "-p|--publish": null,
+            "-P|--publish-all": null,
+            "--pull": null,
+            "--read-only": null,
+            "--restart": null,
+            "--rm": null,
+            "--runtime": null,
+            "--security-opt": null,
+            "--shm-size": null,
+            "--sig-proxy": null,
+            "--stop-signal": null,
+            "--stop-timeout": null,
+            "--storage-opt": null,
+            "--sysctl": null,
+            "--tmpfs": null,
+            "-t|--tty": null,
+            "--ulimit": null,
+            "-u|--user": null,
+            "--userns": null,
+            "--uts": null,
+            "-v|--volume": null,
+            "--volume-driver": null,
+            "--volumes-from": null,
+            "-w|--workdir": null
+        },
+        "start": {
+            "-a|--attach": null,
+            "--detach-keys": null,
+            "-i|--interactive": null
+        },
+        "stats": {
+            "-a|--all": null,
+            "--format": null,
+            "--no-stream": null,
+            "--no-trunc": null
+        },
+        "stop": {
+            "-t|--time": null
+        },
+        "top": null,
+        "unpause": null,
+        "update": {
+            "--blkio-weight": null,
+            "--cpu-period": null,
+            "--cpu-quota": null,
+            "--cpu-rt-period": null,
+            "--cpu-rt-runtime": null,
+            "-c|--cpu-shares": null,
+            "--cpus": null,
+            "--cpuset-cpus": null,
+            "--cpuset-mems": null,
+            "--kernel-memory": null,
+            "-m|--memory": null,
+            "--memory-reservation": null,
+            "--memory-swap": null,
+            "--pids-limit": null,
+            "--restart": null
+        },
+        "wait": null
+    },
+    "context": {
+        "create": {
+            "aci": {
+                "--description": null,
+                "-h|--help": null,
+                "--location": null,
+                "--resource-group": null,
+                "--subscription-id": null
+            },
+            "ecs": {
+                "--access-keys": null,
+                "--description": null,
+                "--from-env": null,
+                "-h|--help": null,
+                "--local-simulation": null,
+                "--profile": null
+            },
+            "--default-stack-orchestrator": null,
+            "--description": null,
+            "--docker": null,
+            "--from": null,
+            "-h|--help": null,
+            "--kubernetes": null
+        },
+        "export": {
+            "-h|--help": null,
+            "--kubeconfig": null
+        },
+        "import": {
+            "-h|--help": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "-h|--help": null
+        },
+        "list": {
+            "--format": null,
+            "-h|--help": null,
+            "-q|--quiet": null
+        },
+        "rm": {
+            "-f|--force": null,
+            "-h|--help": null
+        },
+        "show": {
+            "-h|--help": null
+        },
+        "update": {
+            "--default-stack-orchestrator": null,
+            "--description": null,
+            "--docker": null,
+            "-h|--help": null,
+            "--kubernetes": null
+        },
+        "use": {
+            "-h|--help": null
+        },
+        "-h|--help": null
+    },
+    "image": {
+        "build": {
+            "--add-host": null,
+            "--build-arg": null,
+            "--cache-from": null,
+            "--disable-content-trust": null,
+            "-f|--file": null,
+            "--iidfile": null,
+            "--isolation": null,
+            "--label": null,
+            "--network": null,
+            "--no-cache": null,
+            "-o|--output": null,
+            "--platform": null,
+            "--progress": null,
+            "--pull": null,
+            "-q|--quiet": null,
+            "--secret": null,
+            "--ssh": null,
+            "-t|--tag": null,
+            "--target": null
+        },
+        "history": {
+            "--format": null,
+            "-H|--human": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "import": {
+            "-c|--change": null,
+            "-m|--message": null,
+            "--platform": null
+        },
+        "inspect": {
+            "-f|--format": null
+        },
+        "load": {
+            "-i|--input": null,
+            "-q|--quiet": null
+        },
+        "ls": {
+            "-a|--all": null,
+            "--digests": null,
+            "-f|--filter": null,
+            "--format": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "prune": {
+            "-a|--all": null,
+            "--filter": null,
+            "-f|--force": null
+        },
+        "pull": {
+            "-a|--all-tags": null,
+            "--disable-content-trust": null,
+            "--platform": null,
+            "-q|--quiet": null
+        },
+        "push": {
+            "-a|--all-tags": null,
+            "--disable-content-trust": null,
+            "-q|--quiet": null
+        },
+        "rm": {
+            "-f|--force": null,
+            "--no-prune": null
+        },
+        "save": {
+            "-o|--output": null
+        },
+        "tag": null
+    },
+    "manifest": {
+        "annotate": {
+            "--arch": null,
+            "--os": null,
+            "--os-features": null,
+            "--os-version": null,
+            "--variant": null
+        },
+        "create": {
+            "-a|--amend": null,
+            "--insecure": null
+        },
+        "inspect": {
+            "--insecure": null,
+            "-v|--verbose": null
+        },
+        "push": {
+            "--insecure": null,
+            "-p|--purge": null
+        },
+        "rm": null
+    },
+    "network": {
+        "connect": {
+            "--alias": null,
+            "--driver-opt": null,
+            "--ip": null,
+            "--ip6": null,
+            "--link": null,
+            "--link-local-ip": null
+        },
+        "create": {
+            "--attachable": null,
+            "--aux-address": null,
+            "--config-from": null,
+            "--config-only": null,
+            "-d|--driver": null,
+            "--gateway": null,
+            "--ingress": null,
+            "--internal": null,
+            "--ip-range": null,
+            "--ipam-driver": null,
+            "--ipam-opt": null,
+            "--ipv6": null,
+            "--label": null,
+            "-o|--opt": null,
+            "--scope": null,
+            "--subnet": null
+        },
+        "disconnect": {
+            "-f|--force": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "-v|--verbose": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "prune": {
+            "--filter": null,
+            "-f|--force": null
+        },
+        "rm": null
+    },
+    "node": {
+        "demote": null,
+        "inspect": {
+            "-f|--format": null,
+            "--pretty": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "promote": null,
+        "ps": {
+            "-f|--filter": null,
+            "--format": null,
+            "--no-resolve": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "rm": {
+            "-f|--force": null
+        },
+        "update": {
+            "--availability": null,
+            "--label-add": null,
+            "--label-rm": null,
+            "--role": null
+        }
+    },
+    "plugin": {
+        "create": {
+            "--compress": null
+        },
+        "disable": {
+            "-f|--force": null
+        },
+        "enable": {
+            "--timeout": null
+        },
+        "inspect": {
+            "-f|--format": null
+        },
+        "install": {
+            "--alias": null,
+            "--disable": null,
+            "--disable-content-trust": null,
+            "--grant-all-permissions": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "push": {
+            "--disable-content-trust": null
+        },
+        "rm": {
+            "-f|--force": null
+        },
+        "set": null,
+        "upgrade": {
+            "--disable-content-trust": null,
+            "--grant-all-permissions": null,
+            "--skip-remote-check": null
+        }
+    },
+    "scan": {
+        "--accept-license": null,
+        "--dependency-tree": null,
+        "--exclude-base": null,
+        "-f|--file": null,
+        "--group-issues": null,
+        "--json": null,
+        "--login": null,
+        "--reject-license": null,
+        "--severity": null,
+        "--token": null,
+        "--version": null
+    },
+    "secret": {
+        "create": {
+            "-d|--driver": null,
+            "-l|--label": null,
+            "--template-driver": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "--pretty": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "rm": null
+    },
+    "service": {
+        "create": {
+            "--cap-add": null,
+            "--cap-drop": null,
+            "--config": null,
+            "--constraint": null,
+            "--container-label": null,
+            "--credential-spec": null,
+            "-d|--detach": null,
+            "--dns": null,
+            "--dns-option": null,
+            "--dns-search": null,
+            "--endpoint-mode": null,
+            "--entrypoint": null,
+            "-e|--env": null,
+            "--env-file": null,
+            "--generic-resource": null,
+            "--group": null,
+            "--health-cmd": null,
+            "--health-interval": null,
+            "--health-retries": null,
+            "--health-start-period": null,
+            "--health-timeout": null,
+            "--host": null,
+            "--hostname": null,
+            "--init": null,
+            "--isolation": null,
+            "-l|--label": null,
+            "--limit-cpu": null,
+            "--limit-memory": null,
+            "--limit-pids": null,
+            "--log-driver": null,
+            "--log-opt": null,
+            "--max-concurrent": null,
+            "--mode": null,
+            "--mount": null,
+            "--name": null,
+            "--network": null,
+            "--no-healthcheck": null,
+            "--no-resolve-image": null,
+            "--placement-pref": null,
+            "-p|--publish": null,
+            "-q|--quiet": null,
+            "--read-only": null,
+            "--replicas": null,
+            "--replicas-max-per-node": null,
+            "--reserve-cpu": null,
+            "--reserve-memory": null,
+            "--restart-condition": null,
+            "--restart-delay": null,
+            "--restart-max-attempts": null,
+            "--restart-window": null,
+            "--rollback-delay": null,
+            "--rollback-failure-action": null,
+            "--rollback-max-failure-ratio": null,
+            "--rollback-monitor": null,
+            "--rollback-order": null,
+            "--rollback-parallelism": null,
+            "--secret": null,
+            "--stop-grace-period": null,
+            "--stop-signal": null,
+            "--sysctl": null,
+            "-t|--tty": null,
+            "--ulimit": null,
+            "--update-delay": null,
+            "--update-failure-action": null,
+            "--update-max-failure-ratio": null,
+            "--update-monitor": null,
+            "--update-order": null,
+            "--update-parallelism": null,
+            "-u|--user": null,
+            "--with-registry-auth": null,
+            "-w|--workdir": null
+        },
+        "inspect": {
+            "-f|--format": null,
+            "--pretty": null
+        },
+        "logs": {
+            "--details": null,
+            "-f|--follow": null,
+            "--no-resolve": null,
+            "--no-task-ids": null,
+            "--no-trunc": null,
+            "--raw": null,
+            "--since": null,
+            "-n|--tail": null,
+            "-t|--timestamps": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "ps": {
+            "-f|--filter": null,
+            "--format": null,
+            "--no-resolve": null,
+            "--no-trunc": null,
+            "-q|--quiet": null
+        },
+        "rm": null,
+        "rollback": {
+            "-d|--detach": null,
+            "-q|--quiet": null
+        },
+        "scale": {
+            "-d|--detach": null
+        },
+        "update": {
+            "--args": null,
+            "--cap-add": null,
+            "--cap-drop": null,
+            "--config-add": null,
+            "--config-rm": null,
+            "--constraint-add": null,
+            "--constraint-rm": null,
+            "--container-label-add": null,
+            "--container-label-rm": null,
+            "--credential-spec": null,
+            "-d|--detach": null,
+            "--dns-add": null,
+            "--dns-option-add": null,
+            "--dns-option-rm": null,
+            "--dns-rm": null,
+            "--dns-search-add": null,
+            "--dns-search-rm": null,
+            "--endpoint-mode": null,
+            "--entrypoint": null,
+            "--env-add": null,
+            "--env-rm": null,
+            "--force": null,
+            "--generic-resource-add": null,
+            "--generic-resource-rm": null,
+            "--group-add": null,
+            "--group-rm": null,
+            "--health-cmd": null,
+            "--health-interval": null,
+            "--health-retries": null,
+            "--health-start-period": null,
+            "--health-timeout": null,
+            "--host-add": null,
+            "--host-rm": null,
+            "--hostname": null,
+            "--image": null,
+            "--init": null,
+            "--isolation": null,
+            "--label-add": null,
+            "--label-rm": null,
+            "--limit-cpu": null,
+            "--limit-memory": null,
+            "--limit-pids": null,
+            "--log-driver": null,
+            "--log-opt": null,
+            "--max-concurrent": null,
+            "--mount-add": null,
+            "--mount-rm": null,
+            "--network-add": null,
+            "--network-rm": null,
+            "--no-healthcheck": null,
+            "--no-resolve-image": null,
+            "--placement-pref-add": null,
+            "--placement-pref-rm": null,
+            "--publish-add": null,
+            "--publish-rm": null,
+            "-q|--quiet": null,
+            "--read-only": null,
+            "--replicas": null,
+            "--replicas-max-per-node": null,
+            "--reserve-cpu": null,
+            "--reserve-memory": null,
+            "--restart-condition": null,
+            "--restart-delay": null,
+            "--restart-max-attempts": null,
+            "--restart-window": null,
+            "--rollback": null,
+            "--rollback-delay": null,
+            "--rollback-failure-action": null,
+            "--rollback-max-failure-ratio": null,
+            "--rollback-monitor": null,
+            "--rollback-order": null,
+            "--rollback-parallelism": null,
+            "--secret-add": null,
+            "--secret-rm": null,
+            "--stop-grace-period": null,
+            "--stop-signal": null,
+            "--sysctl-add": null,
+            "--sysctl-rm": null,
+            "-t|--tty": null,
+            "--ulimit-add": null,
+            "--ulimit-rm": null,
+            "--update-delay": null,
+            "--update-failure-action": null,
+            "--update-max-failure-ratio": null,
+            "--update-monitor": null,
+            "--update-order": null,
+            "--update-parallelism": null,
+            "-u|--user": null,
+            "--with-registry-auth": null,
+            "-w|--workdir": null
+        }
+    },
+    "stack": {
+        "--orchestrator": null,
+        "deploy": {
+            "-c|--compose-file": null,
+            "--orchestrator": null,
+            "--prune": null,
+            "--resolve-image": null,
+            "--with-registry-auth": null
+        },
+        "ls": {
+            "--format": null,
+            "--orchestrator": null
+        },
+        "ps": {
+            "-f|--filter": null,
+            "--format": null,
+            "--no-resolve": null,
+            "--no-trunc": null,
+            "--orchestrator": null,
+            "-q|--quiet": null
+        },
+        "rm": {
+            "--orchestrator": null
+        },
+        "services": {
+            "-f|--filter": null,
+            "--format": null,
+            "--orchestrator": null,
+            "-q|--quiet": null
+        }
+    },
+    "swarm": {
+        "ca": {
+            "--ca-cert": null,
+            "--ca-key": null,
+            "--cert-expiry": null,
+            "-d|--detach": null,
+            "--external-ca": null,
+            "-q|--quiet": null,
+            "--rotate": null
+        },
+        "init": {
+            "--advertise-addr": null,
+            "--autolock": null,
+            "--availability": null,
+            "--cert-expiry": null,
+            "--data-path-addr": null,
+            "--data-path-port": null,
+            "--default-addr-pool": null,
+            "--default-addr-pool-mask-length": null,
+            "--dispatcher-heartbeat": null,
+            "--external-ca": null,
+            "--force-new-cluster": null,
+            "--listen-addr": null,
+            "--max-snapshots": null,
+            "--snapshot-interval": null,
+            "--task-history-limit": null
+        },
+        "join": {
+            "--advertise-addr": null,
+            "--availability": null,
+            "--data-path-addr": null,
+            "--listen-addr": null,
+            "--token": null
+        },
+        "join-token": {
+            "-q|--quiet": null,
+            "--rotate": null
+        },
+        "leave": {
+            "-f|--force": null
+        },
+        "unlock": null,
+        "unlock-key": {
+            "-q|--quiet": null,
+            "--rotate": null
+        },
+        "update": {
+            "--autolock": null,
+            "--cert-expiry": null,
+            "--dispatcher-heartbeat": null,
+            "--external-ca": null,
+            "--max-snapshots": null,
+            "--snapshot-interval": null,
+            "--task-history-limit": null
+        }
+    },
+    "system": {
+        "df": {
+            "--format": null,
+            "-v|--verbose": null
+        },
+        "events": {
+            "-f|--filter": null,
+            "--format": null,
+            "--since": null,
+            "--until": null
+        },
+        "info": {
+            "-f|--format": null
+        },
+        "prune": {
+            "-a|--all": null,
+            "--filter": null,
+            "-f|--force": null,
+            "--volumes": null
+        }
+    },
+    "trust": {
+        "key": {
+            "generate": {
+                "--dir": null
+            },
+            "load": {
+                "--name": null
+            }
+        },
+        "signer": {
+            "add": {
+                "--key": null
+            },
+            "remove": {
+                "-f|--force": null
+            }
+        },
+        "inspect": {
+            "--pretty": null
+        },
+        "revoke": {
+            "-y|--yes": null
+        },
+        "sign": {
+            "--local": null
+        }
+    },
+    "volume": {
+        "create": {
+            "-d|--driver": null,
+            "--label": null,
+            "-o|--opt": null
+        },
+        "inspect": {
+            "-f|--format": null
+        },
+        "ls": {
+            "-f|--filter": null,
+            "--format": null,
+            "-q|--quiet": null
+        },
+        "prune": {
+            "--filter": null,
+            "-f|--force": null
+        },
+        "rm": {
+            "-f|--force": null
+        }
+    },
+    "attach": {
+        "--detach-keys": null,
+        "--no-stdin": null,
+        "--sig-proxy": null
+    },
+    "build": {
+        "--add-host": null,
+        "--build-arg": null,
+        "--cache-from": null,
+        "--disable-content-trust": null,
+        "-f|--file": null,
+        "--iidfile": null,
+        "--isolation": null,
+        "--label": null,
+        "--network": null,
+        "--no-cache": null,
+        "-o|--output": null,
+        "--platform": null,
+        "--progress": null,
+        "--pull": null,
+        "-q|--quiet": null,
+        "--secret": null,
+        "--ssh": null,
+        "-t|--tag": null,
+        "--target": null
+    },
+    "commit": {
+        "-a|--author": null,
+        "-c|--change": null,
+        "-m|--message": null,
+        "-p|--pause": null
+    },
+    "cp": {
+        "-a|--archive": null,
+        "-L|--follow-link": null
+    },
+    "create": {
+        "--add-host": null,
+        "-a|--attach": null,
+        "--blkio-weight": null,
+        "--blkio-weight-device": null,
+        "--cap-add": null,
+        "--cap-drop": null,
+        "--cgroup-parent": null,
+        "--cgroupns": null,
+        "--cidfile": null,
+        "--cpu-period": null,
+        "--cpu-quota": null,
+        "--cpu-rt-period": null,
+        "--cpu-rt-runtime": null,
+        "-c|--cpu-shares": null,
+        "--cpus": null,
+        "--cpuset-cpus": null,
+        "--cpuset-mems": null,
+        "--device": null,
+        "--device-cgroup-rule": null,
+        "--device-read-bps": null,
+        "--device-read-iops": null,
+        "--device-write-bps": null,
+        "--device-write-iops": null,
+        "--disable-content-trust": null,
+        "--dns": null,
+        "--dns-option": null,
+        "--dns-search": null,
+        "--domainname": null,
+        "--entrypoint": null,
+        "-e|--env": null,
+        "--env-file": null,
+        "--expose": null,
+        "--gpus": null,
+        "--group-add": null,
+        "--health-cmd": null,
+        "--health-interval": null,
+        "--health-retries": null,
+        "--health-start-period": null,
+        "--health-timeout": null,
+        "--help": null,
+        "-h|--hostname": null,
+        "--init": null,
+        "-i|--interactive": null,
+        "--ip": null,
+        "--ip6": null,
+        "--ipc": null,
+        "--isolation": null,
+        "--kernel-memory": null,
+        "-l|--label": null,
+        "--label-file": null,
+        "--link": null,
+        "--link-local-ip": null,
+        "--log-driver": null,
+        "--log-opt": null,
+        "--mac-address": null,
+        "-m|--memory": null,
+        "--memory-reservation": null,
+        "--memory-swap": null,
+        "--memory-swappiness": null,
+        "--mount": null,
+        "--name": null,
+        "--network": null,
+        "--network-alias": null,
+        "--no-healthcheck": null,
+        "--oom-kill-disable": null,
+        "--oom-score-adj": null,
+        "--pid": null,
+        "--pids-limit": null,
+        "--platform": null,
+        "--privileged": null,
+        "-p|--publish": null,
+        "-P|--publish-all": null,
+        "--pull": null,
+        "--read-only": null,
+        "--restart": null,
+        "--rm": null,
+        "--runtime": null,
+        "--security-opt": null,
+        "--shm-size": null,
+        "--stop-signal": null,
+        "--stop-timeout": null,
+        "--storage-opt": null,
+        "--sysctl": null,
+        "--tmpfs": null,
+        "-t|--tty": null,
+        "--ulimit": null,
+        "-u|--user": null,
+        "--userns": null,
+        "--uts": null,
+        "-v|--volume": null,
+        "--volume-driver": null,
+        "--volumes-from": null,
+        "-w|--workdir": null
+    },
+    "diff": null,
+    "events": {
+        "-f|--filter": null,
+        "--format": null,
+        "--since": null,
+        "--until": null
+    },
+    "exec": {
+        "-d|--detach": null,
+        "--detach-keys": null,
+        "-e|--env": null,
+        "--env-file": null,
+        "-i|--interactive": null,
+        "--privileged": null,
+        "-t|--tty": null,
+        "-u|--user": null,
+        "-w|--workdir": null
+    },
+    "export": {
+        "-o|--output": null
+    },
+    "history": {
+        "--format": null,
+        "-H|--human": null,
+        "--no-trunc": null,
+        "-q|--quiet": null
+    },
+    "images": {
+        "-a|--all": null,
+        "--digests": null,
+        "-f|--filter": null,
+        "--format": null,
+        "--no-trunc": null,
+        "-q|--quiet": null
+    },
+    "import": {
+        "-c|--change": null,
+        "-m|--message": null,
+        "--platform": null
+    },
+    "info": {
+        "-f|--format": null
+    },
+    "inspect": {
+        "-f|--format": null,
+        "-s|--size": null,
+        "--type": null
+    },
+    "kill": {
+        "-s|--signal": null
+    },
+    "load": {
+        "-i|--input": null,
+        "-q|--quiet": null
+    },
+    "login": {
+        "azure": {
+            "--client-id": null,
+            "--client-secret": null,
+            "--cloud-name": null,
+            "-h|--help": null,
+            "--tenant-id": null
+        },
+        "-h|--help": null,
+        "-p|--password": null,
+        "--password-stdin": null,
+        "-u|--username": null
+    },
+    "logout": {
+        "azure": {
+            "-h|--help": null
+        },
+        "-h|--help": null
+    },
+    "logs": {
+        "--details": null,
+        "-f|--follow": null,
+        "--since": null,
+        "-n|--tail": null,
+        "-t|--timestamps": null,
+        "--until": null
+    },
+    "pause": null,
+    "port": null,
+    "ps": {
+        "-a|--all": null,
+        "-f|--filter": null,
+        "--format": null,
+        "-n|--last": null,
+        "-l|--latest": null,
+        "--no-trunc": null,
+        "-q|--quiet": null,
+        "-s|--size": null
+    },
+    "pull": {
+        "-a|--all-tags": null,
+        "--disable-content-trust": null,
+        "--platform": null,
+        "-q|--quiet": null
+    },
+    "push": {
+        "-a|--all-tags": null,
+        "--disable-content-trust": null,
+        "-q|--quiet": null
+    },
+    "rename": null,
+    "restart": {
+        "-t|--time": null
+    },
+    "rm": {
+        "-f|--force": null,
+        "-l|--link": null,
+        "-v|--volumes": null
+    },
+    "rmi": {
+        "-f|--force": null,
+        "--no-prune": null
+    },
     "run": {
-
-    }
+        "--add-host": null,
+        "-a|--attach": null,
+        "--blkio-weight": null,
+        "--blkio-weight-device": null,
+        "--cap-add": null,
+        "--cap-drop": null,
+        "--cgroup-parent": null,
+        "--cgroupns": null,
+        "--cidfile": null,
+        "--cpu-period": null,
+        "--cpu-quota": null,
+        "--cpu-rt-period": null,
+        "--cpu-rt-runtime": null,
+        "-c|--cpu-shares": null,
+        "--cpus": null,
+        "--cpuset-cpus": null,
+        "--cpuset-mems": null,
+        "-d|--detach": null,
+        "--detach-keys": null,
+        "--device": null,
+        "--device-cgroup-rule": null,
+        "--device-read-bps": null,
+        "--device-read-iops": null,
+        "--device-write-bps": null,
+        "--device-write-iops": null,
+        "--disable-content-trust": null,
+        "--dns": null,
+        "--dns-option": null,
+        "--dns-search": null,
+        "--domainname": null,
+        "--entrypoint": null,
+        "-e|--env": null,
+        "--env-file": null,
+        "--expose": null,
+        "--gpus": null,
+        "--group-add": null,
+        "--health-cmd": null,
+        "--health-interval": null,
+        "--health-retries": null,
+        "--health-start-period": null,
+        "--health-timeout": null,
+        "--help": null,
+        "-h|--hostname": null,
+        "--init": null,
+        "-i|--interactive": null,
+        "--ip": null,
+        "--ip6": null,
+        "--ipc": null,
+        "--isolation": null,
+        "--kernel-memory": null,
+        "-l|--label": null,
+        "--label-file": null,
+        "--link": null,
+        "--link-local-ip": null,
+        "--log-driver": null,
+        "--log-opt": null,
+        "--mac-address": null,
+        "-m|--memory": null,
+        "--memory-reservation": null,
+        "--memory-swap": null,
+        "--memory-swappiness": null,
+        "--mount": null,
+        "--name": null,
+        "--network": null,
+        "--network-alias": null,
+        "--no-healthcheck": null,
+        "--oom-kill-disable": null,
+        "--oom-score-adj": null,
+        "--pid": null,
+        "--pids-limit": null,
+        "--platform": null,
+        "--privileged": null,
+        "-p|--publish": null,
+        "-P|--publish-all": null,
+        "--pull": null,
+        "--read-only": null,
+        "--restart": null,
+        "--rm": null,
+        "--runtime": null,
+        "--security-opt": null,
+        "--shm-size": null,
+        "--sig-proxy": null,
+        "--stop-signal": null,
+        "--stop-timeout": null,
+        "--storage-opt": null,
+        "--sysctl": null,
+        "--tmpfs": null,
+        "-t|--tty": null,
+        "--ulimit": null,
+        "-u|--user": null,
+        "--userns": null,
+        "--uts": null,
+        "-v|--volume": null,
+        "--volume-driver": null,
+        "--volumes-from": null,
+        "-w|--workdir": null
+    },
+    "save": {
+        "-o|--output": null
+    },
+    "search": {
+        "-f|--filter": null,
+        "--format": null,
+        "--limit": null,
+        "--no-trunc": null
+    },
+    "start": {
+        "-a|--attach": null,
+        "--detach-keys": null,
+        "-i|--interactive": null
+    },
+    "stats": {
+        "-a|--all": null,
+        "--format": null,
+        "--no-stream": null,
+        "--no-trunc": null
+    },
+    "stop": {
+        "-t|--time": null
+    },
+    "tag": null,
+    "top": null,
+    "unpause": null,
+    "update": {
+        "--blkio-weight": null,
+        "--cpu-period": null,
+        "--cpu-quota": null,
+        "--cpu-rt-period": null,
+        "--cpu-rt-runtime": null,
+        "-c|--cpu-shares": null,
+        "--cpus": null,
+        "--cpuset-cpus": null,
+        "--cpuset-mems": null,
+        "--kernel-memory": null,
+        "-m|--memory": null,
+        "--memory-reservation": null,
+        "--memory-swap": null,
+        "--pids-limit": null,
+        "--restart": null
+    },
+    "version": {
+        "-f|--format": null,
+        "-h|--help": null,
+        "--kubeconfig": null
+    },
+    "wait": null
 }

@@ -1,0 +1,16 @@
+{
+    "--filecount|f":null,
+    "--apparent-size|-s":null,
+    "--full-paths|-p":null,
+    "--help|-h":null,
+    "--ignore_hidden|-i":null,
+    "--limit-filesystem|-x":null,
+    "--no-percent-bars|-b":null,
+    "--no-colors|-c":null,
+    "--reverse|-r":null,
+    "--version|-V":null,
+    "--depth|-d":[],
+    "--ignore-directory|-X":[],
+    "--number-of-lines|-n":[],
+    "--terminal_width|-w":[]
+}
