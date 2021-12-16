@@ -1,5 +1,3 @@
 {
-    "-L": null,
-    "-P": null,
-    "#1": "___advise_lsd; printf '..\n.\n../\n-' "
+    "#1": "___advise_ls"
 }
