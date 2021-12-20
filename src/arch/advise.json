@@ -1,5 +1,7 @@
 {
     "#1": "___advise_ls",
     "-w|-g|-d|--welcome-msg|--goodbye-msg|--digest": ["y","n"],
-    "--file": "___advise_ls"
+    "--file": "___advise_ls",
+    "--help": null,
+    "--version": null
 }

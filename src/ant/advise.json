@@ -1,5 +1,6 @@
 {
-    "-h|-help|--h|--help|-projecthelp|-p|-version|-diagnostics": null,
+    "-h|-help|--h|--help": null,
+    "-projecthelp|-p|-version|-diagnostics|-d": null,
     "-logger|-listener|-inputhandler|-main|-find|-s": null,
     "-buildfile|-file|-f": "___advise_ls 'xml$'",
     "-logfile|-l": "___advise_ls",

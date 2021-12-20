@@ -1,6 +1,6 @@
 {
     "--device|-i": null,
-    "--protocol|-A|-p": null,
+    "--protocol|-A|-p|-a|-d": null,
     "--file|-f": "___advise_ls",
     "--hw-type|-H|-t": ["ash", "ether", "ax25", "netrom", "rose", "arcnet", "dlci", "fddi", "hippi", "irda", "x25", "eui64"]
 }
