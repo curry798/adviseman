@@ -1,5 +1,8 @@
 {
     "-c|-w": null,
     "-I": null,
+    "-f": null,
+    "-U": null,
+    "-D": null,
     "-s": null
 }
