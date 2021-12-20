@@ -11,5 +11,5 @@ get(){
 # get_json(){
 #   indent=0 get "$@" > ~/.x-cmd/.tmp/advise/src/"$1"/advise.json
 # }
-indent=0 get docker > bbb
+indent=0 get docker
 
