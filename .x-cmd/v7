@@ -1,0 +1,29 @@
+# shellcheck shell=bash
+_get_advise_json(){
+    IFS=" "
+    echo "$($* help -a 2>/dev/null)"| awk -v indent="$indent" -v CUR_CMD="$*" -f "./get_git_desc.awk"
+    # # print ~/.x-cmd/.tmp/advise/src/"$1"/advise.json | awk -f "./getName.awk"
+    # "$("$1" --help)"| awk -f "./get_json.awk" | awk -f "./getName.awk"
+}
+_get_advise_json_deep(){
+    IFS=" "
+    echo "$($* -h 2>/dev/null)"| awk -v indent="$indent" -v CUR_CMD="$*" -f "./get_git_desc.awk"
+}
+get_deep(){
+    # indent=0 get git
+    code=$(_get_advise_json_deep "$@" 2>/dev/null)
+    # printf "%s" "$code" >&2
+    eval "$code"
+}
+get(){
+    code=$(_get_advise_json "$@" 2>/dev/null)
+    # printf "%s" "$code" >&2
+    eval "$code"
+}
+# get_json(){
+#   indent=0 get "$@" > ~/.x-cmd/.tmp/advise/src/"$1"/advise.json
+# }
+indent=0 get git > ccc
+# get_deep
+# echo ""|awk '{str="--recursive[=<pathspec>] initialize submodules in the clone"; gsub(/\[.*\]/, "", str); print str}'
+# echo ""|awk '{str="--server-option <server-specific> option to transmit"; gsub(/<.*>/, "", str); print str}'
