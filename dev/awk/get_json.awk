@@ -8,9 +8,11 @@ BEGIN{
     opt=""
     IS_COMMANDS=false
 }
+
 function debug(msg){
     print "\033[1;31m" msg "\033[0;0m"
 }
+
 function get_json(text,    i,arr,arrcom){
     # 把text里面首次正则匹配到的内容用""替换掉,/^[ \t]+/ 匹配行首以空格或者\t(制表符)开头一个或多个内容
     sub(/^[ \t]+/, "",text)
@@ -54,8 +56,9 @@ function get_json(text,    i,arr,arrcom){
         opt=opt "\nprintf \""space"%s\\n\" \"\\\"" arrcom[1] "\\\": $(indent=" indent+1 " get " CUR_CMD " " arrcom[1] "),\""
         return
     }
-    
+
 }
+
 {
     text=$0
     get_json(text)
