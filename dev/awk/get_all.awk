@@ -12,8 +12,8 @@ function debug(msg){
 }
 function pretreatment(text){
     sub(/^[ \t]+/, "",text)
+    gsub(/`/, "'", text)
     gsub(/<.*>.../, "", text)
-    gsub("`","\\`",text)
     gsub(/\[.*\]/, "", text)
     gsub(/<.*>/, "", text)
     gsub(/"/, "\\\"", text)
@@ -75,7 +75,7 @@ function get_subcom(text,    i,arrcom){
                     opt=opt arrcom[i]
                 }
                 opt=opt "\\\": $(indent=" indent+1 " get " CUR_CMD " " arrcom[1] ")"
-                opt=opt "\\\"#desc\\\": \\\""sub_desc"\\\"\"\"\n"space"}\,\""
+                opt=opt "\\\"#desc\\\": \\\""sub_desc"\\\"\\n"space"}\,\""
                 return
             }else if(CUR_CMD == "git"){
                 for(i in arrcom){
@@ -86,7 +86,7 @@ function get_subcom(text,    i,arrcom){
                         opt=opt "\nprintf \""space"%s\\n\"  \"\\\""
                         opt=opt arrcom[i]
                         opt=opt "\\\": $(indent=" indent+1 " get_deep " CUR_CMD " " arrcom[1] ")"
-                        opt=opt "\\\"#desc\\\": \\\""sub_desc"\\\"\"\"\n"space"}\,\""
+                        opt=opt "\\\"#desc\\\": \\\""sub_desc"\\\"\\n"space"}\,\""
                     }
                 }
                 return

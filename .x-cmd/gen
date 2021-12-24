@@ -51,6 +51,7 @@ case $1 in
         ;;
 esac
 if [ -n "$BASH_VERSION$ZSH_VERSION" ] && [ -n "$1" ]; then
+    . ~/.x-cmd/xrc/latest
     xrc advise
     advise rm "$1"
     advise "$1" "./dev/unstable/$1/advise.json"
