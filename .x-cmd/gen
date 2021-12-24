@@ -1,5 +1,4 @@
 # shellcheck shell=bash #xsh
-
 get(){
     code=$(_get_advise_json "$@" 2>/dev/null)
     # printf "%s" "$code" >&2
@@ -47,7 +46,12 @@ case $1 in
     all)
         ;;
     *)
-        printf "Usage: x test {brew|apt|yum|apk|npm|pip|gem|cargo|go|maven|base}"
+        printf "Usage: x gen {brew|apt|yum|apk|npm|pip|gem|cargo|go|maven|base}"
         exit 1
         ;;
 esac
+if [ -n "$BASH_VERSION$ZSH_VERSION" ] && [ -n "$1" ]; then
+    xrc advise
+    advise rm "$1"
+    advise "$1" "./dev/unstable/$1/advise.json"
+fi
