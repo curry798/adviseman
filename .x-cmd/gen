@@ -42,7 +42,7 @@ case $1 in
         ___AWK_PATH="./dev/awk/get_bat_desc.awk" indent=0 get x cat
         ;;
     *)
-        printf "Usage: x gen {brew|apt|yum|apk|npm|pip|gem|cargo|go|maven|base}"
+        printf "Usage: x gen {docker|cargo|git|bat}"
         return 1
         ;;
 esac
