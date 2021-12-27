@@ -1,0 +1,54 @@
+# shellcheck shell=bash #xsh
+get(){
+    code=$(_get_advise_json "$@" 2>/dev/null)
+    # printf "%s" "$code" >&2
+    eval "$code"
+}
+
+_get_advise_json(){
+    IFS=" "
+    printf "%s" "$($* --help 2>/dev/null)"| awk -v indent="$indent" -v CUR_CMD="$*" -f "$___AWK_PATH"
+}
+
+case $1 in
+    docker)
+        docker_str="$(___AWK_PATH="./dev/awk/get_all.awk" indent=0 get docker)"
+        echo "" | awk -v docker_str="$docker_str" '{res=substr(docker_str,1,length(docker_str)-4) "\n}";print res}' > ./dev/unstable/docker/advise.json
+        ;;
+
+    cargo)
+        cargo_str="$(___AWK_PATH="./dev/awk/get_all.awk" indent=0 get cargo)"
+        echo "" | awk -v cargo_str="$cargo_str" '{res=substr(cargo_str,1,length(cargo_str)-4) "\n}";print res}' > ./dev/unstable/cargo/advise.json
+        ;;
+    git)
+        _get_advise_json(){
+            IFS=" "
+            "$*" help -a 2>/dev/null| awk -v indent="$indent" -v CUR_CMD="$*" -f "./dev/awk/get_all.awk"
+        }
+        _get_advise_json_deep(){
+            IFS=" "
+            "$*" -h 2>/dev/null| awk -v indent="$indent" -v CUR_CMD="$*" -f "./dev/awk/get_all.awk"
+        }
+        get_deep(){
+            # indent=0 get git
+            code=$(_get_advise_json_deep "$@" 2>/dev/null)
+            # printf "%s" "$code" >&2
+            eval "$code"
+        }
+        git_str="$(___AWK_PATH="./dev/awk/get_all.awk" indent=0 get git)"
+        echo "" | awk -v git_str="$git_str" '{res=substr(git_str,1,length(git_str)-4) "\n}";print res}' > ./dev/unstable/git/advise.json
+        ;;
+    bat)
+        ___AWK_PATH="./dev/awk/get_bat_desc.awk" indent=0 get x cat
+        ;;
+    *)
+        printf "Usage: x gen {brew|apt|yum|apk|npm|pip|gem|cargo|go|maven|base}"
+        return 1
+        ;;
+esac
+
+if [ -n "$BASH_VERSION$ZSH_VERSION" ] && [ -n "$1" ]; then
+    xrc advise
+    advise rm "$1"
+    advise "$1" "./dev/unstable/$1/advise.json"
+fi

@@ -1,0 +1,499 @@
+{
+  "--config": "--- Location of client config files ",
+  "-c|--context": "--- Name of the context to use to connect to the daemon ",
+  "-D|--debug": "--- Enable debug mode",
+  "-H|--host": "--- Daemon socket to connect to",
+  "-l|--log-level": "--- Set the logging level ",
+  "--tls": "--- Use TLS; implied by --tlsverify",
+  "--tlscacert": "--- Trust certs signed only by this CA ",
+  "--tlscert": "--- Path to TLS certificate file ",
+  "--tlskey": "--- Path to TLS key file ",
+  "--tlsverify": "--- Use TLS and verify the remote",
+  "-v|--version": "--- Print version information and quit",
+  "container": {
+    "#desc": "Manage containers"
+  },
+  "context": {
+    "-h|--help": "--- Help for context",
+    "#desc": "Manage contexts"
+  },
+  "image": {
+    "#desc": "Manage images"
+  },
+  "manifest": {
+    "#desc": "Manage Docker image manifests and manifest lists"
+  },
+  "network": {
+    "#desc": "Manage networks"
+  },
+  "node": {
+    "#desc": "Manage Swarm nodes"
+  },
+  "plugin": {
+    "#desc": "Manage plugins"
+  },
+  "scan": {
+    "--accept-license": "--- Accept using a third party scanning provider",
+    "--dependency-tree": "--- Show dependency tree with scan results",
+    "--exclude-base": "--- Exclude base image from vulnerability scanning ",
+    "-f|--file": "--- Dockerfile associated with image, provides more detailed results",
+    "--group-issues": "--- Aggregate duplicated vulnerabilities and group them to a single one ",
+    "--json": "--- Output results in JSON format",
+    "--login": "--- Authenticate to the scan provider using an optional token , or web base token if empty",
+    "--reject-license": "--- Reject using a third party scanning provider",
+    "--severity": "--- Only report vulnerabilities of provided level or higher ",
+    "--token": "--- Authentication token to login to the third party scanning provider",
+    "--version": "--- Display version of the scan plugin",
+    "#desc": "Docker Scan "
+  },
+  "secret": {
+    "#desc": "Manage Docker secrets"
+  },
+  "service": {
+    "#desc": "Manage services"
+  },
+  "stack": {
+    "--orchestrator": "--- Orchestrator to use ",
+    "#desc": "Manage Docker stacks"
+  },
+  "swarm": {
+    "#desc": "Manage Swarm"
+  },
+  "system": {
+    "#desc": "Manage Docker"
+  },
+  "trust": {
+    "#desc": "Manage trust on Docker images"
+  },
+  "volume": {
+    "#desc": "Manage volumes"
+  },
+  "build": {
+    "--add-host": "--- Add a custom host-to-IP mapping ",
+    "--build-arg": "--- Set build-time variables",
+    "--cache-from": "--- Images to consider as cache sources",
+    "--disable-content-trust": "--- Skip image verification ",
+    "-f|--file": "--- Name of the Dockerfile ",
+    "--iidfile": "--- Write the image ID to the file",
+    "--isolation": "--- Container isolation technology",
+    "--label": "--- Set metadata for an image",
+    "--network": "--- Set the networking mode for the RUN instructions during build ",
+    "--no-cache": "--- Do not use cache when building the image",
+    "-o|--output": "--- Output destination ",
+    "--platform": "--- Set platform if server is multi-platform capable",
+    "--progress": "--- Set type of progress output ",
+    "--pull": "--- Always attempt to pull a newer version of the image",
+    "-q|--quiet": "--- Suppress the build output and print image ID on success",
+    "--secret": "--- Secret file to expose to the build : id=mysecret,src=/local/secret",
+    "--ssh": "--- SSH agent socket or keys to expose to the build  (format: default|",
+    "-t|--tag": "--- Name and optionally a tag in the 'name:tag' format",
+    "--target": "--- Set the target build stage to build.",
+    "#desc": "Build an image from a Dockerfile"
+  },
+  "commit": {
+    "-a|--author": "--- Author ",
+    "-c|--change": "--- Apply Dockerfile instruction to the created image",
+    "-m|--message": "--- Commit message",
+    "-p|--pause": "--- Pause container during commit ",
+    "#desc": "Create a new image from a container's changes"
+  },
+  "cp": {
+    "-a|--archive": "--- Archive mode ",
+    "-L|--follow-link": "--- Always follow symbol link in SRC_PATH",
+    "#desc": "Copy files/folders between a container and the local filesystem"
+  },
+  "create": {
+    "--add-host": "--- Add a custom host-to-IP mapping ",
+    "-a|--attach": "--- Attach to STDIN, STDOUT or STDERR",
+    "--blkio-weight": "--- Block IO ",
+    "--blkio-weight-device": "--- Block IO weight ",
+    "--cap-add": "--- Add Linux capabilities",
+    "--cap-drop": "--- Drop Linux capabilities",
+    "--cgroup-parent": "--- Optional parent cgroup for the container",
+    "--cgroupns": "--- Cgroup namespace to use ",
+    "--cidfile": "--- Write the container ID to the file",
+    "--cpu-period": "--- Limit CPU CFS  period",
+    "--cpu-quota": "--- Limit CPU CFS  quota",
+    "--cpu-rt-period": "--- Limit CPU real-time period in microseconds",
+    "--cpu-rt-runtime": "--- Limit CPU real-time runtime in microseconds",
+    "-c|--cpu-shares": "--- CPU shares ",
+    "--cpus": "--- Number of CPUs",
+    "--cpuset-cpus": "--- CPUs in which to allow execution ",
+    "--cpuset-mems": "--- MEMs in which to allow execution ",
+    "--device": "--- Add a host device to the container",
+    "--device-cgroup-rule": "--- Add a rule to the cgroup allowed devices list",
+    "--device-read-bps": "--- Limit read rate ",
+    "--device-read-iops": "--- Limit read rate ",
+    "--device-write-bps": "--- Limit write rate ",
+    "--device-write-iops": "--- Limit write rate ",
+    "--disable-content-trust": "--- Skip image verification ",
+    "--dns": "--- Set custom DNS servers",
+    "--dns-option": "--- Set DNS options",
+    "--dns-search": "--- Set custom DNS search domains",
+    "--domainname": "--- Container NIS domain name",
+    "--entrypoint": "--- Overwrite the default ENTRYPOINT of the image",
+    "-e|--env": "--- Set environment variables",
+    "--env-file": "--- Read in a file of environment variables",
+    "--expose": "--- Expose a port or a range of ports",
+    "--gpus": "--- GPU devices to add to the container ",
+    "--group-add": "--- Add additional groups to join",
+    "--health-cmd": "--- Command to run to check health",
+    "--health-interval": "--- Time between running the check ",
+    "--health-retries": "--- Consecutive failures needed to report unhealthy",
+    "--health-start-period": "--- Start period for the container to initialize before starting health-retries countdown ",
+    "--health-timeout": "--- Maximum time to allow one check to run ",
+    "--help": "--- Print usage",
+    "-h|--hostname": "--- Container host name",
+    "--init": "--- Run an init inside the container that forwards signals and reaps processes",
+    "-i|--interactive": "--- Keep STDIN open even if not attached",
+    "--ip": "--- IPv4 address ",
+    "--ip6": "--- IPv6 address ",
+    "--ipc": "--- IPC mode to use",
+    "--isolation": "--- Container isolation technology",
+    "--kernel-memory": "--- Kernel memory limit",
+    "-l|--label": "--- Set meta data on a container",
+    "--label-file": "--- Read in a line delimited file of labels",
+    "--link": "--- Add link to another container",
+    "--link-local-ip": "--- Container IPv4/IPv6 link-local addresses",
+    "--log-driver": "--- Logging driver for the container",
+    "--log-opt": "--- Log driver options",
+    "--mac-address": "--- Container MAC address ",
+    "-m|--memory": "--- Memory limit",
+    "--memory-reservation": "--- Memory soft limit",
+    "--memory-swap": "--- Swap limit equal to memory plus swap: '-1' to enable unlimited swap",
+    "--memory-swappiness": "--- Tune container memory swappiness ",
+    "--mount": "--- Attach a filesystem mount to the container",
+    "--name": "--- Assign a name to the container",
+    "--network": "--- Connect a container to a network",
+    "--network-alias": "--- Add network-scoped alias for the container",
+    "--no-healthcheck": "--- Disable any container-specified HEALTHCHECK",
+    "--oom-kill-disable": "--- Disable OOM Killer",
+    "--oom-score-adj": "--- Tune host's OOM preferences ",
+    "--pid": "--- PID namespace to use",
+    "--pids-limit": "--- Tune container pids limit ",
+    "--platform": "--- Set platform if server is multi-platform capable",
+    "--privileged": "--- Give extended privileges to this container",
+    "-p|--publish": "--- Publish a container's port to the host",
+    "-P|--publish-all": "--- Publish all exposed ports to random ports",
+    "--pull": "--- Pull image before creating ",
+    "--read-only": "--- Mount the container's root filesystem as read only",
+    "--restart": "--- Restart policy to apply when a container exits ",
+    "--rm": "--- Automatically remove the container when it exits",
+    "--runtime": "--- Runtime to use for this container",
+    "--security-opt": "--- Security Options",
+    "--shm-size": "--- Size of /dev/shm",
+    "--stop-signal": "--- Signal to stop a container ",
+    "--stop-timeout": "--- Timeout  to stop a container",
+    "--storage-opt": "--- Storage driver options for the container",
+    "--sysctl": "--- Sysctl options ",
+    "--tmpfs": "--- Mount a tmpfs directory",
+    "-t|--tty": "--- Allocate a pseudo-TTY",
+    "--ulimit": "--- Ulimit options ",
+    "-u|--user": "--- Username or UID ",
+    "--userns": "--- User namespace to use",
+    "--uts": "--- UTS namespace to use",
+    "-v|--volume": "--- Bind mount a volume",
+    "--volume-driver": "--- Optional volume driver for the container",
+    "--volumes-from": "--- Mount volumes from the specified container",
+    "-w|--workdir": "--- Working directory inside the container",
+    "#desc": "Create a new container"
+  },
+  "diff": {
+    "#desc": "Inspect changes to files or directories on a container's filesystem"
+  },
+  "events": {
+    "-f|--filter": "--- Filter output based on conditions provided",
+    "--format": "--- Format the output using the given Go template",
+    "--since": "--- Show all events created since timestamp",
+    "--until": "--- Stream events until this timestamp",
+    "#desc": "Get real time events from the server"
+  },
+  "exec": {
+    "-d|--detach": "--- Detached mode: run command in the background",
+    "--detach-keys": "--- Override the key sequence for detaching a container",
+    "-e|--env": "--- Set environment variables",
+    "--env-file": "--- Read in a file of environment variables",
+    "-i|--interactive": "--- Keep STDIN open even if not attached",
+    "--privileged": "--- Give extended privileges to the command",
+    "-t|--tty": "--- Allocate a pseudo-TTY",
+    "-u|--user": "--- Username or UID ",
+    "-w|--workdir": "--- Working directory inside the container",
+    "#desc": "Run a command in a running container"
+  },
+  "export": {
+    "-o|--output": "--- Write to a file, instead of STDOUT",
+    "#desc": "Export a container's filesystem as a tar archive"
+  },
+  "history": {
+    "--format": "--- Pretty-print images using a Go template",
+    "-H|--human": "--- Print sizes and dates in human readable format ",
+    "--no-trunc": "--- Don't truncate output",
+    "-q|--quiet": "--- Only show image IDs",
+    "#desc": "Show the history of an image"
+  },
+  "images": {
+    "-a|--all": "--- Show all images ",
+    "--digests": "--- Show digests",
+    "-f|--filter": "--- Filter output based on conditions provided",
+    "--format": "--- Pretty-print images using a Go template",
+    "--no-trunc": "--- Don't truncate output",
+    "-q|--quiet": "--- Only show image IDs",
+    "#desc": "List images"
+  },
+  "import": {
+    "-c|--change": "--- Apply Dockerfile instruction to the created image",
+    "-m|--message": "--- Set commit message for imported image",
+    "--platform": "--- Set platform if server is multi-platform capable",
+    "#desc": "Import the contents from a tarball to create a filesystem image"
+  },
+  "info": {
+    "-f|--format": "--- Format the output using the given Go template",
+    "#desc": "Display system-wide information"
+  },
+  "inspect": {
+    "-f|--format": "--- Format the output using the given Go template",
+    "-s|--size": "--- Display total file sizes if the type is container",
+    "--type": "--- Return JSON for specified type",
+    "#desc": "Return low-level information on Docker objects"
+  },
+  "kill": {
+    "-s|--signal": "--- Signal to send to the container ",
+    "#desc": "Kill one or more running containers"
+  },
+  "load": {
+    "-i|--input": "--- Read from tar archive file, instead of STDIN",
+    "-q|--quiet": "--- Suppress the load output",
+    "#desc": "Load an image from a tar archive or STDIN"
+  },
+  "login": {
+    "-h|--help": "--- Help for login",
+    "-p|--password": "--- string   password",
+    "--password-stdin": "--- Take the password from stdin",
+    "-u|--username": "--- string   username",
+    "#desc": "Log in to a Docker registry"
+  },
+  "logout": {
+    "-h|--help": "--- Help for logout",
+    "#desc": "Log out from a Docker registry"
+  },
+  "logs": {
+    "--details": "--- Show extra details provided to logs",
+    "-f|--follow": "--- Follow log output",
+    "--since": "--- Show logs since timestamp ",
+    "-n|--tail": "--- Number of lines to show from the end of the logs ",
+    "-t|--timestamps": "--- Show timestamps",
+    "--until": "--- Show logs before a timestamp ",
+    "#desc": "Fetch the logs of a container"
+  },
+  "pause": {
+    "#desc": "Pause all processes within one or more containers"
+  },
+  "port": {
+    "#desc": "List port mappings or a specific mapping for the container"
+  },
+  "ps": {
+    "-a|--all": "--- Show all containers ",
+    "-f|--filter": "--- Filter output based on conditions provided",
+    "--format": "--- Pretty-print containers using a Go template",
+    "-n|--last": "--- Show n last created containers ",
+    "-l|--latest": "--- Show the latest created container ",
+    "--no-trunc": "--- Don't truncate output",
+    "-q|--quiet": "--- Only display container IDs",
+    "-s|--size": "--- Display total file sizes",
+    "#desc": "List containers"
+  },
+  "pull": {
+    "-a|--all-tags": "--- Download all tagged images in the repository",
+    "--disable-content-trust": "--- Skip image verification ",
+    "--platform": "--- Set platform if server is multi-platform capable",
+    "-q|--quiet": "--- Suppress verbose output",
+    "#desc": "Pull an image or a repository from a registry"
+  },
+  "push": {
+    "-a|--all-tags": "--- Push all tagged images in the repository",
+    "--disable-content-trust": "--- Skip image signing ",
+    "-q|--quiet": "--- Suppress verbose output",
+    "#desc": "Push an image or a repository to a registry"
+  },
+  "rename": {
+    "#desc": "Rename a container"
+  },
+  "restart": {
+    "-t|--time": "--- Seconds to wait for stop before killing the container ",
+    "#desc": "Restart one or more containers"
+  },
+  "rm": {
+    "-f|--force": "--- Force the removal of a running container ",
+    "-l|--link": "--- Remove the specified link",
+    "-v|--volumes": "--- Remove anonymous volumes associated with the container",
+    "#desc": "Remove one or more containers"
+  },
+  "rmi": {
+    "-f|--force": "--- Force removal of the image",
+    "--no-prune": "--- Do not delete untagged parents",
+    "#desc": "Remove one or more images"
+  },
+  "run": {
+    "--add-host": "--- Add a custom host-to-IP mapping ",
+    "-a|--attach": "--- Attach to STDIN, STDOUT or STDERR",
+    "--blkio-weight": "--- Block IO ",
+    "--blkio-weight-device": "--- Block IO weight ",
+    "--cap-add": "--- Add Linux capabilities",
+    "--cap-drop": "--- Drop Linux capabilities",
+    "--cgroup-parent": "--- Optional parent cgroup for the container",
+    "--cgroupns": "--- Cgroup namespace to use ",
+    "--cidfile": "--- Write the container ID to the file",
+    "--cpu-period": "--- Limit CPU CFS  period",
+    "--cpu-quota": "--- Limit CPU CFS  quota",
+    "--cpu-rt-period": "--- Limit CPU real-time period in microseconds",
+    "--cpu-rt-runtime": "--- Limit CPU real-time runtime in microseconds",
+    "-c|--cpu-shares": "--- CPU shares ",
+    "--cpus": "--- Number of CPUs",
+    "--cpuset-cpus": "--- CPUs in which to allow execution ",
+    "--cpuset-mems": "--- MEMs in which to allow execution ",
+    "-d|--detach": "--- Run container in background and print container ID",
+    "--detach-keys": "--- Override the key sequence for detaching a container",
+    "--device": "--- Add a host device to the container",
+    "--device-cgroup-rule": "--- Add a rule to the cgroup allowed devices list",
+    "--device-read-bps": "--- Limit read rate ",
+    "--device-read-iops": "--- Limit read rate ",
+    "--device-write-bps": "--- Limit write rate ",
+    "--device-write-iops": "--- Limit write rate ",
+    "--disable-content-trust": "--- Skip image verification ",
+    "--dns": "--- Set custom DNS servers",
+    "--dns-option": "--- Set DNS options",
+    "--dns-search": "--- Set custom DNS search domains",
+    "--domainname": "--- Container NIS domain name",
+    "--entrypoint": "--- Overwrite the default ENTRYPOINT of the image",
+    "-e|--env": "--- Set environment variables",
+    "--env-file": "--- Read in a file of environment variables",
+    "--expose": "--- Expose a port or a range of ports",
+    "--gpus": "--- GPU devices to add to the container ",
+    "--group-add": "--- Add additional groups to join",
+    "--health-cmd": "--- Command to run to check health",
+    "--health-interval": "--- Time between running the check ",
+    "--health-retries": "--- Consecutive failures needed to report unhealthy",
+    "--health-start-period": "--- Start period for the container to initialize before starting health-retries countdown ",
+    "--health-timeout": "--- Maximum time to allow one check to run ",
+    "--help": "--- Print usage",
+    "-h|--hostname": "--- Container host name",
+    "--init": "--- Run an init inside the container that forwards signals and reaps processes",
+    "-i|--interactive": "--- Keep STDIN open even if not attached",
+    "--ip": "--- IPv4 address ",
+    "--ip6": "--- IPv6 address ",
+    "--ipc": "--- IPC mode to use",
+    "--isolation": "--- Container isolation technology",
+    "--kernel-memory": "--- Kernel memory limit",
+    "-l|--label": "--- Set meta data on a container",
+    "--label-file": "--- Read in a line delimited file of labels",
+    "--link": "--- Add link to another container",
+    "--link-local-ip": "--- Container IPv4/IPv6 link-local addresses",
+    "--log-driver": "--- Logging driver for the container",
+    "--log-opt": "--- Log driver options",
+    "--mac-address": "--- Container MAC address ",
+    "-m|--memory": "--- Memory limit",
+    "--memory-reservation": "--- Memory soft limit",
+    "--memory-swap": "--- Swap limit equal to memory plus swap: '-1' to enable unlimited swap",
+    "--memory-swappiness": "--- Tune container memory swappiness ",
+    "--mount": "--- Attach a filesystem mount to the container",
+    "--name": "--- Assign a name to the container",
+    "--network": "--- Connect a container to a network",
+    "--network-alias": "--- Add network-scoped alias for the container",
+    "--no-healthcheck": "--- Disable any container-specified HEALTHCHECK",
+    "--oom-kill-disable": "--- Disable OOM Killer",
+    "--oom-score-adj": "--- Tune host's OOM preferences ",
+    "--pid": "--- PID namespace to use",
+    "--pids-limit": "--- Tune container pids limit ",
+    "--platform": "--- Set platform if server is multi-platform capable",
+    "--privileged": "--- Give extended privileges to this container",
+    "-p|--publish": "--- Publish a container's port to the host",
+    "-P|--publish-all": "--- Publish all exposed ports to random ports",
+    "--pull": "--- Pull image before running ",
+    "--read-only": "--- Mount the container's root filesystem as read only",
+    "--restart": "--- Restart policy to apply when a container exits ",
+    "--rm": "--- Automatically remove the container when it exits",
+    "--runtime": "--- Runtime to use for this container",
+    "--security-opt": "--- Security Options",
+    "--shm-size": "--- Size of /dev/shm",
+    "--sig-proxy": "--- Proxy received signals to the process ",
+    "--stop-signal": "--- Signal to stop a container ",
+    "--stop-timeout": "--- Timeout  to stop a container",
+    "--storage-opt": "--- Storage driver options for the container",
+    "--sysctl": "--- Sysctl options ",
+    "--tmpfs": "--- Mount a tmpfs directory",
+    "-t|--tty": "--- Allocate a pseudo-TTY",
+    "--ulimit": "--- Ulimit options ",
+    "-u|--user": "--- Username or UID ",
+    "--userns": "--- User namespace to use",
+    "--uts": "--- UTS namespace to use",
+    "-v|--volume": "--- Bind mount a volume",
+    "--volume-driver": "--- Optional volume driver for the container",
+    "--volumes-from": "--- Mount volumes from the specified container",
+    "-w|--workdir": "--- Working directory inside the container",
+    "#desc": "Run a command in a new container"
+  },
+  "save": {
+    "-o|--output": "--- Write to a file, instead of STDOUT",
+    "#desc": "Save one or more images to a tar archive "
+  },
+  "search": {
+    "-f|--filter": "--- Filter output based on conditions provided",
+    "--format": "--- Pretty-print search using a Go template",
+    "--limit": "--- Max number of search results ",
+    "--no-trunc": "--- Don't truncate output",
+    "#desc": "Search the Docker Hub for images"
+  },
+  "start": {
+    "-a|--attach": "--- Attach STDOUT/STDERR and forward signals",
+    "--detach-keys": "--- Override the key sequence for detaching a container",
+    "-i|--interactive": "--- Attach container's STDIN",
+    "#desc": "Start one or more stopped containers"
+  },
+  "stats": {
+    "-a|--all": "--- Show all containers ",
+    "--format": "--- Pretty-print images using a Go template",
+    "--no-stream": "--- Disable streaming stats and only pull the first result",
+    "--no-trunc": "--- Do not truncate output",
+    "#desc": "Display a live stream of container resource usage statistics"
+  },
+  "stop": {
+    "-t|--time": "--- Seconds to wait for stop before killing it ",
+    "#desc": "Stop one or more running containers"
+  },
+  "tag": {
+    "#desc": "Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE"
+  },
+  "top": {
+    "#desc": "Display the running processes of a container"
+  },
+  "unpause": {
+    "#desc": "Unpause all processes within one or more containers"
+  },
+  "update": {
+    "--blkio-weight": "--- Block IO ",
+    "--cpu-period": "--- Limit CPU CFS  period",
+    "--cpu-quota": "--- Limit CPU CFS  quota",
+    "--cpu-rt-period": "--- Limit the CPU real-time period in microseconds",
+    "--cpu-rt-runtime": "--- Limit the CPU real-time runtime in microseconds",
+    "-c|--cpu-shares": "--- CPU shares ",
+    "--cpus": "--- Number of CPUs",
+    "--cpuset-cpus": "--- CPUs in which to allow execution ",
+    "--cpuset-mems": "--- MEMs in which to allow execution ",
+    "--kernel-memory": "--- Kernel memory limit",
+    "-m|--memory": "--- Memory limit",
+    "--memory-reservation": "--- Memory soft limit",
+    "--memory-swap": "--- Swap limit equal to memory plus swap: '-1' to enable unlimited swap",
+    "--pids-limit": "--- Tune container pids limit ",
+    "--restart": "--- Restart policy to apply when a container exits",
+    "#desc": "Update configuration of one or more containers"
+  },
+  "version": {
+    "-f|--format": "--- Format the output. Values: . ",
+    "-h|--help": "--- Help for version",
+    "--kubeconfig": "--- Kubernetes config file",
+    "#desc": "Show the Docker version information"
+  },
+  "wait": {
+    "#desc": "Block until one or more containers stop, then print their exit codes"
+  }
+}
