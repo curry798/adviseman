@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+WSROOT="${BASH_SOURCE[0]}"
+
+if [ "${WSROOT#/}" = "$WSROOT" ]; then
+    WSROOT="$(pwd)/${BASH_SOURCE[0]}"
+fi
+
+WSROOT="${WSROOT%/.x-cmd/*}"
+
+# print "$WSROOT"
+if [ "$#" -gt 0 ]; then
+    op="$1"
+    shift
+    # echo "$WSROOT/dev/unstable/$op"
+    mv -f "$WSROOT/dev/unstable/$op/advise.json" "$WSROOT/src/$op/advise.json"
+    rm -rf "$WSROOT/dev/unstable/$op"
+fi

@@ -1,9 +1,23 @@
-#! /usr/bin/env bash
+# shellcheck shell=bash #xsh
 
-git remote remove gitee 2>/dev/null
-git remote add gitee git@gitee.com:x-cmd/advise.git
-git push gitee
+push_git(){
+    git remote remove "$1" 2>/dev/null
+    git remote add "$1" git@"$1".com:x-cmd/advise.git
+    git push "$1"
+}
 
-git remote remove github 2>/dev/null
-git remote add github git@github.com:x-cmd/advise.git
-git push github
+x dist tgz
+git add dist/all.tgz
+git commit -m "dist/all.tgz"
+case "$1" in
+    gitee)
+        push_git gitee
+    ;;
+    github)
+        push_git github
+    ;;
+    *)
+        push_git gitee
+        push_git github
+    ;;
+esac
