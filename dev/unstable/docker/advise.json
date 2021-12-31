@@ -496,5 +496,4 @@
   "wait": {
     "#desc": "Block until one or more containers stop, then print their exit codes"
   }
-
 }
