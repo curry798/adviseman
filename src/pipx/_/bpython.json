@@ -1,0 +1,10 @@
+{
+    "--help|-h": null,
+    "--config": [],
+    "--interactive|-i": null,
+    "--quiet|-q": null,
+    "--version|-v": null,
+    "--log-level|-l": [ "debug", "info", "warning", "error", "critical" ],
+    "--log-output|-L": [],
+    "--paste|-p": null
+}
