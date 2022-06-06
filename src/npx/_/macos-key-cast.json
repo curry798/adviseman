@@ -1,0 +1,8 @@
+{
+    "-b|--bounds|": "--- JSON object with bounds of a rectangle to show the UI in. Example: '{\"bounds\":[[955,627],[656,384]]}'",
+    "-d|--display|": "--- Display number of the screen to show the UI in. Defaults to the main screen.",
+    "-h|--help": "--- Show help information",
+    "-k|--key-combinations": "--- Show key combinations only",
+    "-s|--size|": "--- Size of the window and font to use. Defaults to normal",
+    "-t|--delay|": "--- How long the key remains on screen in seconds"
+}

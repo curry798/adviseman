@@ -1,0 +1,8 @@
+{
+"-b|--brokers <brokers>": "--- bootstrap server host (default: \"localhost: 9092\")",
+"-l|--log-level <logLevel>": "--- log level",
+"-t|--timeout <timeout>": "--- set a timeout of operation (default:\"0\")",                                                                 ^
+"--ssl": "--- enable ssl (default: false)",
+"--mechanism <mechanism>": "--- sasl mechanism",
+"--username <username>": "--- sasl username"
+}

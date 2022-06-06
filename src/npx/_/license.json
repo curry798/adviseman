@@ -1,0 +1,11 @@
+{
+"--version": "--- Show version number [boolean]",
+"--help": "--- Show help [boolean]",
+"-n, --name": "--- The copyright owner's name. [string] [default: \"zhengyuhang\"]",
+"-e, --email": "--- The copyright owner's email address.",
+"-y, --year": "--- The copyright year. [string] [default: \"2022\"]",
+"-p, --project": "--- The project directory to generate for. [string] [default: \".\"]",
+"--projectName": "--- The name of the project to use in the license.",
+"--raw": "--- Print out the license's template. [boolean] [default: false]",
+"--non-osi": "--- Whether to show non-OSI approved licenses in the license"
+}

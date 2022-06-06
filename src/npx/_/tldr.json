@@ -1,0 +1,6 @@
+{
+"-h|--help": "--- Show this help text",
+"-v|--version": "--- Show version",
+"--update": "--- Update tldr pages",
+"COMMAND": "--- name of the command"
+}

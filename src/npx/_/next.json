@@ -1,0 +1,12 @@
+{
+"build": null,
+"start": null,
+"export":null,
+"dev": null,
+"lint":null,
+"telemetry": null,
+"info":null,
+" --version|v" : "--- Version number",
+"--help|-h" : "---  Displays this message"
+
+}

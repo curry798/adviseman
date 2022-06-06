@@ -1,0 +1,20 @@
+{
+"-h|help": "---  Output usage information",
+"-v|version": "---  Output the version number",
+"-V|platform-version": "---  Set the platform version to deploy to",
+"-A FILE|local-config=FILE": "---  Path to the local `vercel.json` file",
+"-Q DIR|global-config=DIR": "---  Path to the global `.vercel` directory",
+"-d|debug": "---  Debug mode [off]",
+"-f|force": "---  Force a new deployment even if nothing has changed",
+"--with-cache": "---  Retain build cache when using\"--force\"",
+"-t TOKEN|token=TOKEN": "---  Login token",
+"-p|public": "---  Deployment is public (`/_src` is exposed)",
+"-e|env": "---  Include an env var during run time (e.g.: `-e KEY=value`). Can appear many times.",
+"-b|build-env": "---  Similar to `--env` but for build time only.",
+"-m|meta": "---  Add metadata for the deployment (e.g.: `-m KEY=value`). Can appear many times.",
+"-C|no-clipboard": "---  Do not attempt to copy URL to clipboard",
+"-S|scope": "---  Set a custom scope",
+"--regions": "---  Set default regions to enable the deployment on",
+"--prod": "---  Create a production deployment",
+"-c|confirm": "---  Confirm default options and skip questions"
+}

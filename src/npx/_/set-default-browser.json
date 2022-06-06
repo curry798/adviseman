@@ -1,0 +1,11 @@
+{
+    "set-default-browser" : {
+        "- chrome": "null",
+        "- chromeCanary": "null",
+        "- firefox": "null",
+        "- firefoxDE": "null",
+        "- safari": "null",
+        "- edge": "null",
+        "- edgeCanary": "null"
+    }
+}
