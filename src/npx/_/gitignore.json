@@ -1,0 +1,6 @@
+{
+    "-V|--version":"--- output the version numbe",
+    "-l|--list":"--- List all available stack",
+    "-s|--search <item>":"--- Fuzzy search across varis",
+    "-h|--help":"--- output usage information"
+}
