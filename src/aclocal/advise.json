@@ -1,6 +1,15 @@
 {
-    "--help|--print-ac-dir|--version": null,
-    "--acdir|-I": "___advise_lsd",
+    "--automake-acdir": "___advise_ls",
+    "--system-acdir": "___advise_ls",
+    "--diff": null,
+    "--dry-run": null,
+    "--help": null,
+    "-I": "___advise_lsd",
+    "--install": null,
+    "--force": null,
     "--output": "___advise_ls",
+    "--print-ac-dir": "___advise_ls",
+    "--verbose": null,
+    "--version": null,
     "--warnings|-W": ["all", "no-unsupported", "unsupported", "error", "none", "no-syntax", "syntax"]
 }

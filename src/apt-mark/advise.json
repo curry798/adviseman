@@ -1,19 +1,21 @@
 {
     "auto": null,
     "manual": null,
-    "minimize-manual": null,
     "showauto": null,
     "showmanual": null,
     "hold": null,
     "unhold": null,
-    "showhold": null,
     "install": null,
     "remove": null,
     "purge": null,
+    "showhold": null,
     "showinstall": null,
     "showremove": null,
     "showpurge": null,
-    "--file=|-f": "___advise_ls",
-    "--help|--option|--version|-h|-o|-h": null,
-    "--config-file": null
+    "minimize-manual": null,
+    "--file|-f": "___advise_ls",
+    "--version|-v": null,
+    "--config-file|-c": [],
+    "--option|-o": null,
+    "--help|-h": null
 }

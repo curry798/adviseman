@@ -1,6 +1,10 @@
 {
-    "#n": "___advise_lsd",
-    "--help|-h|--version|-V|--trace|-t": null,
+    "--help|-h": null,
+    "--version|-V": null,
+    "--trace|-t": null,
+    "--verbose|-v": null,
+    "--debug|-d": null,
+    "--force|-f": null,
     "--output|-o": "___advise_ls",
     "--warnings|-W": ["all", "error", "no-obsolete", "none", "syntax", "cross", "no-cross", "no-syntax", "obsolete"],
     "--prepend-include|-B|--include|-I": "___advise_lsd"
