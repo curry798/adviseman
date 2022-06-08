@@ -1,6 +1,13 @@
 {
     "--padding-size": [],
     "--padding-color": [],
-    "-o": [],
+    "-o|--output": [],
+    "--border-size": [],
+    "--border-color": [],
+    "--background-color": [],
+    "--supersample": [],
+    "--version": "--- Print hexsticker version and exit.",
+    "-v|--verbose": "--- Turn on verbose mode.",
+    "--help": "--- Show this message and exit."
     "#1": []
 }

@@ -2,6 +2,5 @@
     "--help|-h": null,
     "--version|-v": null,
     "create": {},
-    "list": {},
-    "--type"
+    "list": {}
 }

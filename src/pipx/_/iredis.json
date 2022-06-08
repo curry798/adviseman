@@ -1,0 +1,20 @@
+{
+    "#1": [],
+    "-h": [],
+    "-p": [],
+    "-s|--socket": [],
+    "-n": [],
+    "-a|--password": [],
+    "--url": [],
+    "-d|--dsn": [],
+    "--newbie|--no-newbie": "--- Show command hints and useful helps.",
+    "--iredisrc": [],
+    "--decode": [],
+    "--client_name": [],
+    "--raw|--no-raw": "--- Use raw formatting for replies",
+    "--rainbow|--no-rainbow": "--- Display colorful prompt.",
+    "--shell|--no-shell": "--- Allow to run shell commands, default to True.",
+    "--pager|--no-pager": "--- Using pager when output is too tall for your window, default to True.",
+    "--version": "--- Show the version and exit.",
+    "--help": "--- Show this message and exit."
+}

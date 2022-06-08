@@ -1,0 +1,14 @@
+{
+    "#1": [],
+    "-V|--version": "--- Output litecli's version.",
+    "-D|--database": [],
+    "-R|--prompt": [],
+    "-l|--logfile": [],
+    "--liteclirc": [],
+    "--auto-vertical-output": "--- Automatically switch to vertical output mode if the result is wider than the terminal width.",
+    "-t|--table": "--- Display batch output in table format.",
+    "--csv": "--- Display batch output in CSV format.",
+    "--warn|--no-warn": "--- Warn before running a destructive query.",
+    "-e|--execute": [],
+    "--help": "--- Show this message and exit."
+}

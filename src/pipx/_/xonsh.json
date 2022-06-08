@@ -1,0 +1,21 @@
+  {
+    "#1": [],
+    "script-file": {
+      "#desc": "If present, execute the script in script-file and exit."
+    },
+    "args": {
+      "#desc": "Additional arguments to the script specified by script-file."
+    },
+    "-h|--help": "--- Show help and exit.",
+    "-V|--version": "--- Show version information and exit.",
+    "-c": [],
+    "-i|--interactive": "--- Force running in interactive mode.",
+    "-l|--login": "--- Run as a login shell.",
+    "--rc": [],
+    "--no-rc": "--- Do not load any xonsh RC files.",
+    "--no-script-cache": "--- Do not cache scripts as they are run.",
+    "--cache-everything": "--- Use a cache, even for interactive commands.",
+    "-D": [],
+    "--shell-type": [],
+    "--timings": "--- Prints timing information before the prompt is shown."
+  }

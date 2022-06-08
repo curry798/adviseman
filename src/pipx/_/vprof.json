@@ -1,0 +1,13 @@
+{
+    "#1": [],
+    "-h|--help": "--- show this help message and exit",
+    "-r|--remote": "--- launch in remote mode",
+    "-i|--input-file": [],
+    "-c|--config": [],
+    "-H|--host": [],
+    "-p|--port": [],
+    "-n|--no-browser": "--- don't start browser automatically",
+    "-o|--output-file": [],
+    "--debug": "--- don't suppress error messages",
+    "--version": "--- show program's version number and exit"
+}

@@ -1,0 +1,19 @@
+{
+  "-v|--version": "--- Show the version and exit.",
+  "-h|--help": "--- Show this message and exit.",
+  "completion": {
+    "#desc": "Output completion (to be eval'd)."
+  },
+  "demo": {
+    "#desc": "Run a demo doitlive session."
+  },
+  "play": {
+    "#desc": "Play a session file."
+  },
+  "record": {
+    "#desc": "Record a session file."
+  },
+  "themes": {
+    "#desc": "Preview the available prompt themes."
+  }
+}

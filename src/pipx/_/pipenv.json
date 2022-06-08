@@ -1,0 +1,62 @@
+{
+    "#1": [],
+    "--where": "--- Output project home information.",
+    "--venv": "--- Output virtualenv information.",
+    "--py": "--- Output Python interpreter information.",
+    "--envs": "--- Output Environment Variable options.",
+    "--rm": "--- Remove the virtualenv.",
+    "--bare": "--- Minimal output.",
+    "--man": "--- Display manpage.",
+    "--support": "--- Output diagnostic information for use in GitHub issues.",
+    "--site-packages|--no-site-packages": [],
+    "--python": [],
+    "--three": "--- Use Python 3 when creating virtualenv.",
+    "--clear": "--- Clears caches",
+    "-q|--quiet": "--- Quiet mode.",
+    "-v|--verbose": "--- Verbose mode.",
+    "--pypi-mirror": [],
+    "--version": "--- Show the version and exit.",
+    "-h|--help": "--- Show this message and exit.",
+    "check": {
+        "#desc": "Checks for PyUp Safety security vulnerabilities and against PEP 508 markers provided in Pipfile."
+    },
+    "clean": {
+        "#desc": "Uninstalls all packages not specified in Pipfile.lock."
+    },
+    "graph": {
+        "#desc": "Displays currently-installed dependency graph information."
+    },
+    "install": {
+        "#desc": "Installs provided packages and adds them to Pipfile,installs all packages from Pipfile."
+    },
+    "lock": {
+        "#desc": "Generates Pipfile.lock."
+    },
+    "open": {
+        "#desc": "View a given module in your editor."
+    },
+    "requirements": {
+        "#desc": "Generate a requirements.txt from Pipfile.lock."
+    },
+    "run": {
+        "#desc": "Spawns a command installed into the virtualenv."
+    },
+    "scripts": {
+        "#desc": "Lists scripts in current environment config."
+    },
+    "shell": {
+        "#desc": "Spawns a shell within the virtualenv."
+    },
+    "sync": {
+        "#desc": "Installs all packages specified in Pipfile.lock."
+    },
+    "uninstall": {
+        "#desc": "Uninstalls a provided package and removes it from Pipfile."
+    },
+    "update": {
+        "#desc": "Runs lock, then sync."
+    },
+    "verify": {
+        "#desc": "Verify the hash in Pipfile.lock is up-to-date."
+    }
+}

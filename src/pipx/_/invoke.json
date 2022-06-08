@@ -1,0 +1,23 @@
+{
+    "#n": [],
+    "--complete": "--- Print tab-completion candidates for given parse remainder.",
+    "--hide": [],
+    "--no-dedupe": "--- Disable task deduplication.",
+    "--print-completion-script": [],
+    "--prompt-for-sudo-password": "--- Prompt user at start of session for the sudo.password config value.",
+    "--write-pyc": "--- Enable creation of .pyc files.",
+    "-c|--collection": [],
+    "-d|--debug": "--- Enable debug output.",
+    "-D|--list-depth": [],
+    "-e|--echo": "--- Echo executed commands before running.",
+    "-f|--config": [],
+    "-F|--list-format": [],
+    "-h|--help": "--- Show core or per-task help and exit.",
+    "-l|--list": [],
+    "-p|--pty": "--- Use a pty when executing shell commands.",
+    "-r|--search-root": [],
+    "-R|--dry": "--- Echo commands instead of running.",
+    "-T|--command-timeout": [],
+    "-V|--version": "--- Show version and exit.",
+    "-w|--warn-only": "--- Warn, instead of failing, when shell commands fail."
+}

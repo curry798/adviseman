@@ -1,0 +1,5 @@
+{
+  "#1": ["rec", "play", "cat", "upload", "auth"],
+  "-h|--help": null,
+  "--version": null
+}

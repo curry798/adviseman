@@ -1,0 +1,11 @@
+{
+    "-h|--host": [],
+    "-p|--port": [],
+    "-U|--user": [],
+    "-W|--password": "--- Force password prompt.",
+    "-w|--no-password": "--- Never prompt for password.",
+    "-v|--version": "--- Version of pgcli.",
+    "-d|--dbname": [],
+    "--pgclirc": [],
+    "--help": "--- Show this message and exit."
+}

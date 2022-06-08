@@ -1,0 +1,20 @@
+{
+    "#1": [],
+    "-h|--help": "--- show this help message and exit",
+    "--args": "--- Specify the executable file you wish to debug and any arguments to pass to it.",
+    "-g GDB_CMD|--gdb-cmd": "--- gdb binary and arguments to run.",
+    "-p|--port": "--- The port on which gdbgui will be hosted",
+    "--host": "--- The host ip address on which gdbgui serve",
+    "-r|--remote": "--- Shortcut to set host to 0.0.0.0 and suppress browser from opening.",
+    "--auth-file": "--- Require authentication before accessing gdbgui in the browser.",
+    "--user": "--- Username when authenticating",
+    "--password": "--- Password when authenticating",
+    "--key": "--- SSL private key.",
+    "--cert": "--- SSL certificate.",
+    "--remap-sources|-m": "--- Replace compile-time source paths to local source paths.",
+    "--project": "--- Set the project directory.",
+    "-v|--version": "--- Print version",
+    "-n|--no-browser": "--- By default, the browser will open with gdbgui.",
+    "-b|--browser": "--- Use the given browser executable instead of the system default.",
+    "--debug": "--- The debug flag of this Flask application."
+}

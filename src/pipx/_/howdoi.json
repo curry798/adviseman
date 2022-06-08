@@ -1,0 +1,18 @@
+{
+    "#1": [],
+    "-h|--help": "--- show this help message and exit",
+    "-p|--pos": [],
+    "-n|--num": [],
+    "-a|--all": "--- display the full text of the answer",
+    "-l|--link": "--- display only the answer link",
+    "-c|--color": "--- enable colorized output",
+    "-x|--explain": "--- explain how answer was chosen",
+    "-C|--clear-cache": "--- clear the cache",
+    "-j|--json": "--- return answers in raw json format",
+    "-v|--version": "--- display the current version of howdoi",
+    "-e|--engine": [],
+    "--save|--stash": "--- stash a howdoi answer",
+    "--view": "--- view your stash",
+    "--remove": "--- remove an entry in your stash",
+    "--empty": "--- empty your stash"
+}

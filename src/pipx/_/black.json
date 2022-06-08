@@ -1,0 +1,27 @@
+{
+  "-c|--code": "--- Format the code passed in as a string.",
+  "-l|--line-length": [],
+  "-t|--target-version": ["py33", "py34", "py35", "py36", "py37", "py38", "py39", "py310"],
+  "--pyi": null,
+  "--ipynb": "--- Format all input files like Jupyter",
+  "--python-cell-magics": null,
+  "-S|--skip-string-normalization": "--- Don't normalize string quotes or prefixes."
+  "-C|--skip-magic-trailing-comma": "--- Don't use trailing commas as a reason to split lines.",
+  "--preview": null,
+  "--check": null,
+  "--diff": "--- Don't write the files back|just output a diff for each file on stdout.",
+  "--color|--no-color": "--- Show colored diff. Only applies when --diff is given."
+  "--fast|--safe": null,
+  "--required-version": null,
+  "--include": null,
+  "--exclude": null,
+  "--extend-exclude": null,
+  "--force-exclude": null,
+  "--stdin-filename": null,
+  "-W|--workers": "--- Number of parallel workers",
+  "-q|--quiet": null,
+  "-v|--verbose": null,
+  "--version": "-- Show the version and exit."
+  "--config": "--- Read configuration from FILE path.",
+  "-h|--help": "--- Show this message and exit."
+}

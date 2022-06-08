@@ -1,0 +1,11 @@
+{
+    "#1": [],
+    "-h|--help": "--- show this help message and exit",
+    "--vi": "--- Enable Vi key bindings",
+    "-i|--interactive": "--- Start interactive shell after executing this file.",
+    "--light-bg": "--- Run on a light background",
+    "--dark-bg": "--- Run on a dark background",
+    "--config-file": [],
+    "--history-file": [],
+    "-V|--version": "--- show program's version number and exit"
+}

@@ -1,0 +1,5 @@
+{
+    "-h, --help": "--- show this help message and exit",
+    "--template": "--- Template name or url.",
+    "--version": null
+}

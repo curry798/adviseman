@@ -1,0 +1,22 @@
+{
+    "-h|--help": "--- Prints this help message and quits",
+    "--help-all": "--- Prints help messages of all sub-commands and quits",
+    "-v|--version": "--- Prints the program's version and quits",
+    "-a|--answers-file": "--- Update using this path (relative to `destination_path`) to find the answers file",
+    "-d|--data": "--- Make VARIABLE available as VALUE when rendering the template; may be given multiple times",
+    "-f|--force": "--- Same as --defaults --overwrite.",
+    "-g|--prereleases": "--- Use prereleases to compare template VCS tags.",
+    "-l|--defaults": "--- Use default answers to questions, which might be null if not specified.",
+    "-n|--pretend": "--- Run but do not make any changes",
+    "-q|--quiet": "--- Suppress status output",
+    "-r|--vcs-ref": null,
+    "-s|--skip": "--- Skip specified files if they exist already; may be given multiple times",
+    "-w|--overwrite": "--- Overwrite files that already exist, without asking.",
+    "-x|--exclude": "--- A name or shell-style pattern matching files or folders that must not be copied; may be given multiple times",
+    "copy": {
+        "#desc": "Copy from a template source to a destination."
+    },
+    "update": {
+        "#desc": "Update a copy from its original template."
+    }
+}

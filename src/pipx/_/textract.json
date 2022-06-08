@@ -1,1 +1,10 @@
-{}
+{
+    "#1": [],
+    "-h|--help": "--- show this help message and exit",
+    "-e": [],
+    "--extension": [],
+    "-m|--method": [],
+    "-o|--output": [],
+    "-O|--option": [],
+    "-v|--version": "--- show program's version number and exit"
+}

@@ -1,5 +1,19 @@
 {
-    "new": {},
-    "build": {},
-    "serve": {}
+    "#1": [],
+    "build": {
+        "#desc": "Build the MkDocs documentation"
+    },
+    "gh-deploy": {
+        "#desc": "Deploy your documentation to GitHub Pages"
+    },
+    "new": {
+        "#desc": "Create a new MkDocs project"
+    },
+    "serve": {
+        "#desc": "Run the builtin development server"
+    },
+    "-V|--version": "--- Show the version and exit.",
+    "-q|--quiet": "--- Silence warnings",
+    "-v|--verbose": "--- Enable verbose output",
+    "-h|--help": "--- Show this message and exit."
 }

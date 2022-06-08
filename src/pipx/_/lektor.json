@@ -1,0 +1,34 @@
+{
+    "#1": [],
+    "--project PATH": "--- The path to the lektor project to work with.",
+    "--language TEXT": "--- The UI language to use.",
+    "--version": "--- Show the version and exit.",
+    "--help": "--- Show this message and exit.",
+    "build": {
+        "#desc": "Builds the entire project into the final artifacts."
+    },
+    "clean": {
+        "#desc": "Cleans the entire build folder."
+    },
+    "content-file-info": {
+        "#desc": "Provides information for a set of lektor files."
+    },
+    "deploy": {
+        "#desc": "Deploy the website."
+    },
+    "dev": {
+        "#desc": "Development commands."
+    },
+    "plugins": {
+        "#desc": "Manages plugins."
+    },
+    "project-info": {
+        "#desc": "Shows the info about a project."
+    },
+    "quickstart": {
+        "#desc": "Starts a new empty project."
+    },
+    "server": {
+        "#desc": "Launch a local server."
+    }
+}
