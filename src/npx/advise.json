@@ -1,3 +1,7 @@
 {
-    "#n": ""
+    "--package": [],
+    "-c|--call": [],
+    "-w|--workspace": [],
+    "-ws|--workspaces": null,
+    "--include-workspace-roo": null
 }

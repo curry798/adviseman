@@ -17,5 +17,16 @@
         "--save-prod|--save-dev|--save-optional": null,
         "--save-exact": null,
         "--no-save": null
-    }
+    },
+    "list": {},
+    "search": {},
+    "show": {},
+    "reinstall": {},
+    "remove": {},
+    "autoremove": {},
+    "update": {},
+    "upgrade": {},
+    "full-upgrade": {},
+    "edit-sources": {},
+    "satisfy": {}
 }

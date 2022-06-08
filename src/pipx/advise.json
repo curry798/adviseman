@@ -1,3 +1,18 @@
 {
-
+    "install": {},
+    "inject": {},
+    "upgrade": {},
+    "upgrade-all": {},
+    "uninstall": {},
+    "uninstall-all": {},
+    "reinstall": {},
+    "reinstall-all": {},
+    "list": {},
+    "run": {},
+    "runpip": {},
+    "ensurepath": {},
+    "environment": {},
+    "completions": {},
+    "-h|--help": {},
+    "--version"
 }

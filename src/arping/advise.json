@@ -1,8 +1,15 @@
 {
-    "-c|-w": null,
-    "-I": null,
-    "-f": null,
-    "-U": null,
+    "-A": null,
+    "-b": null,
+    "-c": null,
     "-D": null,
-    "-s": null
+    "-f": null,
+    "-I": null,
+    "-h": null,
+    "-q": null,
+    "-s": null,
+    "-U": null,
+    "-V": null,
+    "-w": null,
+    "-i": null
 }

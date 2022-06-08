@@ -1,11 +1,15 @@
 {
-    "-f": null,
+    "-f|--force": null,
     "-i": null,
-    "-d": null,
-    "-P": null,
-    "-R": null,
-    "-r": null,
-    "-v": null,
-    "-W": null,
+    "-I": null,
+    "--interactive": [],
+    "--one-file-system": null,
+    "--no-preserve-root": null,
+    "--preserve-root": [],
+    "-r|-R|--recursive": null,
+    "-d|--dir": null,
+    "-v|--verbose": null,
+    "--help": null,
+    "--version": null,
     "#n": "___advise_ls"
 }
