@@ -1,0 +1,19 @@
+{
+    "help|-h": "---show help",
+    "version|-v": "---show versions for this and jasmine-core",
+    "init": "---initialize a new Jasmine project",
+    "serve": "start a server with your Jasmine specs",
+    "runSpecs": "start a server and run your Jasmine specs in a browser",
+    "--esm": "---configure for use with ES modules (<script type=\"module\">)",
+    "--config=": "---path to the config file",
+    "--port=": "---port to run the server on",
+    "--config=": "---path to the config file",
+    "--port=": "---port to run the server on",
+    "--[no-]color": "---turn on or off color output",
+    "--filter=": "---filter specs to run only those that match the given string",
+    "--fail-fast": "---stop Jasmine execution on the first failure",
+    "--[no-]random": "---turn on or off randomization",
+    "--seed=": "---specify a seed for randomization",
+    "--reporter=": "---path to reporter to use instead of the default Jasmine reporter",
+    "--browser=": "---which local browser to launch"
+}

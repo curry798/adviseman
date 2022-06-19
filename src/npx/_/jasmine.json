@@ -1,11 +1,11 @@
 {
   "--no-color": "--- turn off color in spec output",
-  " --color": "--- force turn on color in spec output",
-  " --filter=": "---  filter specs to run only those that match the given string",
-  " --helper=": "---  load helper files that match the given string",
-  " --require=": "--- load module that match the given string",
+  "--color": "--- force turn on color in spec output",
+  "--filter=": "---  filter specs to run only those that match the given string",
+  "--helper=": "---  load helper files that match the given string",
+  "--require=": "--- load module that match the given string",
   "--fail-fast": "--- stop Jasmine execution on spec failure",
-  " --config=": "--- path to your optional jasmine.json",
+  "--config=": "--- path to your optional jasmine.json",
   "--reporter=": "--- path to reporter to use instead of the default Jasmine reporter",
   "--": "--- marker to signal the end of options meant for Jasmine"
 }
