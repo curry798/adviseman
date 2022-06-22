@@ -1,7 +1,7 @@
 {
-    "--package": [],
-    "-c|--call": [],
-    "-w|--workspace": [],
-    "-ws|--workspaces": null,
-    "--include-workspace-roo": null
+    "package": [],
+    "c|call": [],
+    "w|workspace": [],
+    "ws|workspaces": null,
+    "includeworkspaceroo": null
 }
