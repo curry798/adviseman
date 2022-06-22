@@ -1,8 +1,23 @@
 {
-    "-t|--theme[name]": "set the vtop theme [acid|becca|brew|certs|dark|gooey|gruvbox|monokai|nord|parallax|seti|wizard]",
-    "--no-mouse": " Disables mouse interactivity",
-    "--quit-after[seconds]": "Quits vtop after interval",
-    "--update-interval[milliseconds]": "Interval between updates",
-    "-V|--version": "output the version number",
-    "-h|--help": "output usage information"
+    "t|theme": {
+        "#desc": "set the vtop theme [acid|becca|brew|certs|dark|gooey|gruvbox|monokai|nord|parallax|seti|wizard]",
+        "#1": ["acid","becca", "brew","certsdark","gooey","gruvbox","monokai","nord","parallax","seti","wizard" ]
+    },
+    "nomouse": {
+        "#desc":  "Disables mouse interactivity"
+    },
+    "quitafter": {
+        "#desc": "Quits vtop after interval",
+        "#1": null
+    },    
+    "updateinterval": {
+        "#desc": "Interval between updates",
+        "milliseconds": null
+    },  
+    "V|version": {
+        "#desc": "output the version number"
+    },
+    "h|help": {
+        "#desc": "output usage information"
+    }
 }
