@@ -8,7 +8,7 @@
     "-p": null,
     "-r": null,
     "-s": null,
-    "-t": " [ -z \"$(printf \"%s\" \"$cur\" | tr -d [0-9])\" ] && echo s,d,m | tr ',' '\n' | xargs -n 1 printf \"$cur%s\n\" ",
+    "-t": "[ -z \"$(printf \"%s\" \"$cur\" | tr -d [0-9])\" ] && echo s,d,m | tr ',' '\n' | xargs -n 1 printf \"$cur%s\n\" ",
     "-u": ["/dev/stdout", "/dev/stderr"],
     "-n1": "___advise_seq 1 10000",
     "#1": ["var", "input", "val", "tmp"]

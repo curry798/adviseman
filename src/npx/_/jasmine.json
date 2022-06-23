@@ -25,10 +25,10 @@
     "#1": []
   },
   "--reporter": {
-    "#desc": " path to reporter to use instead of the default Jasmine reporter",
+    "#desc": "path to reporter to use instead of the default Jasmine reporter",
     "#1": []
   },
   "--": {
-    "#desc": " marker to signal the end of options meant for Jasmine"
+    "#desc": "marker to signal the end of options meant for Jasmine"
   }
 }

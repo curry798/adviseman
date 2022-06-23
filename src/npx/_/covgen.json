@@ -19,7 +19,7 @@
     "#1": ""
   },
   "--parser": {
-    "#desc": "Specify the parser to be used", 
+    "#desc": "Specify the parser to be used",
     "#1": ""
   },
   "--parser-options Object": {
@@ -47,17 +47,17 @@
     "#desc": "Automatically fix problems without saving the changes to the file system"
   },
   "--fix-type Array": {
-    "#desc": " Specify the types of fixes to apply (directive, problem, suggestion, layout)"
+    "#desc": "Specify the types of fixes to apply (directive, problem, suggestion, layout)"
   },
   "--ignore-path": {
     "#desc": "Specify path of ignore file",
     "#1": ""
   },
   "--no-ignore":{
-    "#desc": " Disable use of ignore files and patterns"
+    "#desc": "Disable use of ignore files and patterns"
   },
   "--ignore-pattern": {
-    "#desc":"  Pattern of files to ignore (in addition to those in .eslintignore)",
+    "#desc":" Pattern of files to ignore (in addition to those in .eslintignore)",
     "#1": ""
   },
   "--stdin":{
@@ -70,19 +70,19 @@
 
   "--quiet": {
     "--max-warnings Int": {
-      "#desc": " Number of warnings to trigger nonzero exit code - default: -1",
+      "#desc": "Number of warnings to trigger nonzero exit code - default: -1",
       "#1": ""
     },
-    "-o|--output-file":{ 
+    "-o|--output-file":{
       "#desc": "Specify file to write report to",
       "#1": ""
     },
     "-f|--format": {
-      "#desc": " Use a specific output format - default: stylish",
+      "#desc": "Use a specific output format - default: stylish",
       "#1": ""
     },
     "--color|--no-color": {
-      "#desc": " Force enabling/disabling of color"
+      "#desc": "Force enabling/disabling of color"
     }
   },
 
@@ -109,22 +109,22 @@
       "#desc": "Run config initialization wizard - default: false"
     },
     "--env-info": {
-      "#desc": " Output execution environment information - default: false"
+      "#desc": "Output execution environment information - default: false"
     },
     "--no-error-on-unmatched-pattern": {
-      "#desc": " Prevent errors when pattern is unmatched"
+      "#desc": "Prevent errors when pattern is unmatched"
     },
     "--exit-on-fatal-error": {
-      "#desc": " Exit with exit code 2 in case of fatal error - default: false"
+      "#desc": "Exit with exit code 2 in case of fatal error - default: false"
     },
     "--debug": {
-      "#desc": " Output debugging information"
+      "#desc": "Output debugging information"
     },
     "-h|--help": {
       "#desc": "Show help"
     },
     "-v|--version": {
-      "#desc": " Output the version number"
+      "#desc": "Output the version number"
     },
     "--print-config": {
       "#desc": "Print the configuration for the given file",
