@@ -5,8 +5,11 @@
     "-v|--version": {
         "#desc": " Displays the current version of serve"
     },
-    "-l|--listen listen_uri": {
-        "#desc": " Specify a URI endpoint on which to listen (see below) more than one may be specified to listen in multiple places"
+    "-l|--listen": {
+        "#desc": " Specify a URI endpoint on which to listen (see below) more than one may be specified to listen in multiple places",
+        "#1": {
+            "#desc": "listen_uri"
+        }
     },
     "-p": {
         "#desc": " Specify custom port"
