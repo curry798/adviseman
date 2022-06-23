@@ -1,23 +1,23 @@
 {
-    "t|theme": {
+    "--t|--theme": {
         "#desc": "set the vtop theme [acid|becca|brew|certs|dark|gooey|gruvbox|monokai|nord|parallax|seti|wizard]",
         "#1": ["acid","becca", "brew","certsdark","gooey","gruvbox","monokai","nord","parallax","seti","wizard" ]
     },
-    "nomouse": {
+    "--nomouse": {
         "#desc":  "Disables mouse interactivity"
     },
-    "quitafter": {
+    "--quitafter": {
         "#desc": "Quits vtop after interval",
         "#1": null
     },    
-    "updateinterval": {
+    "--updateinterval": {
         "#desc": "Interval between updates",
         "milliseconds": null
     },  
-    "V|version": {
+    "--V|--version": {
         "#desc": "output the version number"
     },
-    "h|help": {
+    "--h|--help": {
         "#desc": "output usage information"
     }
 }

@@ -1,8 +1,20 @@
 {
-"-h|--help": "---  Display this usage info",
-"-G|--no-glob": "--- Do not expand glob patterns in arguments",
-"-g|--glob": "--- Expand glob patterns in arguments (default)",
-"--preserve-root": "---  Do not remove '/' (default)",
-"--no-preserve-root": "---  Do not treat '/' specially",
-"--": "---  Stop parsing flags"
+"-h|--help": {
+    "#desc": " Display this usage info"
+},
+"-G|--no-glob": {
+    "#desc": " Do not expand glob patterns in arguments"
+},
+"-g|--glob": {
+    "#desc": " Expand glob patterns in arguments (default)"
+},
+"--preserve-root": {
+    "#desc": " Do not remove '/' (default)"
+},
+"--no-preserve-root": {
+    "#desc": " Do not treat '/' specially"
+},
+"--": {
+    "#desc": " Stop parsing flags"
+}
 }

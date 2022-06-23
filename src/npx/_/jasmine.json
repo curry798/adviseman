@@ -1,29 +1,34 @@
 {
-  "nocolor": {
+  "--nocolor": {
     "#desc": "turn off color in spec output"
   },
-  "color": {
+  "--color": {
     "#desc": "force turn on color in spec output"
   },
-  "filter=": {
-    "#desc": "filter specs to run only those that match the given string"
+  "--filter": {
+    "#desc": "filter specs to run only those that match the given string",
+    "#1": []
   },
-  "helper=": {
-    "#desc": "load helper files that match the given string"
+  "--helper": {
+    "#desc": "load helper files that match the given string",
+    "#1": []
   },
-  "require=": {
-    "#desc": "load module that match the given string"
+  "--require": {
+    "#desc": "load module that match the given string",
+    "#1": []
   },
-  "failfast": {
+  "--failfast": {
     "#desc": "stop Jasmine execution on spec failure"
   },
-  "config=": {
-    "#desc": "path to your optional jasmine.json"
+  "--config": {
+    "#desc": "path to your optional jasmine.json",
+    "#1": []
   },
-  "reporter=": {
-    "#desc": " path to reporter to use instead of the default Jasmine reporter"
+  "--reporter": {
+    "#desc": " path to reporter to use instead of the default Jasmine reporter",
+    "#1": []
   },
-  "": {
+  "--": {
     "#desc": " marker to signal the end of options meant for Jasmine"
   }
 }

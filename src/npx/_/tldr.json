@@ -1,14 +1,14 @@
 {
-    "h|help": {
+    "--os nameh|--help": {
         "#desc": " Show this help text"
     },
-    "v|version": {
+    "--v|version": {
         "#desc": " Show version"
     },
-    "update": {
+    "--update": {
         "#desc": " Update tldr pages"
     },
-    "COMMAND": {
+    "--COMMAND": {
         "#desc": " name of the command"
     }
 }

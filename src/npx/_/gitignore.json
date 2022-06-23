@@ -1,15 +1,15 @@
 {
-    "V|version":{
+    "--V|--version":{
         "#desc": "output the version numbe"
     },
-    "l|list":{
+    "--l|--list":{
        "#desc": "List all available stack"
     },
-    "s|search":{
+    "--s|--search":{
         "#desc": "Fuzzy search across varis",
         "item": []
     },
-    "h|help":{
+    "--h|--help":{
         "#desc": "output usage information"
     }
 }
