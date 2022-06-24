@@ -20,7 +20,7 @@
     "-gb": {
         "#desc": "Show folder size in Gigabytes"
     },
-    "-h|--help, ?": {
+    "-h|--help|?": {
         "#desc": "Show this help page, with all options."
     },
     "-nu|--no-check-update": {
