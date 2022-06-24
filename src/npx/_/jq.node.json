@@ -1,8 +1,20 @@
 {
-    "-h| --help": "Show help  [boolean]",
-    "-v| --version": "Show version number  [boolean]",
-    "-x| --raw-input": "Read input as a string  [boolean]",
-    "-j| --json ": "Force JSON output  [boolean]",
-    "-C| --color": "Colorize JSON (--color=false to disable it)  [boolean]",
-    "-r| --require": "require the given module"
+    "-h| --help": {
+        "#desc": "Show help  [boolean]"
+    },
+    "-v| --version": {
+        "#desc": "Show version number  [boolean]"
+    },
+    "-x| --raw-input": {
+        "#desc": "Read input as a string  [boolean]"
+    },
+    "-j| --json": {
+        "#desc": "Force JSON output  [boolean]"
+    },
+    "-C| --color": {
+        "#desc": "Colorize JSON (--color=false to disable it)  [boolean]"
+    },
+    "-r| --require": {
+        "#desc": "require the given module"
+    }
 }
