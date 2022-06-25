@@ -1,0 +1,8 @@
+{
+  "--version|-V": null,
+  "--help|-h": null,
+  "serve": {},
+  "watch": {},
+  "build": {},
+  "help": {}
+}
