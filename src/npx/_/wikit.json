@@ -1,11 +1,15 @@
 {
     "--lang": {
         "#desc": "Specify language",
-            "#1": []
+            "#1": {
+                "#desc": "<LANG>"
+            }
     },
     "--l": {
         "#desc": "LANG is an HTML ISO language code",
-        "#1": []
+        "#1": {
+            "#desc": "<LANG>"
+        }
     },
     "--all": {
         "#desc": "Print all sections of the article"
@@ -18,7 +22,9 @@
     },
     "--browser": {
         "#desc": "Open article in specific BROWSER",
-        "#1": []
+        "#1": {
+            "#desc": "<BROWSER>"
+        }
     },
     "--d": {
         "#desc": "Open disambiguation CLI menu"
@@ -28,7 +34,9 @@
     },
     "--line": {
         "#desc": "Set line wrap length to NUM (minimum 15)",
-        "#1": []
+        "#1": {
+            "#desc": "<NUM>"
+        }
     },
     "--link": {
         "#desc": "Print a link to the full article after the summary"
