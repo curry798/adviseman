@@ -1,42 +1,42 @@
 {
-    "lang": {
+    "--lang": {
         "#desc": "Specify language",
             "#1": []
     },
-    "l": {
+    "--l": {
         "#desc": "LANG is an HTML ISO language code",
         "#1": []
     },
-    "all": {
+    "--all": {
         "#desc": "Print all sections of the article"
     },
-    "a": {
+    "--a": {
         "#desc": "Recommended to pipe into a reader e.g. less"
     },
-    "b": {
+    "--b": {
         "#desc": "Open Wikipedia article in default browser"
     },
-    "browser": {
+    "--browser": {
         "#desc": "Open article in specific BROWSER",
         "#1": []
     },
-    "d": {
+    "--d": {
         "#desc": "Open disambiguation CLI menu"
     },
-    "D": {
+    "--D": {
         "#desc": "Open disambiguation page in browser"
     },
-    "line": {
+    "--line": {
         "#desc": "Set line wrap length to NUM (minimum 15)",
         "#1": []
     },
-    "link": {
+    "--link": {
         "#desc": "Print a link to the full article after the summary"
     },
-    "version|v": {
+    "--version|--v": {
         "#desc": "Print installed version number"
     },
-    "name|n": {
+    "--name|--n": {
         "#desc": "Print the CLI name: wikit"
     }
 }

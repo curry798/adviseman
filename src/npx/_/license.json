@@ -1,11 +1,29 @@
 {
-"--version": "--- Show version number [boolean]",
-"--help": "--- Show help [boolean]",
-"-n, --name": "--- The copyright owner's name. [string] [default: \"zhengyuhang\"]",
-"-e, --email": "--- The copyright owner's email address.",
-"-y, --year": "--- The copyright year. [string] [default: \"2022\"]",
-"-p, --project": "--- The project directory to generate for. [string] [default: \".\"]",
-"--projectName": "--- The name of the project to use in the license.",
-"--raw": "--- Print out the license's template. [boolean] [default: false]",
-"--non-osi": "--- Whether to show non-OSI approved licenses in the license"
+    "--version": {
+        "#desc": "Show version number [boolean]"
+    },
+    "--help": {
+        "#desc": "Show help [boolean]"
+    },
+    "-n|--name": {
+        "#desc": "The copyright owner's name. [string] [default: \"zhengyuhang\"]"
+    },
+    "-e|--email": {
+        "#desc": "The copyright owner's email address."
+    },
+    "-y|--year": {
+        "#desc": "The copyright year. [string] [default: \"2022\"]"
+    },
+    "-p|--project": {
+        "#desc": "The project directory to generate for. [string] [default: \".\"]"
+    },
+    "--projectName": {
+        "#desc": "The name of the project to use in the license."
+    },
+    "--raw": {
+        "#desc": "Print out the license's template. [boolean] [default: false]"
+    },
+    "--non-osi": {
+        "#desc": "Whether to show non-OSI approved licenses in the license"
+    }
 }

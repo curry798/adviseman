@@ -1,19 +1,53 @@
 {
-    "help|-h": "---show help",
-    "version|-v": "---show versions for this and jasmine-core",
-    "init": "---initialize a new Jasmine project",
-    "serve": "start a server with your Jasmine specs",
-    "runSpecs": "start a server and run your Jasmine specs in a browser",
-    "--esm": "---configure for use with ES modules (<script type=\"module\">)",
-    "--config=": "---path to the config file",
-    "--port=": "---port to run the server on",
-    "--config=": "---path to the config file",
-    "--port=": "---port to run the server on",
-    "--[no-]color": "---turn on or off color output",
-    "--filter=": "---filter specs to run only those that match the given string",
-    "--fail-fast": "---stop Jasmine execution on the first failure",
-    "--[no-]random": "---turn on or off randomization",
-    "--seed=": "---specify a seed for randomization",
-    "--reporter=": "---path to reporter to use instead of the default Jasmine reporter",
-    "--browser=": "---which local browser to launch"
+    "help|-h": {
+        "#desc": "show help"
+    },
+    "version|-v": {
+        "#desc": "show versions for this and jasmine-core"
+    },
+    "init": {
+        "#desc": "initialize a new Jasmine project"
+    },
+    "serve": {
+        "#desc": "start a server with your Jasmine specs"
+    },
+    "runSpecs": {
+        "#desc": "start a server and run your Jasmine specs in a browser"
+    },
+    "--esm": {
+        "#desc": "configure for use with ES modules (<script type=\"module\">)"
+    },
+    "--config=": {
+        "#desc": "path to the config file"
+    },
+    "--port=": {
+        "#desc": "port to run the server on"
+    },
+    "--config=": {
+        "#desc": "path to the config file"
+    },
+    "--port=": {
+        "#desc": "port to run the server on"
+    },
+    "--no-color|--color": {
+        "#desc": "turn on or off color output"
+    },
+    "--filter=": {
+        "#desc": "filter specs to run only those that match the given string"
+    },
+    "--fail-fast": {
+        "#desc": "stop Jasmine execution on the first failure"
+    },
+    "--no-random|--random": {
+        "#desc": "turn on or off randomization"
+    },
+    "--seed=": {
+        "#desc": "specify a seed for randomization"
+    },
+    "--reporter=": {
+        "#desc": "path to reporter to use instead of the default Jasmine reporter"
+    },
+    "--browser=": {
+        "#desc": "which local browser to launch"
+    }
 }

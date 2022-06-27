@@ -1,9 +1,0 @@
-{
-"-V|--version": "--- output the version number",
-"-e|--example <example-path>": "--- Example from https://github.com/jaredpalmer/razzle/tree/master/examples/{example-path}",
-"--no-install": "--- Dont install packages",
-"--yarn": "--- Force yarn package manager",
-"--npm": "--- Force npm package manager",
-"--verbose": "--- Be verbose to debug",
-"-h|--help": "--- display help for command"
-}

@@ -1,24 +1,128 @@
 {
-"-b|--brokers <brokers>": "---   bootstrap server host (default: \"localhost: 9092\")",
-"-l|--log-level <logLevel>": "---   log level",
-"-t|--timeout <timeout>": "---   set a timeout of operation (default: \"--- 0\")",
-"--ssl": "---    enable ssl (default: false)",
-"--mechanism <mechanism>": "---    sasl mechanism",
-"--username <username>": "---    sasl username",
-"--password <password>": "---    sasl password",
-"--auth-id <authId>": "---    sasl aws authorization identity",
-"--access-key-id <accessKeyId>": "---    sasl aws access key id",
-"--secret-access-key <secretAccessKey>": "---    sasl aws secret access key",
-"--session-token <seccionToken>": "---    sasl aws session token",
-"--oauth-bearer <oauthBearer> >": "---    sasl oauth bearer token",
-"-V|--version": "---   output the version number",
-"-h|--help": "---   display help for command",
-"consume [options] <topic>": "---  Consume kafka topic events",
-"produce [options] <topic>": "---  Produce kafka topic events",
-"metadata": "---  Displays kafka server metadata",
-"list|ls [options]": "---  Lists kafka topics",
-"config [options]": "---  Describes config for specific resource",
-"create <topic>": "---  Creates kafka topic",
-"delete <topic>": "---  Deletes kafka topic",
-"help [command]": "---  display help for command"
+    "-b|--brokers": {
+        "#desc": "bootstrap server host (default: \"localhost: 9092\")",
+        "#1": {
+            "#desc": "<brokers>"
+        }
+    },
+    "-l|--log-level": {
+        "#desc": "log level",
+        "#1": {
+            "#desc": "<logLevel>"
+        }
+    },
+    "-t|--timeout": {
+        "#desc": "set a timeout of operation (default: \" 0\")",
+        "#1": {
+            "#desc": "<timeout>"
+        }
+    },
+    "--ssl": {
+        "#desc": "enable ssl (default: false)"
+    },
+    "--mechanism": {
+        "#desc": "sasl mechanism",
+        "#1": {
+            "#desc": "<mechanism>"
+        }
+    },
+    "--username": {
+        "#desc": "sasl username",
+        "#1": {
+            "#desc": "<username>"
+        }
+    },
+    "--password": {
+        "#desc": "sasl password",
+        "#1": {
+            "#desc": "<password>"
+        }
+    },
+    "--auth-id": {
+        "#desc": "sasl aws authorization identity",
+        "#1": {
+            "#desc": "<authId>"
+        }
+    },
+    "--access-key-id": {
+        "#desc": "sasl aws access key id",
+        "#1": {
+            "#desc": "<accessKeyId>"
+        }
+    },
+    "--secret-access-key": {
+        "#desc": "sasl aws secret access key",
+        "#1": {
+            "#desc": "<secretAccessKey>"
+        }
+    },
+    "--session-token": {
+        "#desc": "sasl aws session token",
+        "#1": {
+            "#desc": "<seccionToken>"
+        }
+    },
+    "--oauth-bearer": {
+        "#desc": "sasl oauth bearer token",
+        "#1": {
+            "#desc": "<oauthBearer>"
+        }
+    },
+    "-V|--version": {
+        "#desc": "output the version number"
+    },
+    "-h|--help": {
+        "#desc": "display help for command"
+    },
+    "consume": {
+        "#desc": "Consume kafka topic events",
+        "#1": {
+            "#desc": "[options]"
+        },
+        "#2": {
+            "#desc": "<topic>"
+        }
+    },
+    "produce": {
+        "#desc": "Produce kafka topic events",
+        "#1": {
+            "#desc": "[options]"
+        },
+        "#2": {
+            "#desc": "<topic>"
+        }
+    },
+    "metadata": {
+        "#desc": "Displays kafka server metadata"
+    },
+    "list|ls": {
+        "#desc": "Lists kafka topics",
+        "#1": {
+            "#desc": "[options]"
+        }
+    },
+    "config": {
+        "#desc": "Describes config for specific resource",
+        "#1": {
+            "#desc": "[options]"
+        }
+    },
+    "create": {
+        "#desc": "Creates kafka topic",
+        "#1": {
+            "#desc": "<topic>"
+        }
+    },
+    "delete": {
+        "#desc": "Deletes kafka topic",
+        "#1": {
+            "#desc": "<topic>"
+        }
+    },
+    "help": {
+        "#desc": "display help for command",
+        "#1": {
+            "#desc": "[command]"
+        }
+    }
 }

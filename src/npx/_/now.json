@@ -1,20 +1,158 @@
 {
-"-h|help": "---  Output usage information",
-"-v|version": "---  Output the version number",
-"-V|platform-version": "---  Set the platform version to deploy to",
-"-A FILE|local-config=FILE": "---  Path to the local `vercel.json` file",
-"-Q DIR|global-config=DIR": "---  Path to the global `.vercel` directory",
-"-d|debug": "---  Debug mode [off]",
-"-f|force": "---  Force a new deployment even if nothing has changed",
-"--with-cache": "---  Retain build cache when using\"--force\"",
-"-t TOKEN|token=TOKEN": "---  Login token",
-"-p|public": "---  Deployment is public (`/_src` is exposed)",
-"-e|env": "---  Include an env var during run time (e.g.: `-e KEY=value`). Can appear many times.",
-"-b|build-env": "---  Similar to `--env` but for build time only.",
-"-m|meta": "---  Add metadata for the deployment (e.g.: `-m KEY=value`). Can appear many times.",
-"-C|no-clipboard": "---  Do not attempt to copy URL to clipboard",
-"-S|scope": "---  Set a custom scope",
-"--regions": "---  Set default regions to enable the deployment on",
-"--prod": "---  Create a production deployment",
-"-c|confirm": "---  Confirm default options and skip questions"
+    "-h|--help": {
+        "#desc": "Output usage information"
+    },
+    "-v|--version": {
+        "#desc": "Output the version number"
+    },
+    "-V|--platform-version": {
+        "#desc": "Set the platform version to deploy to"
+    },
+    "-A|--local-config=": {
+        "#desc": "Path to the local \`vercel.json\` file",
+        "#1": {
+            "#desc": "FILE"
+        }
+    },
+    "-Q|--global-config=": {
+        "#desc": "Path to the global \`.vercel\` directory",
+        "#1": {
+            "#desc": "DIR"
+        }
+    },
+    "-d|--debug": {
+        "#desc": "Debug mode [off]"
+    },
+    "-f|--force": {
+        "#desc": "Force a new deployment even if nothing has changed"
+    },
+    "--with-cache": {
+        "#desc": "Retain build cache when using\"--force\""
+    },
+    "-t|--token=": {
+        "#desc": "Login token",
+        "#1": {
+            "#desc": "TOKEN"
+        }
+    },
+    "-p|--public": {
+        "#desc": "Deployment is public (\`/_src\` is exposed)"
+    },
+    "-e|--env": {
+        "#desc": "Include an env var during run time (e.g.: \`-e KEY=value\`). Can appear many times."
+    },
+    "-b|--build-env": {
+        "#desc": "Similar to \`--env\` but for build time only."
+    },
+    "-m|--meta": {
+        "#desc": "Add metadata for the deployment (e.g.: \`-m KEY=value\`). Can appear many times."
+    },
+    "-C|--no-clipboard": {
+        "#desc": "Do not attempt to copy URL to clipboard"
+    },
+    "-S|--scope": {
+        "#desc": "Set a custom scope"
+    },
+    "--regions": {
+        "#desc": "Set default regions to enable the deployment on"
+    },
+    "--prod": {
+        "#desc": "Create a production deployment"
+    },
+    "-c|--confirm": {
+        "#desc": "Confirm default options and skip questions"
+    },
+    "deploy": {
+        "#desc": "Performs a deployment (default)",
+        "#1": {
+            "#desc": "[path]"
+        }
+    },
+    "dev": {
+        "#desc": "Start a local development server"
+    },
+    "env": {
+        "#desc": "Manages the Environment Variables for your current Project"
+    },
+    "init": {
+        "#desc": "Initialize an example project",
+        "#1": {
+            "#desc": "[example]"
+        }
+    },
+    "ls|list": {
+        "#desc": "Lists deployments",
+        "#1": {
+            "#desc": "[app]"
+        }
+    },
+    "inspect": {
+        "#desc": "Displays information related to a deployment",
+        "#1": {
+            "#desc": "[id]"
+        }
+    },
+    "login": {
+        "#desc": "Logs into your account or creates a new one",
+        "#1": {
+            "#desc": "[email]"
+        }
+    },
+    "logout": {
+        "#desc": "Logs out of your account"
+    },
+    "switch": {
+        "#desc": "Switches between teams and your personal account",
+        "#1": {
+            "#desc": "[scope]"
+        }
+    },
+    "help": {
+        "#desc": "Displays complete help for [cmd]",
+        "#1": {
+            "#desc": "[cmd]"
+        }
+    },
+    "rm|remove": {
+        "#desc": "Removes a deployment",
+        "#1": {
+            "#desc": "[id]"
+        }
+    },
+    "domains": {
+        "#desc": "Manages your domain names",
+        "#1": {
+            "#desc": "[name]"
+        }
+    },
+    "dns": {
+        "#desc": "Manages your DNS records",
+        "#1": {
+            "#desc": "[name]"
+        }
+    },
+    "certs": {
+        "#desc": "Manages your SSL certificates",
+        "#1": {
+            "#desc": "[cmd] "
+        }
+    },
+    "secrets": {
+        "#desc": "Manages your global Secrets, for use in Environment Variables",
+        "#1": {
+            "#desc": "[name]  "
+        }
+    },
+    "logs": {
+        "#desc": "Displays the logs for a deployment",
+        "#1": {
+            "#desc": "[url]   "
+        }
+    },
+    "teams": {
+        "#desc": "Manages your teams"
+    },
+    "whoami": {
+        "#desc": "Shows the username of the currently logged in user"
+    }
 }
