@@ -1,0 +1,12 @@
+{
+    "run": "null",
+    "run-many": "null",
+    "build": "null",
+    "generate": "null",
+    "migrate": "null",
+    "graph": {
+        "--watch": "null"
+    },
+    "affected:graph": "null",
+    "list": "null"
+}
