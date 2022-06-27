@@ -18,13 +18,13 @@
         "#desc": "Show debugging information"
     },
     "-s|--single": {
-        "#desc": "Rewrite all not-found requests to `index.html`"
+        "#desc": "Rewrite all not-found requests to \`index.html\`"
     },
     "-c|--config": {
-        "#desc": "Specify custom path to `serve.json`"
+        "#desc": "Specify custom path to \`serve.json\`"
     },
     "-C|--cors": {
-        "#desc": "Enable CORS|sets `Access-Control-Allow-Origin` to `*`"
+        "#desc": "Enable CORS|sets \`Access-Control-Allow-Origin\` to \`*\`"
     },
     "-n|--no-clipboard": {
         "#desc": "Do not copy the local address to the clipboard"
@@ -33,7 +33,7 @@
         "#desc": "Do not compress files"
     },
     "--no-etag": {
-        "#desc": "Send `Last-Modified` header instead of `ETag`"
+        "#desc": "Send \`Last-Modified\` header instead of \`ETag\`"
     },
     "-S|--symlinks": {
         "#desc": "Resolve symlinks instead of showing 404 errors"
