@@ -5,7 +5,7 @@
       "#1": "<moduleName>"
     },
     "check": {
-      "#desc": "Check for outdated modules       [default]",
+      "#desc": "Check for outdated modules[default]",
       "#1": "[filter]"
     },
     "ignore": {
@@ -14,16 +14,16 @@
     }
   },
   "--version": {
-    "#desc": "Show version number                               [boolean]"
+    "#desc": "Show version number[boolean]"
   },
   "--help": {
-    "#desc": "Show help                                         [boolean]"
+    "#desc": "Show help[boolean]"
   },
   "-g|--global": {
-    "#desc": "check only \"dependencies\" [boolean]"
+    "#desc": "check only \"dependencies\"[boolean]"
   },
   "-p|--production": {
-    "#desc": "check only \"dependencies\"                [boolean]"
+    "#desc": "check only \"dependencies\"[boolean]"
   },
   "-o|--optional": {
     "#desc": "check only \"optionalDependencies\"[boolean]"
