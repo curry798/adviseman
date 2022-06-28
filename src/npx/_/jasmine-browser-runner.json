@@ -18,22 +18,25 @@
         "#desc": "configure for use with ES modules (<script type=\"module\">)"
     },
     "--config=": {
-        "#desc": "path to the config file"
+        "#desc": "path to the config file",
+        "#1": {
+            "#desc": "<value>"
+        }
     },
     "--port=": {
-        "#desc": "port to run the server on"
-    },
-    "--config=": {
-        "#desc": "path to the config file"
-    },
-    "--port=": {
-        "#desc": "port to run the server on"
+        "#desc": "port to run the server on",
+        "#1": {
+            "#desc": "<value>"
+        }
     },
     "--no-color|--color": {
         "#desc": "turn on or off color output"
     },
     "--filter=": {
-        "#desc": "filter specs to run only those that match the given string"
+        "#desc": "filter specs to run only those that match the given string",
+        "#1": {
+            "#desc": "<value>"
+        }
     },
     "--fail-fast": {
         "#desc": "stop Jasmine execution on the first failure"
@@ -42,12 +45,21 @@
         "#desc": "turn on or off randomization"
     },
     "--seed=": {
-        "#desc": "specify a seed for randomization"
+        "#desc": "specify a seed for randomization",
+        "#1": {
+            "#desc": "<value>"
+        }
     },
     "--reporter=": {
-        "#desc": "path to reporter to use instead of the default Jasmine reporter"
+        "#desc": "path to reporter to use instead of the default Jasmine reporter",
+        "#1": {
+            "#desc": "<value>"
+        }
     },
     "--browser=": {
-        "#desc": "which local browser to launch"
+        "#desc": "which local browser to launch",
+        "#1": {
+            "#desc": "<value>"
+        }
     }
 }
