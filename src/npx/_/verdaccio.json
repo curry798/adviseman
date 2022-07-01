@@ -1,4 +1,8 @@
 {
-    "--listen|-l": [],
-    "--config|-c": []
+    "--listen|-l": {
+        "#desc": "host:port number to listen on (default: localhost:4873)"
+    },
+    "--config|-c": {
+        "#desc": "use this configuration file (default: ./config.yaml)"
+    }
 }

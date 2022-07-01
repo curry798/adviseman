@@ -4,7 +4,9 @@
     },
     "-c|--config": {
         "#desc": "Use this configuration|overriding .eslintrc.* config options if present",
-        "#1": {}
+        "#1": {
+            "#desc": "path::String"
+        }
     },
     "--env": {
         "#desc": "Specify environments",
@@ -13,7 +15,10 @@
         }
     },
     "--ext": {
-        "#desc": "Specify JavaScript file extensions"
+        "#desc": "Specify JavaScript file extensions",
+        "#1": {
+            "#desc": "[String]"
+        }
     },
     "--global": {
         "#desc": "Define global variables",
@@ -160,7 +165,7 @@
         "#desc": "Output debugging information"
     },
     "-h|--help": {
-        "#desc": " Show help"
+        "#desc": "Show help"
     },
     "-v|--version": {
         "#desc": "Output the version number"
