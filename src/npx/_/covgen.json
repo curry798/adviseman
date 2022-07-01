@@ -8,19 +8,19 @@
       "#desc": "path::String"
     }
   },
-  "--env ": {
+  "--env": {
     "#desc": "Specify environments",
     "#1": {
       "#desc": "[String]"
     }
   },
-  "--ext ":  {
+  "--ext":  {
     "#desc": "Specify JavaScript file extensions",
     "#1": {
       "#desc": "[String]"
     }
   },
-  "--global ": {
+  "--global": {
     "#desc": "Define global variables",
     "#1": {
       "#desc": "[String]"
@@ -38,13 +38,13 @@
       "#desc": "Object"
     }
   },
-  "--resolve-plugins-relative-to ": {
+  "--resolve-plugins-relative-to": {
     "#desc": "A folder where plugins should be resolved from, CWD by default",
     "#1": {
       "#desc": "path::String"
     }
   },
-  "--plugin ": {
+  "--plugin": {
     "#desc": "Specify plugins",
     "#1": {
       "#desc": "[String]"
@@ -89,7 +89,7 @@
   "--stdin":{
     "#desc": "Lint code provided on <STDIN> - default: false"
   },
-  "--stdin-filename ": {
+  "--stdin-filename": {
     "#desc": "Specify filename to process STDIN as",
     "#1": {
       "#desc": "[String]"
