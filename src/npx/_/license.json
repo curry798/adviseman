@@ -1,4 +1,10 @@
 {
+    "config": {
+        "#desc": "Set and view config"
+    },
+    "#1": {
+        "#desc": "Generate a license file. [default]"
+    },
     "--version": {
         "#desc": "Show version number [boolean]"
     },
