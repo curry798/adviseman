@@ -3,7 +3,7 @@
         "#desc": "same as -dR --preserve=all"
     },
     "--attributes-only": {
-        "#desc": "don't copy the file data, just the attributes"
+        "#desc": "don't copy the file data|just the attributes"
     },
     "--backup[=CONTROL]": {
         "#desc": "make a backup of each existing destination file"
@@ -15,7 +15,7 @@
         "#desc": "same as --no-dereference --preserve=links"
     },
     "-f|--force": {
-        "#desc": "if an existing destination file cannot be opened, remove it and try again (this option is ignored when the -n option is also used)"
+        "#desc": "if an existing destination file cannot be opened|remove it and try again (this option is ignored when the -n option is also used)"
     },
     "-i|--interactive": {
         "#desc": "prompt before overwrite (overrides a previous -n option)"
@@ -39,7 +39,7 @@
         "#desc": "same as --preserve=mode,ownership,timestamps"
     },
     "--preserve[=ATTR_LIST]": {
-        "#desc": "preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all"
+        "#desc": "preserve the specified attributes (default: mode,ownership,timestamps)|if possible additional attributes: context|links|xattr|all"
     },
     "--no-preserve=ATTR_LIST": {
         "#desc": "don't preserve the specified attributes"
@@ -62,32 +62,32 @@
     "--strip-trailing-slashes": {
         "#desc": "remove any trailing slashes from each SOURCE argument"
     },
-    "-s, --symbolic-link": {
+    "-s|--symbolic-link": {
         "#desc": "make symbolic links instead of copying"
     },
-    "-S, --suffix=SUFFIX": {
+    "-S|--suffix=SUFFIX": {
         "#desc": "override the usual backup suffix"
     },
-    "-t, --target-directory=DIRECTORY": {
+    "-t|--target-directory=DIRECTORY": {
         "#desc": "copy all SOURCE arguments into DIRECTORY"
     },
-    "-T, --no-target-directory": {
+    "-T|--no-target-directory": {
         "#desc": "treat DEST as a normal file"
     },
-    "-u, --update": {
+    "-u|--update": {
         "#desc": "copy only when the SOURCE file is newer than the destination file or when the destination file is missing"
     },
-    "-v, --verbose": {
+    "-v|--verbose": {
         "#desc": "explain what is being done"
     },
-    "-x, --one-file-system": {
+    "-x|--one-file-system": {
         "#desc": "stay on this file system"
     },
     "-Z": {
         "#desc": "set SELinux security context of destination file to default type"
     },
     "--context[=CTX]": {
-        "#desc": "like -Z, or if CTX is specified then set the SELinux or SMACK security context to CTX"
+        "#desc": "like -Z|or if CTX is specified then set the SELinux or SMACK security context to CTX"
     },
     "--help": {
         "#desc": "display this help and exit"
