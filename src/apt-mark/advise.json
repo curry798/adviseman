@@ -1,18 +1,34 @@
 {
-    "auto": null,
-    "manual": null,
-    "showauto": null,
-    "showmanual": null,
-    "hold": null,
-    "unhold": null,
+    "auto": {
+        "#desc": "Mark the given packages as automatically installed"
+    },
+    "manual": {
+        "#desc": "Mark the given packages as manually installed"
+    },
+    "showauto": {
+        "#desc": "Print the list of automatically installed packages"
+    },
+    "showmanual": {
+        "#desc": "Print the list of manually installed packages"
+    },
+    "hold": {
+        "#desc": "Mark a package as held back"
+    },
+    "unhold": {
+        "#desc": "Unset a package set as held back"
+    },
     "install": null,
     "remove": null,
     "purge": null,
-    "showhold": null,
+    "showhold": {
+        "#desc": "Print the list of packages on hold"
+    },
     "showinstall": null,
     "showremove": null,
     "showpurge": null,
-    "minimize-manual": null,
+    "minimize-manual": {
+        "#desc": "Mark all dependencies of meta packages as automatically installed."
+    },
     "--file|-f": "___advise_ls",
     "--version|-v": null,
     "--config-file|-c": [],

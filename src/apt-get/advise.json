@@ -1,20 +1,50 @@
 {
-    "update": null,
-    "upgrade": null,
-    "dist-upgrade": null,
-    "dselect-upgrade": null,
-    "install": null,
-    "remove": null,
-    "purge": null,
-    "source": null,
-    "build-dep": null,
-    "check": null,
-    "download": null,
-    "clean": null,
-    "autoclean": null,
+    "update": {
+        "#desc": "Retrieve new lists of packages"
+    },
+    "upgrade": {
+        "#desc": "Perform an upgrade"
+    },
+    "dist-upgrade": {
+        "#desc": "Distribution upgrade, see apt-get(8)"
+    },
+    "dselect-upgrade": {
+        "#desc": "Follow dselect selections"
+    },
+    "install": {
+        "#desc": "Install new packages (pkg is libc6 not libc6.deb)"
+    },
+    "remove": {
+        "#desc": "Remove packages"
+    },
+    "purge": {
+        "#desc": "Remove packages and config files"
+    },
+    "source": {
+        "#desc": "Download source archives"
+    },
+    "build-dep": {
+        "#desc": "Configure build-dependencies for source packages"
+    },
+    "check": {
+        "#desc": "Verify that there are no broken dependencies"
+    },
+    "download": {
+        "#desc": "Download the binary package into the current directory"
+    },
+    "clean": {
+        "#desc": "Erase downloaded archive files"
+    },
+    "autoclean": {
+        "#desc": "Erase old downloaded archive files"
+    },
     "indextargets": null,
-    "changelog": null,
-    "satisfy": null,
+    "changelog": {
+        "#desc": "Download and display the changelog for the given package"
+    },
+    "satisfy": {
+        "#desc": "Satisfy dependency strings"
+    },
     "--no-install-recommends": null,
     "--install-suggests": null,
     "--download-only|-d": null,
