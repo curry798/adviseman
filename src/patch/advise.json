@@ -1,40 +1,163 @@
 {
-    "-p|--strip": [],
-    "--fuzz|-F": ["0", "1", "2", "3"],
-    "-l|--ignore-whitespace": null,
-    "-c|--context": null,
-    "-e|--ed": null,
-    "-n|--normal": null,
-    "-u|--unified": null,
-    "-N|--forward": null,
-    "-R|--reverse": null,
-    "--input|-i": "___advise_ls",
-    "--output|-o": "___advise_ls",
-    "--reject-file|-r": "___advise_ls",
-    "-D|--ifdef": [],
-    "--merge": null,
-    "-E|--remove-empty-files": null,
-    "-Z|--set-utc": null,
-    "-T|--set-time": null,
-    "--quoting-style": null,
-    "-b|--backup": null,
-    "--backup-if-mismatch": null,
-    "--no-backup-if-mismatch": null,
-    "--version-control|-V": ["simple", "numbered", "existing"],
-    "-B|--prefix": [],
-    "-Y|--basename-prefix": [],
-    "-z|--suffix": [],
-    "-g|--get": null,
-    "-t|--batch": null,
-    "-f|--force": null,
-    "-s|--quiet": null,
-    "--verbose": null,
-    "--dry-run": null,
-    "--posix": null,
-    "-d|--directory": null,
-    "--reject-format": ["context", "unified"],
-    "--binary": null,
-    "--read-only": ["ignore", "warn", "fail"],
-    "-v|--version": null,
-    "--help": null
+    "-p|--strip=": {
+        "#desc": "Strip NUM leading components from file names.",
+        "#1": {
+            "#desc": "NUM"
+        }
+    },
+    "--fuzz|-F": {
+        "#desc": "Set the fuzz factor to LINES for inexact matching.",
+        "#1": {
+            "#desc": "LINES"
+        }
+    },
+    "-l|--ignore-whitespace": {
+        "#desc": "Ignore white space changes between patch and input."
+    },
+    "-c|--context": {
+        "#desc": "Interpret the patch as a context difference."
+    },
+    "-e|--ed": {
+        "#desc": "Interpret the patch as an ed script."
+    },
+    "-n|--normal": {
+        "#desc": "Interpret the patch as a normal difference."
+    },
+    "-u|--unified": {
+        "#desc": "Interpret the patch as a unified difference."
+    },
+    "-N|--forward": {
+        "#desc": "Ignore patches that appear to be reversed or already applied."
+    },
+    "-R|--reverse": {
+        "#desc": "Assume patches were created with old and new files swapped."
+    },
+    "-i|--input=": {
+        "#desc": "Read patch from PATCHFILE instead of stdin.",
+        "#1": {
+            "#desc": "PATCHFILE"
+        }
+    },
+    "-o|--output=": {
+        "#desc": "Output patched files to FILE.",
+        "#1": {
+            "#desc": "FILE",
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
+    "-r|--reject-file=": {
+        "#desc": "Output rejects to FILE.",
+        "#1": {
+            "#desc": "FILE",
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
+    "-D|--ifdef=": {
+        "#desc": "Make merged if-then-else output using NAME.",
+        "#1": {
+            "#desc": "NAME"
+        }
+    },
+    "--merge": {
+        "#desc": "Merge using conflict markers instead of creating reject files."
+    },
+    "-E|--remove-empty-files": {
+        "#desc": "Remove output files that are empty after patching."
+    },
+    "-Z|--set-utc": {
+        "#desc": "Set times of patched files, assuming diff uses UTC (GMT)."
+    },
+    "-T|--set-time": {
+        "#desc": "Likewise, assuming local time."
+    },
+    "--quoting-stylee=": {
+        "#desc": "output file names using quoting style WORD. Valid WORDs are: literal, shell, shell-always, c, escape. Default is taken from QUOTING_STYLE env variable, or 'shell' if unset.",
+        "#1": {
+            "#desc": "WORD"
+        }
+    },
+    "-b|--backup": {
+        "#desc": "Back up the original contents of each file."
+    },
+    "--backup-if-mismatch": {
+        "#desc": "Back up if the patch does not match exactly."
+    },
+    "--no-backup-if-mismatch": {
+        "#desc": "Back up mismatches only if otherwise requested."
+    },
+    "-V|--version-control=": {
+        "#desc": "Use STYLE version control. STYLE is either 'simple', 'numbered', or 'existing'.",
+        "#1": {
+            "#desc": "STYLE"
+        }
+    },
+    "-B|--prefix=": {
+        "#desc": "Prepend PREFIX to backup file names.",
+        "#1": {
+            "#desc": "PREFIX"
+        }
+    },
+    "-Y|--basename-prefix=": {
+        "#desc": "Prepend PREFIX to backup file basenames.",
+        "#1": {
+            "#desc": "PREFIX"
+        }
+    },
+    "-z|--suffix=": {
+        "#desc": "Append SUFFIX to backup file names.",
+        "#1": {
+            "#desc": "SUFFIX"
+        }
+    },
+    "-g|--get=": {
+        "#desc": "Get files from RCS etc. if positive; ask if negative.",
+        "#1": {
+            "#desc": "NUM"
+        }
+    },
+    "-t|--batch": {
+        "#desc": "Ask no questions; skip bad-Prereq patches; assume reversed."
+    },
+    "-f|--force": {
+        "#desc": "Like -t, but ignore bad-Prereq patches, and assume unreversed."
+    },
+    "-s|--quiet": {
+        "#desc": "Work silently unless an error occurs."
+    },
+    "--verbose": {
+        "#desc": "Output extra information about the work being done."
+    },
+    "--dry-run": {
+        "#desc": "Do not actually change any files; just print what would happen."
+    },
+    "--posix": {
+        "#desc": "Conform to the POSIX standard."
+    },
+    "-d|--directory=": {
+        "#desc": "Change the working directory to DIR first.",
+        "#1": {
+            "#desc": "DIR"
+        }
+    },
+    "--reject-format=": {
+        "#desc": "Create 'context' or 'unified' rejects.",
+        "#1": {
+            "#desc": "FORMAT"
+        }
+    },
+    "--binary": {
+        "#desc": "Read and write data in binary mode."
+    },
+    "--read-only=": {
+        "#desc": "How to handle read-only input files: 'ignore' that they are read-only, 'warn' (default), or 'fail'.",
+        "#1": {
+            "#desc": "BEHAVIOR"
+        }
+    },
+    "-v|--version": {
+        "#desc": "Output version info."
+    },
+    "--help": {
+        "#desc": "Output this help."
+    }
 }

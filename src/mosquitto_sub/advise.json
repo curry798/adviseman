@@ -1,0 +1,242 @@
+{
+    "#desc": "mosquitto_sub is a simple mqtt client that will subscribe to a set of topics and print all messages it receives.",
+    "-A": {
+        "#desc": "bind the outgoing socket to this host/ip address. Use to control which interface the client communicates over.",
+        "#1": {
+            "#desc": "bind_address"
+        }
+    },
+    "-c": {
+        "#desc": "disable clean session/enable persistent client mode When this argument is used, the broker will be instructed not to clean existing sessions for the same client id when the client connects, and sessions will never expire when the client disconnects. MQTT v5 clients can change their session expiry interval with the -x argument."
+    },
+    "-C": {
+        "#desc": "disconnect and exit after receiving the 'msg_count' messages.",
+        "#1": {
+            "#desc": "msg_count"
+        }
+    },
+    "-d": {
+        "#desc": "enable debug messages."
+    },
+    "-D": {
+        "#desc": "Define MQTT v5 properties. See the documentation for more details."
+    },
+    "-E": {
+        "#desc": "Exit once all subscriptions have been acknowledged by the broker."
+    },
+    "-F": {
+        "#desc": "output format.",
+        "#1": {
+            "#desc": "format"
+        }
+    },
+    "-h": {
+        "#desc": "mqtt host to connect to. Defaults to localhost.",
+        "#1": {
+            "#desc": "host"
+        }
+    },
+    "-i": {
+        "#desc": "id to use for this client. Defaults to mosquitto_sub_ appended with the process id.",
+        "#1": {
+            "#desc": "id"
+        }
+    },
+    "-I": {
+        "#desc": "define the client id as id_prefix appended with the process id. Useful for when the broker is using the clientid_prefixes option.",
+        "#1": {
+            "#desc": "id_prefix"
+        }
+    },
+    "-k": {
+        "#desc": "keep alive in seconds for this client. Defaults to 60.",
+        "#1": {
+            "#desc": "keepalive"
+        }
+    },
+    "-L": {
+        "#desc": "specify user, password, hostname, port and topic as a URL in the form: mqtt(s)://[username[:password]@]host[:port]/topic",
+        "#1": {
+            "#desc": "URL"
+        }
+    },
+    "-N": {
+        "#desc": "do not add an end of line character when printing the payload."
+    },
+    "-p": {
+        "#desc": "network port to connect to. Defaults to 1883 for plain MQTT and 8883 for MQTT over TLS.",
+        "#1": {
+            "#desc": "port"
+        }
+    },
+    "-P": {
+        "#desc": "provide a password",
+        "#1": {
+            "#desc": "password"
+        }
+    },
+    "-q": {
+        "#desc": "quality of service level to use for the subscription. Defaults to 0.",
+        "#1": {
+            "#desc": "qos"
+        }
+    },
+    "-R": {
+        "#desc": "do not print stale messages (those with retain set)."
+    },
+    "-t": {
+        "#desc": "mqtt topic to subscribe to. May be repeated multiple times.",
+        "#1": {
+            "#desc": "topic"
+        }
+    },
+    "-T": {
+        "#desc": "topic string to filter out of results. May be repeated.",
+        "#1": {
+            "#desc": "filter_out"
+        }
+    },
+    "-u": {
+        "#desc": "provide a username",
+        "#1": {
+            "#desc": "username"
+        }
+    },
+    "-U": {
+        "#desc": "unsubscribe from a topic. May be repeated.",
+        "#1": {
+            "#desc": "topic ..."
+        }
+    },
+    "-v": {
+        "#desc": "print published messages verbosely."
+    },
+    "-V": {
+        "#desc": "specify the version of the MQTT protocol to use when connecting. Can be mqttv5, mqttv311 or mqttv31. Defaults to mqttv311."
+    },
+    "-W": {
+        "#desc": "Specifies a timeout in seconds how long to process incoming MQTT messages.",
+        "#1": {
+            "#desc": "timeout_secs"
+        }
+    },
+    "-x": {
+        "#desc": "Set the session-expiry-interval property on the CONNECT packet. Applies to MQTT v5 clients only. Set to 0-4294967294 to specify the session will expire in that many seconds after the client disconnects, or use -1, 4294967295, or ∞ for a session",
+        "#1": {
+            "#desc": "session-expiry-interval"
+        }
+    },
+    "--help": {
+        "#desc": "display this message."
+    },
+    "--nodelay": {
+        "#desc": "disable Nagle's algorithm, to reduce socket sending latency at the possible expense of more packets being sent."
+    },
+    "--pretty": {
+        "#desc": "print formatted output rather than minimised output when using the JSON output format option."
+    },
+    "--quiet": {
+        "#desc": "don't print error messages."
+    },
+    "--random-filter": {
+        "#desc": "only print a percentage of received messages. Set to 100 to have all messages printed, 50.0 to have half of the messages received on average printed, and so on."
+    },
+    "--retained-only": {
+        "#desc": "only handle messages with the retained flag set, and exit when the first non-retained message is received."
+    },
+    "--remove-retained": {
+        "#desc": "send a message to the server to clear any received retained messages Use -T to filter out messages you do not want to be cleared."
+    },
+    "--unix": {
+        "#desc": "connect to a broker through a unix domain socket instead of a TCP socket, e.g. /tmp/mosquitto.sock",
+        "#1": {
+            "#desc": "path"
+        }
+    },
+    "--will-payload": {
+        "#desc": "payload for the client Will, which is sent by the broker in case of unexpected disconnection. If not given and will-topic is set, a zero length message will be sent.",
+        "#1": {
+            "#desc": "payload"
+        }
+    },
+    "--will-qos": {
+        "#desc": "QoS level for the client Will.",
+        "#1": {
+            "#desc": "qos"
+        }
+    },
+    "--will-retain": {
+        "#desc": "if given, make the client Will retained."
+    },
+    "--will-topic": {
+        "#desc": "the topic on which to publish the client Will."
+    },
+    "--cafile": {
+        "#desc": "path to a file containing trusted CA certificates to enable encrypted certificate based communication.",
+        "#1": {
+            "#desc": "file",
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
+    "--capath": {
+        "#desc": "path to a directory containing trusted CA certificates to enable encrypted communication.",
+        "#1": {
+            "#desc": "dir"
+        }
+    },
+    "--cert": {
+        "#desc": "client certificate for authentication, if required by server.",
+        "#1": {
+            "#desc": "file",
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
+    "--key": {
+        "#desc": "client private key for authentication, if required by server.",
+        "#1": {
+            "#desc": "file",
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
+    "--keyform": {
+        "#desc": "keyfile type, can be either \"pem\" or \"engine\".",
+        "#1": {
+            "#desc": "keyform"
+        }
+    },
+    "--ciphers": {
+        "#desc": "openssl compatible list of TLS ciphers to support.",
+        "#1": {
+            "#desc": "ciphers"
+        }
+    },
+    "--tls-version": {
+        "#desc": "TLS protocol version, can be one of tlsv1.3 tlsv1.2 or tlsv1.1. Defaults to tlsv1.2 if available."
+    },
+    "--insecure": {
+        "#desc": "do not check that the server certificate hostname matches the remote hostname. Using this option means that you cannot be sure that the remote host is the server you wish to connect to and so is insecure. Do not use this option in a production environment."
+    },
+    "--tls-engine": {
+        "#desc": "If set, enables the use of a SSL engine device.",
+        "#1": {
+            "#desc": "engine"
+        }
+    },
+    "--tls-engine-kpass-sha1": {
+        "#desc": "SHA1 of the key password to be used with the selected SSL engine."
+    },
+    "--tls-use-os-certs": {
+        "#desc": "Load and trust OS provided CA certificates."
+    },
+    "--tls-alpn": {
+        "#1": {
+            "#desc": "protocol"
+        }
+    },
+    "--proxy": {
+        "#desc": "SOCKS5 proxy URL of the form: socks5h: //[username[:password]@]hostname[:port] Only \"none\" and \"username\" authentication is supported.",
+        "#1": {
+            "#desc": "socks-url"
+        }
+    }
+}

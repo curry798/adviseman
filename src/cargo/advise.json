@@ -1,403 +1,1121 @@
 {
-  "-V|--version": "--- Print version info and exit",
-  "--list": "--- List installed commands",
-  "--explain": "--- Run 'rustc --explain CODE'",
-  "-v|--verbose": "--- Use verbose output ",
-  "-q|--quiet": "--- No output printed to stdout",
-  "--color": "--- Coloring: auto, always, never",
-  "--frozen": "--- Require Cargo.lock and cache are up to date",
-  "--locked": "--- Require Cargo.lock is up to date",
-  "--offline": "--- Run without accessing the network",
-  "--config": "--- Override a configuration value ",
-  "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-  "-h|--help": "--- Prints help information",
+  "-V|--version": {
+    "#desc": "Print version info and exit"
+  },
+  "--list": {
+    "#desc": "List installed commands"
+  },
+  "--explain": {
+    "#desc": "Run 'rustc --explain CODE'"
+  },
+  "-v|--verbose": {
+    "#desc": "Use verbose output "
+  },
+  "-q|--quiet": {
+    "#desc": "No output printed to stdout"
+  },
+  "--color": {
+    "#desc": "Coloring: auto, always, never"
+  },
+  "--frozen": {
+    "#desc": "Require Cargo.lock and cache are up to date"
+  },
+  "--locked": {
+    "#desc": "Require Cargo.lock is up to date"
+  },
+  "--offline": {
+    "#desc": "Run without accessing the network"
+  },
+  "--config": {
+    "#desc": "Override a configuration value "
+  },
+  "-Z": {
+    "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+  },
+  "-h|--help": {
+    "#desc": "Prints help information"
+  },
   "build|b": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "-p|--package": "--- Package to build ",
-    "--workspace": "--- Build all packages in the workspace",
-    "--exclude": "--- Exclude packages from the build",
-    "--all": "--- Alias for --workspace ",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--lib": "--- Build only this package's library",
-    "--bin": "--- Build only the specified binary",
-    "--bins": "--- Build all binaries",
-    "--example": "--- Build only the specified example",
-    "--examples": "--- Build all examples",
-    "--test": "--- Build only the specified test target",
-    "--tests": "--- Build all tests",
-    "--bench": "--- Build only the specified bench target",
-    "--benches": "--- Build all benches",
-    "--all-targets": "--- Build all targets",
-    "--release": "--- Build artifacts in release mode, with optimizations",
-    "--profile": "--- Build artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--out-dir": "--- Copy final artifacts to this directory ",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "--message-format": "--- Error format",
-    "--build-plan": "--- Output the build plan in JSON ",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "--future-incompat-report": "--- Outputs a future incompatibility report at the end of the build ",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "-p|--package": {
+      "#desc": "Package to build "
+    },
+    "--workspace": {
+      "#desc": "Build all packages in the workspace"
+    },
+    "--exclude": {
+      "#desc": "Exclude packages from the build"
+    },
+    "--all": {
+      "#desc": "Alias for --workspace "
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--lib": {
+      "#desc": "Build only this package's library"
+    },
+    "--bin": {
+      "#desc": "Build only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Build all binaries"
+    },
+    "--example": {
+      "#desc": "Build only the specified example"
+    },
+    "--examples": {
+      "#desc": "Build all examples"
+    },
+    "--test": {
+      "#desc": "Build only the specified test target"
+    },
+    "--tests": {
+      "#desc": "Build all tests"
+    },
+    "--bench": {
+      "#desc": "Build only the specified bench target"
+    },
+    "--benches": {
+      "#desc": "Build all benches"
+    },
+    "--all-targets": {
+      "#desc": "Build all targets"
+    },
+    "--release": {
+      "#desc": "Build artifacts in release mode, with optimizations"
+    },
+    "--profile": {
+      "#desc": "Build artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--out-dir": {
+      "#desc": "Copy final artifacts to this directory "
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--build-plan": {
+      "#desc": "Output the build plan in JSON "
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "--future-incompat-report": {
+      "#desc": "Outputs a future incompatibility report at the end of the build "
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Compile the current package"
   },
   "check|c": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "-p|--package": "--- Package to check",
-    "--workspace": "--- Check all packages in the workspace",
-    "--exclude": "--- Exclude packages from the check",
-    "--all": "--- Alias for --workspace ",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--lib": "--- Check only this package's library",
-    "--bin": "--- Check only the specified binary",
-    "--bins": "--- Check all binaries",
-    "--example": "--- Check only the specified example",
-    "--examples": "--- Check all examples",
-    "--test": "--- Check only the specified test target",
-    "--tests": "--- Check all tests",
-    "--bench": "--- Check only the specified bench target",
-    "--benches": "--- Check all benches",
-    "--all-targets": "--- Check all targets",
-    "--release": "--- Check artifacts in release mode, with optimizations",
-    "--profile": "--- Check artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Check for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "--message-format": "--- Error format",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "--future-incompat-report": "--- Outputs a future incompatibility report at the end of the build ",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "-p|--package": {
+      "#desc": "Package to check"
+    },
+    "--workspace": {
+      "#desc": "Check all packages in the workspace"
+    },
+    "--exclude": {
+      "#desc": "Exclude packages from the check"
+    },
+    "--all": {
+      "#desc": "Alias for --workspace "
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--lib": {
+      "#desc": "Check only this package's library"
+    },
+    "--bin": {
+      "#desc": "Check only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Check all binaries"
+    },
+    "--example": {
+      "#desc": "Check only the specified example"
+    },
+    "--examples": {
+      "#desc": "Check all examples"
+    },
+    "--test": {
+      "#desc": "Check only the specified test target"
+    },
+    "--tests": {
+      "#desc": "Check all tests"
+    },
+    "--bench": {
+      "#desc": "Check only the specified bench target"
+    },
+    "--benches": {
+      "#desc": "Check all benches"
+    },
+    "--all-targets": {
+      "#desc": "Check all targets"
+    },
+    "--release": {
+      "#desc": "Check artifacts in release mode, with optimizations"
+    },
+    "--profile": {
+      "#desc": "Check artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Check for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "--future-incompat-report": {
+      "#desc": "Outputs a future incompatibility report at the end of the build "
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Analyze the current package and report errors, but don't build object files"
   },
   "clean": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "-p|--package": "--- Package to clean artifacts for",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--target": "--- Target triple to clean output for",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--release": "--- Whether or not to clean release artifacts",
-    "--profile": "--- Clean artifacts of the specified profile",
-    "--doc": "--- Whether or not to clean just the documentation directory",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "-p|--package": {
+      "#desc": "Package to clean artifacts for"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--target": {
+      "#desc": "Target triple to clean output for"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--release": {
+      "#desc": "Whether or not to clean release artifacts"
+    },
+    "--profile": {
+      "#desc": "Clean artifacts of the specified profile"
+    },
+    "--doc": {
+      "#desc": "Whether or not to clean just the documentation directory"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Remove the target directory"
   },
   "doc|d": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--open": "--- Opens the docs in a browser after the operation",
-    "-p|--package": "--- Package to document",
-    "--workspace": "--- Document all packages in the workspace",
-    "--exclude": "--- Exclude packages from the build",
-    "--all": "--- Alias for --workspace ",
-    "--no-deps": "--- Don't build documentation for dependencies",
-    "--document-private-items": "--- Document private items",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--lib": "--- Document only this package's library",
-    "--bin": "--- Document only the specified binary",
-    "--bins": "--- Document all binaries",
-    "--example": "--- Document only the specified example",
-    "--examples": "--- Document all examples",
-    "--release": "--- Build artifacts in release mode, with optimizations",
-    "--profile": "--- Build artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--message-format": "--- Error format",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--open": {
+      "#desc": "Opens the docs in a browser after the operation"
+    },
+    "-p|--package": {
+      "#desc": "Package to document"
+    },
+    "--workspace": {
+      "#desc": "Document all packages in the workspace"
+    },
+    "--exclude": {
+      "#desc": "Exclude packages from the build"
+    },
+    "--all": {
+      "#desc": "Alias for --workspace "
+    },
+    "--no-deps": {
+      "#desc": "Don't build documentation for dependencies"
+    },
+    "--document-private-items": {
+      "#desc": "Document private items"
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--lib": {
+      "#desc": "Document only this package's library"
+    },
+    "--bin": {
+      "#desc": "Document only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Document all binaries"
+    },
+    "--example": {
+      "#desc": "Document only the specified example"
+    },
+    "--examples": {
+      "#desc": "Document all examples"
+    },
+    "--release": {
+      "#desc": "Build artifacts in release mode, with optimizations"
+    },
+    "--profile": {
+      "#desc": "Build artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Build this package's and its dependencies' documentation"
   },
   "new": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--registry": "--- Registry to use",
-    "--vcs": "--- Initialize a new repository for the given version control system (git, hg, pijul, or",
-    "--bin": "--- Use a binary  template ",
-    "--lib": "--- Use a library template",
-    "--edition": "--- Edition to set for the crate generated ",
-    "--name": "--- Set the resulting package name, defaults to the directory name",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--registry": {
+      "#desc": "Registry to use"
+    },
+    "--vcs": {
+      "#desc": "Initialize a new repository for the given version control system (git, hg, pijul, or"
+    },
+    "--bin": {
+      "#desc": "Use a binary  template "
+    },
+    "--lib": {
+      "#desc": "Use a library template"
+    },
+    "--edition": {
+      "#desc": "Edition to set for the crate generated "
+    },
+    "--name": {
+      "#desc": "Set the resulting package name, defaults to the directory name"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Create a new cargo package"
   },
   "init": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--registry": "--- Registry to use",
-    "--vcs": "--- Initialize a new repository for the given version control system (git, hg, pijul, or",
-    "--bin": "--- Use a binary  template ",
-    "--lib": "--- Use a library template",
-    "--edition": "--- Edition to set for the crate generated ",
-    "--name": "--- Set the resulting package name, defaults to the directory name",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--registry": {
+      "#desc": "Registry to use"
+    },
+    "--vcs": {
+      "#desc": "Initialize a new repository for the given version control system (git, hg, pijul, or"
+    },
+    "--bin": {
+      "#desc": "Use a binary  template "
+    },
+    "--lib": {
+      "#desc": "Use a library template"
+    },
+    "--edition": {
+      "#desc": "Edition to set for the crate generated "
+    },
+    "--name": {
+      "#desc": "Set the resulting package name, defaults to the directory name"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Create a new cargo package in an existing directory"
   },
   "run|r": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--bin": "--- Name of the bin target to run",
-    "--example": "--- Name of the example target to run",
-    "-p|--package": "--- Package with the target to run",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--release": "--- Build artifacts in release mode, with optimizations",
-    "--profile": "--- Build artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--message-format": "--- Error format",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--bin": {
+      "#desc": "Name of the bin target to run"
+    },
+    "--example": {
+      "#desc": "Name of the example target to run"
+    },
+    "-p|--package": {
+      "#desc": "Package with the target to run"
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--release": {
+      "#desc": "Build artifacts in release mode, with optimizations"
+    },
+    "--profile": {
+      "#desc": "Build artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Run a binary or example of the local package"
   },
   "test|t": {
-    "-q|--quiet": "--- Display one character per test instead of one line",
-    "--lib": "--- Test only this package's library unit tests",
-    "--bin": "--- Test only the specified binary",
-    "--bins": "--- Test all binaries",
-    "--example": "--- Test only the specified example",
-    "--examples": "--- Test all examples",
-    "--test": "--- Test only the specified test target",
-    "--tests": "--- Test all tests",
-    "--bench": "--- Test only the specified bench target",
-    "--benches": "--- Test all benches",
-    "--all-targets": "--- Test all targets",
-    "--doc": "--- Test only this library's documentation",
-    "--no-run": "--- Compile, but don't run tests",
-    "--no-fail-fast": "--- Run all tests regardless of failure",
-    "-p|--package": "--- Package to run tests for",
-    "--workspace": "--- Test all packages in the workspace",
-    "--exclude": "--- Exclude packages from the test",
-    "--all": "--- Alias for --workspace ",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--release": "--- Build artifacts in release mode, with optimizations",
-    "--profile": "--- Build artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "--message-format": "--- Error format",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "--future-incompat-report": "--- Outputs a future incompatibility report at the end of the build ",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "Display one character per test instead of one line"
+    },
+    "--lib": {
+      "#desc": "Test only this package's library unit tests"
+    },
+    "--bin": {
+      "#desc": "Test only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Test all binaries"
+    },
+    "--example": {
+      "#desc": "Test only the specified example"
+    },
+    "--examples": {
+      "#desc": "Test all examples"
+    },
+    "--test": {
+      "#desc": "Test only the specified test target"
+    },
+    "--tests": {
+      "#desc": "Test all tests"
+    },
+    "--bench": {
+      "#desc": "Test only the specified bench target"
+    },
+    "--benches": {
+      "#desc": "Test all benches"
+    },
+    "--all-targets": {
+      "#desc": "Test all targets"
+    },
+    "--doc": {
+      "#desc": "Test only this library's documentation"
+    },
+    "--no-run": {
+      "#desc": "Compile, but don't run tests"
+    },
+    "--no-fail-fast": {
+      "#desc": "Run all tests regardless of failure"
+    },
+    "-p|--package": {
+      "#desc": "Package to run tests for"
+    },
+    "--workspace": {
+      "#desc": "Test all packages in the workspace"
+    },
+    "--exclude": {
+      "#desc": "Exclude packages from the test"
+    },
+    "--all": {
+      "#desc": "Alias for --workspace "
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--release": {
+      "#desc": "Build artifacts in release mode, with optimizations"
+    },
+    "--profile": {
+      "#desc": "Build artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "--future-incompat-report": {
+      "#desc": "Outputs a future incompatibility report at the end of the build "
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Run the tests"
   },
   "bench": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--lib": "--- Benchmark only this package's library",
-    "--bin": "--- Benchmark only the specified binary",
-    "--bins": "--- Benchmark all binaries",
-    "--example": "--- Benchmark only the specified example",
-    "--examples": "--- Benchmark all examples",
-    "--test": "--- Benchmark only the specified test target",
-    "--tests": "--- Benchmark all tests",
-    "--bench": "--- Benchmark only the specified bench target",
-    "--benches": "--- Benchmark all benches",
-    "--all-targets": "--- Benchmark all targets",
-    "--no-run": "--- Compile, but don't run benchmarks",
-    "-p|--package": "--- Package to run benchmarks for",
-    "--workspace": "--- Benchmark all packages in the workspace",
-    "--exclude": "--- Exclude packages from the benchmark",
-    "--all": "--- Alias for --workspace ",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--profile": "--- Build artifacts with the specified profile",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--ignore-rust-version": "--- Ignore 'rust-version' specification in packages",
-    "--message-format": "--- Error format",
-    "--no-fail-fast": "--- Run all benchmarks regardless of failure",
-    "--unit-graph": "--- Output build graph in JSON ",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--lib": {
+      "#desc": "Benchmark only this package's library"
+    },
+    "--bin": {
+      "#desc": "Benchmark only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Benchmark all binaries"
+    },
+    "--example": {
+      "#desc": "Benchmark only the specified example"
+    },
+    "--examples": {
+      "#desc": "Benchmark all examples"
+    },
+    "--test": {
+      "#desc": "Benchmark only the specified test target"
+    },
+    "--tests": {
+      "#desc": "Benchmark all tests"
+    },
+    "--bench": {
+      "#desc": "Benchmark only the specified bench target"
+    },
+    "--benches": {
+      "#desc": "Benchmark all benches"
+    },
+    "--all-targets": {
+      "#desc": "Benchmark all targets"
+    },
+    "--no-run": {
+      "#desc": "Compile, but don't run benchmarks"
+    },
+    "-p|--package": {
+      "#desc": "Package to run benchmarks for"
+    },
+    "--workspace": {
+      "#desc": "Benchmark all packages in the workspace"
+    },
+    "--exclude": {
+      "#desc": "Exclude packages from the benchmark"
+    },
+    "--all": {
+      "#desc": "Alias for --workspace "
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--profile": {
+      "#desc": "Build artifacts with the specified profile"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--ignore-rust-version": {
+      "#desc": "Ignore 'rust-version' specification in packages"
+    },
+    "--message-format": {
+      "#desc": "Error format"
+    },
+    "--no-fail-fast": {
+      "#desc": "Run all benchmarks regardless of failure"
+    },
+    "--unit-graph": {
+      "#desc": "Output build graph in JSON "
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Run the benchmarks"
   },
   "update": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "-w|--workspace": "--- Only update the workspace packages",
-    "-p|--package": "--- Package to update",
-    "--aggressive": "--- Force updating all dependencies of SPEC as well when used with -p",
-    "--dry-run": "--- Don't actually write the lockfile",
-    "--precise": "--- Update a single dependency to exactly PRECISE when used with -p",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "-w|--workspace": {
+      "#desc": "Only update the workspace packages"
+    },
+    "-p|--package": {
+      "#desc": "Package to update"
+    },
+    "--aggressive": {
+      "#desc": "Force updating all dependencies of SPEC as well when used with -p"
+    },
+    "--dry-run": {
+      "#desc": "Don't actually write the lockfile"
+    },
+    "--precise": {
+      "#desc": "Update a single dependency to exactly PRECISE when used with -p"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Update dependencies listed in Cargo.lock"
   },
   "search": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--index": "--- Registry index URL to upload the package to",
-    "--limit": "--- Limit the number of results ",
-    "--registry": "--- Registry to use",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--index": {
+      "#desc": "Registry index URL to upload the package to"
+    },
+    "--limit": {
+      "#desc": "Limit the number of results "
+    },
+    "--registry": {
+      "#desc": "Registry to use"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Search registry for crates"
   },
   "publish": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--index": "--- Registry index URL to upload the package to",
-    "--token": "--- Token to use when uploading",
-    "--no-verify": "--- Don't verify the contents by building them",
-    "--allow-dirty": "--- Allow dirty working directories to be packaged",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "-p|--package": "--- Package to publish",
-    "--manifest-path": "--- Path to Cargo.toml",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "--dry-run": "--- Perform all checks without uploading",
-    "--registry": "--- Registry to publish to",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--index": {
+      "#desc": "Registry index URL to upload the package to"
+    },
+    "--token": {
+      "#desc": "Token to use when uploading"
+    },
+    "--no-verify": {
+      "#desc": "Don't verify the contents by building them"
+    },
+    "--allow-dirty": {
+      "#desc": "Allow dirty working directories to be packaged"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "-p|--package": {
+      "#desc": "Package to publish"
+    },
+    "--manifest-path": {
+      "#desc": "Path to Cargo.toml"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "--dry-run": {
+      "#desc": "Perform all checks without uploading"
+    },
+    "--registry": {
+      "#desc": "Registry to publish to"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Package and upload this package to the registry"
   },
   "install": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "--version": "--- Specify a version to install",
-    "--git": "--- Git URL to install the specified crate from",
-    "--branch": "--- Branch to use when installing from git",
-    "--tag": "--- Tag to use when installing from git",
-    "--rev": "--- Specific commit to use when installing from git",
-    "--path": "--- Filesystem path to local crate to install",
-    "--list": "--- list all installed packages and their versions",
-    "-j|--jobs": "--- Number of parallel jobs, defaults to # of CPUs",
-    "-f|--force": "--- Force overwriting existing crates or binaries",
-    "--no-track": "--- Do not save tracking information",
-    "--features": "--- Space or comma separated list of features to activate",
-    "--all-features": "--- Activate all available features",
-    "--no-default-features": "--- Do not activate the 'default' feature",
-    "--profile": "--- Install artifacts with the specified profile",
-    "--debug": "--- Build in debug mode instead of release mode",
-    "--bin": "--- Install only the specified binary",
-    "--bins": "--- Install all binaries",
-    "--example": "--- Install only the specified example",
-    "--examples": "--- Install all examples",
-    "--target": "--- Build for the target triple",
-    "--target-dir": "--- Directory for all generated artifacts",
-    "--root": "--- Directory to install packages into",
-    "--index": "--- Registry index to install from",
-    "--registry": "--- Registry to use",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "--version": {
+      "#desc": "Specify a version to install"
+    },
+    "--git": {
+      "#desc": "Git URL to install the specified crate from"
+    },
+    "--branch": {
+      "#desc": "Branch to use when installing from git"
+    },
+    "--tag": {
+      "#desc": "Tag to use when installing from git"
+    },
+    "--rev": {
+      "#desc": "Specific commit to use when installing from git"
+    },
+    "--path": {
+      "#desc": "Filesystem path to local crate to install"
+    },
+    "--list": {
+      "#desc": "list all installed packages and their versions"
+    },
+    "-j|--jobs": {
+      "#desc": "Number of parallel jobs, defaults to # of CPUs"
+    },
+    "-f|--force": {
+      "#desc": "Force overwriting existing crates or binaries"
+    },
+    "--no-track": {
+      "#desc": "Do not save tracking information"
+    },
+    "--features": {
+      "#desc": "Space or comma separated list of features to activate"
+    },
+    "--all-features": {
+      "#desc": "Activate all available features"
+    },
+    "--no-default-features": {
+      "#desc": "Do not activate the 'default' feature"
+    },
+    "--profile": {
+      "#desc": "Install artifacts with the specified profile"
+    },
+    "--debug": {
+      "#desc": "Build in debug mode instead of release mode"
+    },
+    "--bin": {
+      "#desc": "Install only the specified binary"
+    },
+    "--bins": {
+      "#desc": "Install all binaries"
+    },
+    "--example": {
+      "#desc": "Install only the specified example"
+    },
+    "--examples": {
+      "#desc": "Install all examples"
+    },
+    "--target": {
+      "#desc": "Build for the target triple"
+    },
+    "--target-dir": {
+      "#desc": "Directory for all generated artifacts"
+    },
+    "--root": {
+      "#desc": "Directory to install packages into"
+    },
+    "--index": {
+      "#desc": "Registry index to install from"
+    },
+    "--registry": {
+      "#desc": "Registry to use"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Install a Rust binary. Default location is /home/zjq/.cargo/bin"
   },
   "uninstall": {
-    "-q|--quiet": "--- No output printed to stdout",
-    "-p|--package": "--- Package to uninstall",
-    "--bin": "--- Only uninstall the binary NAME",
-    "--root": "--- Directory to uninstall packages from",
-    "-v|--verbose": "--- Use verbose output ",
-    "--color": "--- Coloring: auto, always, never",
-    "--frozen": "--- Require Cargo.lock and cache are up to date",
-    "--locked": "--- Require Cargo.lock is up to date",
-    "--offline": "--- Run without accessing the network",
-    "--config": "--- Override a configuration value ",
-    "-Z": "--- Unstable  flags to Cargo, see 'cargo -Z help' for details",
-    "-h|--help": "--- Prints help information",
+    "-q|--quiet": {
+      "#desc": "No output printed to stdout"
+    },
+    "-p|--package": {
+      "#desc": "Package to uninstall"
+    },
+    "--bin": {
+      "#desc": "Only uninstall the binary NAME"
+    },
+    "--root": {
+      "#desc": "Directory to uninstall packages from"
+    },
+    "-v|--verbose": {
+      "#desc": "Use verbose output "
+    },
+    "--color": {
+      "#desc": "Coloring: auto, always, never"
+    },
+    "--frozen": {
+      "#desc": "Require Cargo.lock and cache are up to date"
+    },
+    "--locked": {
+      "#desc": "Require Cargo.lock is up to date"
+    },
+    "--offline": {
+      "#desc": "Run without accessing the network"
+    },
+    "--config": {
+      "#desc": "Override a configuration value "
+    },
+    "-Z": {
+      "#desc": "Unstable  flags to Cargo, see 'cargo -Z help' for details"
+    },
+    "-h|--help": {
+      "#desc": "Prints help information"
+    },
     "#desc": "Uninstall a Rust binary"
   }
 }

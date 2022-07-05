@@ -1,0 +1,18 @@
+{
+    "-c": {
+        "#desc": "specify the broker config file",
+        "#exec": "___x_cmd_advise_file"
+    },
+    "-d": {
+        "#desc": "put the broker into the background after starting"
+    },
+    "-h": {
+        "#desc": "display this help."
+    },
+    "-p": {
+        "#desc": "start the broker listening on the specified port.Not recommended in conjunction with the -c option."
+    },
+    "-v": {
+        "#desc": "verbose mode - enable all logging types. This overrides any logging options given in the config file."
+    }
+}

@@ -1,249 +1,863 @@
 {
-    "--abstract-unix-socket": [],
-    "--alt-svc": [],
-    "--anyauth": null,
-    "-a|--append": null,
-    "--aws-sigv4": [],
-    "--basic": null,
-    "--cacert": [],
-    "--capath": [],
-    "-E|--cert": [],
-    "--cert-status": null,
-    "--cert-type": [],
-    "--ciphers": [],
-    "--compressed": null,
-    "--compressed-ssh": null,
-    "-K|--config": [],
-    "--connect-timeout": [],
-    "--connect-to": [],
-    "-C|--continue-at": [],
-    "-b|--cookie": [],
-    "-c|--cookie-jar": [],
-    "--create-dirs": null,
-    "--create-file-mode": [],
-    "--crlf": null,
-    "--crlfile": [],
-    "--curves": [],
-    "-d|--data": [],
-    "--data-ascii": [],
-    "--data-binary": [],
-    "--data-raw": [],
-    "--data-urlencode": [],
-    "--delegation": [],
-    "--digest": null,
-    "-q|--disable": null,
-    "--disable-eprt": null,
-    "--disable-epsv": null,
-    "--disallow-username-in-url": null,
-    "--dns-interface": [],
-    "--dns-ipv4-addr": [],
-    "--dns-ipv6-addr": [],
-    "--dns-servers": [],
-    "--doh-cert-status": null,
-    "--doh-insecure": null,
-    "--doh-url": [],
-    "-D|--dump-header": [],
-    "--egd-file": [],
-    "--engine": [],
-    "--etag-compare": [],
-    "--etag-save": [],
-    "--expect100-timeout": [],
-    "-f|--fail": null,
-    "--fail-early": null,
-    "--fail-with-body": null,
-    "--false-start": null,
-    "-F|--form": [],
-    "--form-escape": null,
-    "--form-string": [],
-    "--ftp-account": [],
-    "--ftp-alternative-to-user": [],
-    "--ftp-create-dirs": null,
-    "--ftp-method": [],
-    "--ftp-pasv": null,
-    "-P|--ftp-port": [],
-    "--ftp-pret": null,
-    "--ftp-skip-pasv-ip": null,
-    "--ftp-ssl-ccc": null,
-    "--ftp-ssl-ccc-mode": [],
-    "--ftp-ssl-control": null,
-    "-G|--get": null,
-    "-g|--globoff": null,
-    "--happy-eyeballs-timeout-ms": [],
-    "--haproxy-protocol": null,
-    "-I|--head": null,
-    "-H|--header": [],
-    "-h|--help": [],
-    "--hostpubmd5": [],
-    "--hostpubsha256": [],
-    "--hsts": [],
-    "--http0.9": null,
-    "-0|--http1.0": null,
-    "--http1.1": null,
-    "--http2": null,
-    "--http2-prior-knowledge": null,
-    "--http3": null,
-    "--ignore-content-length": null,
-    "-i|--include": null,
-    "-k|--insecure": null,
-    "--interface": [],
-    "-4|--ipv4": null,
-    "-6|--ipv6": null,
-    "--json": [],
-    "-j|--junk-session-cookies": null,
-    "--keepalive-time": [],
-    "--key": [],
-    "--key-type": [],
-    "--krb": [],
-    "--libcurl": [],
-    "--limit-rate": [],
-    "-l|--list-only": null,
-    "--local-port": [],
-    "-L|--location": null,
-    "--location-trusted": null,
-    "--login-options": [],
-    "--mail-auth": [],
-    "--mail-from": [],
-    "--mail-rcpt": [],
-    "--mail-rcpt-allowfails": null,
-    "-M|--manual": null,
-    "--max-filesize": [],
-    "--max-redirs": [],
-    "-m|--max-time": [],
-    "--metalink": null,
-    "--negotiate": null,
-    "-n|--netrc": null,
-    "--netrc-file": [],
-    "--netrc-optional": null,
-    "-:|--next": null,
-    "--no-alpn": null,
-    "-N|--no-buffer": null,
-    "--no-clobber": null,
-    "--no-keepalive": null,
-    "--no-npn": null,
-    "--no-progress-meter": null,
-    "--no-sessionid": null,
-    "--noproxy": [],
-    "--ntlm": null,
-    "--ntlm-wb": null,
-    "--oauth2-bearer": [],
-    "-o|--output": [],
-    "--output-dir": [],
-    "-Z|--parallel": null,
-    "--parallel-immediate": null,
-    "--parallel-max": [],
-    "--pass": [],
-    "--path-as-is": null,
-    "--pinnedpubkey": [],
-    "--post301": null,
-    "--post302": null,
-    "--post303": null,
-    "--preproxy": [],
-    "-#|--progress-bar": null,
-    "--proto": [],
-    "--proto-default": [],
-    "--proto-redir": [],
-    "-x|--proxy": [],
-    "--proxy-anyauth": null,
-    "--proxy-basic": null,
-    "--proxy-cacert": [],
-    "--proxy-capath": [],
-    "--proxy-cert": [],
-    "--proxy-cert-type": [],
-    "--proxy-ciphers": [],
-    "--proxy-crlfile": [],
-    "--proxy-digest": null,
-    "--proxy-header": [],
-    "--proxy-insecure": null,
-    "--proxy-key": [],
-    "--proxy-key-type": [],
-    "--proxy-negotiate": null,
-    "--proxy-ntlm": null,
-    "--proxy-pass": [],
-    "--proxy-pinnedpubkey": [],
-    "--proxy-service-name": [],
-    "--proxy-ssl-allow-beast": null,
-    "--proxy-ssl-auto-client-cert": null,
-    "--proxy-tls13-ciphers": [],
-    "--proxy-tlsauthtype": [],
-    "--proxy-tlspassword": [],
-    "--proxy-tlsuser": [],
-    "--proxy-tlsv1": null,
-    "-U|--proxy-user": [],
-    "--proxy1.0": [],
-    "-p|--proxytunnel": null,
-    "--pubkey": [],
-    "-Q|--quote": [],
-    "--random-file": [],
-    "-r|--range": [],
-    "--raw": null,
-    "-e|--referer": [],
-    "-J|--remote-header-name": null,
-    "-O|--remote-name": null,
-    "--remote-name-all": null,
-    "-R|--remote-time": null,
-    "--remove-on-error": null,
-    "-X|--request": [],
-    "--request-target": [],
-    "--resolve": [],
-    "--retry": [],
-    "--retry-all-errors": null,
-    "--retry-connrefused": null,
-    "--retry-delay": [],
-    "--retry-max-time": [],
-    "--sasl-authzid": [],
-    "--sasl-ir": null,
-    "--service-name": [],
-    "-S|--show-error": null,
-    "-s|--silent": null,
-    "--socks4": [],
-    "--socks4a": [],
-    "--socks5": [],
-    "--socks5-basic": null,
-    "--socks5-gssapi": null,
-    "--socks5-gssapi-nec": null,
-    "--socks5-gssapi-service": [],
-    "--socks5-hostname": [],
-    "-Y|--speed-limit": [],
-    "-y|--speed-time": [],
-    "--ssl": null,
-    "--ssl-allow-beast": null,
-    "--ssl-auto-client-cert": null,
-    "--ssl-no-revoke": null,
-    "--ssl-reqd": null,
-    "--ssl-revoke-best-effort": null,
-    "-2|--sslv2": null,
-    "-3|--sslv3": null,
-    "--stderr": [],
-    "--styled-output": null,
-    "--suppress-connect-headers": null,
-    "--tcp-fastopen": null,
-    "--tcp-nodelay": null,
-    "-t|--telnet-option": [],
-    "--tftp-blksize": [],
-    "--tftp-no-options": null,
-    "-z|--time-cond": [],
-    "--tls-max": [],
-    "--tls13-ciphers": [],
-    "--tlsauthtype": [],
-    "--tlspassword": [],
-    "--tlsuser": [],
-    "-1|--tlsv1": null,
-    "--tlsv1.0": null,
-    "--tlsv1.1": null,
-    "--tlsv1.2": null,
-    "--tlsv1.3": null,
-    "--tr-encoding": null,
-    "--trace": [],
-    "--trace-ascii": [],
-    "--trace-time": null,
-    "--unix-socket": [],
-    "-T|--upload-file": [],
-    "--url": [],
-    "-B|--use-ascii": null,
-    "-u|--user": [],
-    "-A|--user-agent": [],
-    "-v|--verbose": null,
-    "-V|--version": null,
-    "-w|--write-out": [],
-    "--xattr": null
+    "--abstract-unix-socket": {
+        "#desc": "Connect via abstract Unix domain socket",
+        "#1": {
+            "#desc": "<path>"
+        }
+    },
+    "--alt-svc": {
+        "#desc": "Enable alt-svc with this cache file",
+        "#1": {
+            "#desc": "<file name>"
+        }
+    },
+    "--anyauth": {
+        "#desc": "Pick any authentication method"
+    },
+    "-a|--append": {
+        "#desc": "Append to target file when uploading"
+    },
+    "--aws-sigv4": {
+        "#desc": ""
+    },
+    "--basic": {
+        "#desc": "Use HTTP Basic Authentication"
+    },
+    "--cacert": {
+        "#desc": "CA certificate to verify peer against",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--capath": {
+        "#desc": "CA directory to verify peer against",
+        "#1": {
+            "#desc": "<dir>"
+        }
+    },
+    "-E|--cert": {
+        "#desc": "Client certificate file and password",
+        "#1": {
+            "#desc": "<certificate[:password]>"
+        }
+    },
+    "--cert-status": {
+        "#desc": "Verify the status of the server certificate"
+    },
+    "--cert-type": {
+        "#desc": "Certificate file type (DER/PEM/ENG)",
+        "#1": {
+            "#desc": "<type>"
+        }
+    },
+    "--ciphers": {
+        "#desc": "SSL ciphers to use",
+        "#1": {
+            "#desc": "<list of ciphers>"
+        }
+    },
+    "--compressed": {
+        "#desc": "Request compressed response"
+    },
+    "--compressed-ssh": {
+        "#desc": "Enable SSH compression"
+    },
+    "-K|--config": {
+        "#desc": "Read config from a file",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--connect-timeout": {
+        "#desc": "Maximum time allowed for connection",
+        "#1": {
+            "#desc": "<seconds>"
+        }
+    },
+    "--connect-to": {
+        "#desc": "Connect to host",
+        "#1": {
+            "#desc": "<HOST1:PORT1:HOST2:PORT2>"
+        }
+    },
+    "-C|--continue-at": {
+        "#desc": "Resumed transfer offset",
+        "#1": {
+            "#desc": "<offset>"
+        }
+    },
+    "-b|--cookie": {
+        "#desc": "Send cookies from string/file",
+        "#1": {
+            "#desc": "<data|filename>"
+        }
+    },
+    "-c|--cookie-jar": {
+        "#desc": "Write cookies to <filename> after operation",
+        "#1": {
+            "#desc": "<filename>"
+        }
+    },
+    "--create-dirs": {
+        "#desc": "Create necessary local directory hierarchy"
+    },
+    "--create-file-mode": {
+        "#desc": ""
+    },
+    "--crlf": {
+        "#desc": "Convert LF to CRLF in upload"
+    },
+    "--crlfile": {
+        "#desc": "Get a CRL list in PEM format from the given file",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--curves": {
+        "#desc": ""
+    },
+    "-d|--data": {
+        "#desc": "HTTP POST data",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--data-ascii": {
+        "#desc": "HTTP POST ASCII data",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--data-binary": {
+        "#desc": "HTTP POST binary data",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--data-raw": {
+        "#desc": "HTTP POST data, '@' allowed",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--data-urlencode": {
+        "#desc": "HTTP POST data url encoded",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--delegation": {
+        "#desc": "GSS-API delegation permission",
+        "#1": {
+            "#desc": "<LEVEL>"
+        }
+    },
+    "--digest": {
+        "#desc": "Use HTTP Digest Authentication"
+    },
+    "-q|--disable": {
+        "#desc": "Disable .curlrc"
+    },
+    "--disable-eprt": {
+        "#desc": "Inhibit using EPRT or LPRT"
+    },
+    "--disable-epsv": {
+        "#desc": "Inhibit using EPSV"
+    },
+    "--disallow-username-in-url": {
+        "#desc": "Disallow username in url"
+    },
+    "--dns-interface": {
+        "#desc": "Interface to use for DNS requests",
+        "#1": {
+            "#desc": "<interface>"
+        }
+    },
+    "--dns-ipv4-addr": {
+        "#desc": "IPv4 address to use for DNS requests",
+        "#1": {
+            "#desc": "<address>"
+        }
+    },
+    "--dns-ipv6-addr": {
+        "#desc": "IPv6 address to use for DNS requests",
+        "#1": {
+            "#desc": "<address>"
+        }
+    },
+    "--dns-servers": {
+        "#desc": "DNS server addrs to use",
+        "#1": {
+            "#desc": "<addresses>"
+        }
+    },
+    "--doh-cert-status": {
+        "#desc": ""
+    },
+    "--doh-insecure": {
+        "#desc": ""
+    },
+    "--doh-url": {
+        "#desc": "Resolve host names over DOH",
+        "#1": {
+            "#desc": "<URL>"
+        }
+    },
+    "-D|--dump-header": {
+        "#desc": "Write the received headers to <filename>",
+        "#1": {
+            "#desc": "<filename>"
+        }
+    },
+    "--egd-file": {
+        "#desc": "EGD socket path for random data",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--engine": {
+        "#desc": "Crypto engine to use",
+        "#1": {
+            "#desc": "<name>"
+        }
+    },
+    "--etag-compare": {
+        "#desc": "Get an ETag from a file and send a conditional request",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--etag-save": {
+        "#desc": "Get an ETag from response header and save it to a FILE",
+        "#1": {
+            "#desc": "<file>"
+        }
+    },
+    "--expect100-timeout": {
+        "#desc": "How long to wait for 100-continue",
+        "#1": {
+            "#desc": "<seconds>"
+        }
+    },
+    "-f|--fail": {
+        "#desc": "Fail silently (no output at all) on HTTP errors"
+    },
+    "--fail-early": {
+        "#desc": "Fail on first transfer error, do not continue"
+    },
+    "--fail-with-body": {
+        "#desc": ""
+    },
+    "--false-start": {
+        "#desc": "Enable TLS False Start"
+    },
+    "-F|--form": {
+        "#desc": "Specify multipart MIME data",
+        "#1": {
+            "#desc": "<name=content>"
+        }
+    },
+    "--form-escape": {
+        "#desc": ""
+    },
+    "--form-string": {
+        "#desc": "Specify multipart MIME data",
+        "#1": {
+            "#desc": "<name=string>"
+        }
+    },
+    "--ftp-account": {
+        "#desc": "Account data string",
+        "#1": {
+            "#desc": "<data>"
+        }
+    },
+    "--ftp-alternative-to-user": {
+        "#desc": "String to replace USER [name]",
+        "#1": {
+            "#desc": "<command>"
+        }
+    },
+    "--ftp-create-dirs": {
+        "#desc": "Create the remote dirs if not present"
+    },
+    "--ftp-method": {
+        "#desc": "Control CWD usage",
+        "#1": {
+            "#desc": "<method>"
+        }
+    },
+    "--ftp-pasv": {
+        "#desc": "Use PASV/EPSV instead of PORT"
+    },
+    "-P|--ftp-port": {
+        "#desc": "Use PORT instead of PASV",
+        "#1": {
+            "#desc": "<address>"
+        }
+    },
+    "--ftp-pret": {
+        "#desc": "Send PRET before PASV"
+    },
+    "--ftp-skip-pasv-ip": {
+        "#desc": "Skip the IP address for PASV"
+    },
+    "--ftp-ssl-ccc": {
+        "#desc": "Send CCC after authenticating"
+    },
+    "--ftp-ssl-ccc-mode": {
+        "#desc": "Set CCC mode",
+        "#1": {
+            "#desc": "<active/passive>"
+        }
+    },
+    "--ftp-ssl-control": {
+        "#desc": "Require SSL/TLS for FTP login, clear for transfer"
+    },
+    "-G|--get": {
+        "#desc": "Put the post data in the URL and use GET"
+    },
+    "-g|--globoff": {
+        "#desc": "Disable URL sequences and ranges using {} and []"
+    },
+    "--happy-eyeballs-timeout-ms": {
+        "#desc": "How long to wait in milliseconds for IPv6 before trying IPv4",
+        "#1": {
+            "#desc": "<milliseconds>"
+        }
+    },
+    "--haproxy-protocol": {
+        "#desc": "Send HAProxy PROXY protocol v1 header"
+    },
+    "-I|--head": {
+        "#desc": "Show document info only"
+    },
+    "-H|--header": {
+        "#desc": "Pass custom header(s) to server",
+        "#1": {
+            "#desc": "<header/@file>"
+        }
+    },
+    "-h|--help": {
+        "#desc": "This help text"
+    },
+    "--hostpubmd5": {
+        "#desc": "Acceptable MD5 hash of the host public key"
+    },
+    "--hostpubsha256": {
+        "#desc": ""
+    },
+    "--hsts": {
+        "#desc": ""
+    },
+    "--http0.9": {
+        "#desc": ""
+    },
+    "-0|--http1.0": {
+        "#desc": ""
+    },
+    "--http1.1": {
+        "#desc": ""
+    },
+    "--http2": {
+        "#desc": ""
+    },
+    "--http2-prior-knowledge": {
+        "#desc": ""
+    },
+    "--http3": {
+        "#desc": ""
+    },
+    "--ignore-content-length": {
+        "#desc": ""
+    },
+    "-i|--include": {
+        "#desc": ""
+    },
+    "-k|--insecure": {
+        "#desc": ""
+    },
+    "--interface": {
+        "#desc": ""
+    },
+    "-4|--ipv4": {
+        "#desc": ""
+    },
+    "-6|--ipv6": {
+        "#desc": ""
+    },
+    "--json": {
+        "#desc": ""
+    },
+    "-j|--junk-session-cookies": {
+        "#desc": ""
+    },
+    "--keepalive-time": {
+        "#desc": ""
+    },
+    "--key": {
+        "#desc": ""
+    },
+    "--key-type": {
+        "#desc": ""
+    },
+    "--krb": {
+        "#desc": ""
+    },
+    "--libcurl": {
+        "#desc": ""
+    },
+    "--limit-rate": {
+        "#desc": ""
+    },
+    "-l|--list-only": {
+        "#desc": ""
+    },
+    "--local-port": {
+        "#desc": ""
+    },
+    "-L|--location": {
+        "#desc": ""
+    },
+    "--location-trusted": {
+        "#desc": ""
+    },
+    "--login-options": {
+        "#desc": ""
+    },
+    "--mail-auth": {
+        "#desc": ""
+    },
+    "--mail-from": {
+        "#desc": ""
+    },
+    "--mail-rcpt": {
+        "#desc": ""
+    },
+    "--mail-rcpt-allowfails": {
+        "#desc": ""
+    },
+    "-M|--manual": {
+        "#desc": ""
+    },
+    "--max-filesize": {
+        "#desc": ""
+    },
+    "--max-redirs": {
+        "#desc": ""
+    },
+    "-m|--max-time": {
+        "#desc": ""
+    },
+    "--metalink": {
+        "#desc": ""
+    },
+    "--negotiate": {
+        "#desc": ""
+    },
+    "-n|--netrc": {
+        "#desc": ""
+    },
+    "--netrc-file": {
+        "#desc": ""
+    },
+    "--netrc-optional": {
+        "#desc": ""
+    },
+    "-:|--next": {
+        "#desc": ""
+    },
+    "--no-alpn": {
+        "#desc": ""
+    },
+    "-N|--no-buffer": {
+        "#desc": ""
+    },
+    "--no-clobber": {
+        "#desc": ""
+    },
+    "--no-keepalive": {
+        "#desc": ""
+    },
+    "--no-npn": {
+        "#desc": ""
+    },
+    "--no-progress-meter": {
+        "#desc": ""
+    },
+    "--no-sessionid": {
+        "#desc": ""
+    },
+    "--noproxy": {
+        "#desc": ""
+    },
+    "--ntlm": {
+        "#desc": ""
+    },
+    "--ntlm-wb": {
+        "#desc": ""
+    },
+    "--oauth2-bearer": {
+        "#desc": ""
+    },
+    "-o|--output": {
+        "#desc": ""
+    },
+    "--output-dir": {
+        "#desc": ""
+    },
+    "-Z|--parallel": {
+        "#desc": ""
+    },
+    "--parallel-immediate": {
+        "#desc": ""
+    },
+    "--parallel-max": {
+        "#desc": ""
+    },
+    "--pass": {
+        "#desc": ""
+    },
+    "--path-as-is": {
+        "#desc": ""
+    },
+    "--pinnedpubkey": {
+        "#desc": ""
+    },
+    "--post301": {
+        "#desc": ""
+    },
+    "--post302": {
+        "#desc": ""
+    },
+    "--post303": {
+        "#desc": ""
+    },
+    "--preproxy": {
+        "#desc": ""
+    },
+    "-#|--progress-bar": {
+        "#desc": ""
+    },
+    "--proto": {
+        "#desc": ""
+    },
+    "--proto-default": {
+        "#desc": ""
+    },
+    "--proto-redir": {
+        "#desc": ""
+    },
+    "-x|--proxy": {
+        "#desc": ""
+    },
+    "--proxy-anyauth": {
+        "#desc": ""
+    },
+    "--proxy-basic": {
+        "#desc": ""
+    },
+    "--proxy-cacert": {
+        "#desc": ""
+    },
+    "--proxy-capath": {
+        "#desc": ""
+    },
+    "--proxy-cert": {
+        "#desc": ""
+    },
+    "--proxy-cert-type": {
+        "#desc": ""
+    },
+    "--proxy-ciphers": {
+        "#desc": ""
+    },
+    "--proxy-crlfile": {
+        "#desc": ""
+    },
+    "--proxy-digest": {
+        "#desc": ""
+    },
+    "--proxy-header": {
+        "#desc": ""
+    },
+    "--proxy-insecure": {
+        "#desc": ""
+    },
+    "--proxy-key": {
+        "#desc": ""
+    },
+    "--proxy-key-type": {
+        "#desc": ""
+    },
+    "--proxy-negotiate": {
+        "#desc": ""
+    },
+    "--proxy-ntlm": {
+        "#desc": ""
+    },
+    "--proxy-pass": {
+        "#desc": ""
+    },
+    "--proxy-pinnedpubkey": {
+        "#desc": ""
+    },
+    "--proxy-service-name": {
+        "#desc": ""
+    },
+    "--proxy-ssl-allow-beast": {
+        "#desc": ""
+    },
+    "--proxy-ssl-auto-client-cert": {
+        "#desc": ""
+    },
+    "--proxy-tls13-ciphers": {
+        "#desc": ""
+    },
+    "--proxy-tlsauthtype": {
+        "#desc": ""
+    },
+    "--proxy-tlspassword": {
+        "#desc": ""
+    },
+    "--proxy-tlsuser": {
+        "#desc": ""
+    },
+    "--proxy-tlsv1": {
+        "#desc": ""
+    },
+    "-U|--proxy-user": {
+        "#desc": ""
+    },
+    "--proxy1.0": {
+        "#desc": ""
+    },
+    "-p|--proxytunnel": {
+        "#desc": ""
+    },
+    "--pubkey": {
+        "#desc": ""
+    },
+    "-Q|--quote": {
+        "#desc": ""
+    },
+    "--random-file": {
+        "#desc": ""
+    },
+    "-r|--range": {
+        "#desc": ""
+    },
+    "--raw": {
+        "#desc": ""
+    },
+    "-e|--referer": {
+        "#desc": ""
+    },
+    "-J|--remote-header-name": {
+        "#desc": ""
+    },
+    "-O|--remote-name": {
+        "#desc": ""
+    },
+    "--remote-name-all": {
+        "#desc": ""
+    },
+    "-R|--remote-time": {
+        "#desc": ""
+    },
+    "--remove-on-error": {
+        "#desc": ""
+    },
+    "-X|--request": {
+        "#desc": ""
+    },
+    "--request-target": {
+        "#desc": ""
+    },
+    "--resolve": {
+        "#desc": ""
+    },
+    "--retry": {
+        "#desc": ""
+    },
+    "--retry-all-errors": {
+        "#desc": ""
+    },
+    "--retry-connrefused": {
+        "#desc": ""
+    },
+    "--retry-delay": {
+        "#desc": ""
+    },
+    "--retry-max-time": {
+        "#desc": ""
+    },
+    "--sasl-authzid": {
+        "#desc": ""
+    },
+    "--sasl-ir": {
+        "#desc": ""
+    },
+    "--service-name": {
+        "#desc": ""
+    },
+    "-S|--show-error": {
+        "#desc": ""
+    },
+    "-s|--silent": {
+        "#desc": ""
+    },
+    "--socks4": {
+        "#desc": ""
+    },
+    "--socks4a": {
+        "#desc": ""
+    },
+    "--socks5": {
+        "#desc": ""
+    },
+    "--socks5-basic": {
+        "#desc": ""
+    },
+    "--socks5-gssapi": {
+        "#desc": ""
+    },
+    "--socks5-gssapi-nec": {
+        "#desc": ""
+    },
+    "--socks5-gssapi-service": {
+        "#desc": ""
+    },
+    "--socks5-hostname": {
+        "#desc": ""
+    },
+    "-Y|--speed-limit": {
+        "#desc": ""
+    },
+    "-y|--speed-time": {
+        "#desc": ""
+    },
+    "--ssl": {
+        "#desc": ""
+    },
+    "--ssl-allow-beast": {
+        "#desc": ""
+    },
+    "--ssl-auto-client-cert": {
+        "#desc": ""
+    },
+    "--ssl-no-revoke": {
+        "#desc": ""
+    },
+    "--ssl-reqd": {
+        "#desc": ""
+    },
+    "--ssl-revoke-best-effort": {
+        "#desc": ""
+    },
+    "-2|--sslv2": {
+        "#desc": ""
+    },
+    "-3|--sslv3": {
+        "#desc": ""
+    },
+    "--stderr": {
+        "#desc": ""
+    },
+    "--styled-output": {
+        "#desc": ""
+    },
+    "--suppress-connect-headers": {
+        "#desc": ""
+    },
+    "--tcp-fastopen": {
+        "#desc": ""
+    },
+    "--tcp-nodelay": {
+        "#desc": ""
+    },
+    "-t|--telnet-option": {
+        "#desc": ""
+    },
+    "--tftp-blksize": {
+        "#desc": ""
+    },
+    "--tftp-no-options": {
+        "#desc": ""
+    },
+    "-z|--time-cond": {
+        "#desc": ""
+    },
+    "--tls-max": {
+        "#desc": ""
+    },
+    "--tls13-ciphers": {
+        "#desc": ""
+    },
+    "--tlsauthtype": {
+        "#desc": ""
+    },
+    "--tlspassword": {
+        "#desc": ""
+    },
+    "--tlsuser": {
+        "#desc": ""
+    },
+    "-1|--tlsv1": {
+        "#desc": ""
+    },
+    "--tlsv1.0": {
+        "#desc": ""
+    },
+    "--tlsv1.1": {
+        "#desc": ""
+    },
+    "--tlsv1.2": {
+        "#desc": ""
+    },
+    "--tlsv1.3": {
+        "#desc": ""
+    },
+    "--tr-encoding": {
+        "#desc": ""
+    },
+    "--trace": {
+        "#desc": ""
+    },
+    "--trace-ascii": {
+        "#desc": ""
+    },
+    "--trace-time": {
+        "#desc": ""
+    },
+    "--unix-socket": {
+        "#desc": ""
+    },
+    "-T|--upload-file": {
+        "#desc": ""
+    },
+    "--url": {
+        "#desc": ""
+    },
+    "-B|--use-ascii": {
+        "#desc": ""
+    },
+    "-u|--user": {
+        "#desc": ""
+    },
+    "-A|--user-agent": {
+        "#desc": ""
+    },
+    "-v|--verbose": {
+        "#desc": ""
+    },
+    "-V|--version": {
+        "#desc": ""
+    },
+    "-w|--write-out": {
+        "#desc": ""
+    },
+    "--xattr": {
+        "#desc": ""
+    }
 }
