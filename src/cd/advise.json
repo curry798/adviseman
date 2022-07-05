@@ -5,8 +5,11 @@
     "--attributes-only": {
         "#desc": "don't copy the file data|just the attributes"
     },
-    "--backup[=CONTROL]": {
-        "#desc": "make a backup of each existing destination file"
+    "--backup|--backup=": {
+        "#desc": "make a backup of each existing destination file",
+        "#1": {
+            "#desc": "CONTROL"
+        }
     },
     "-b": {
         "#desc": "like --backup but does not accept an argument"
@@ -38,11 +41,17 @@
     "-p": {
         "#desc": "same as --preserve=mode,ownership,timestamps"
     },
-    "--preserve[=ATTR_LIST]": {
-        "#desc": "preserve the specified attributes (default: mode,ownership,timestamps)|if possible additional attributes: context|links|xattr|all"
+    "--preserve|--preserve=": {
+        "#desc": "preserve the specified attributes (default: mode,ownership,timestamps)|if possible additional attributes: context|links|xattr|all",
+        "#1": {
+            "#desc": "ATTR_LIST"
+        }
     },
-    "--no-preserve=ATTR_LIST": {
-        "#desc": "don't preserve the specified attributes"
+    "--no-preserve=": {
+        "#desc": "don't preserve the specified attributes",
+        "#1": {
+            "#desc": "ATTR_LIST"
+        }
     },
     "--parents": {
         "#desc": "use full source file name under DIRECTORY"
@@ -50,14 +59,20 @@
     "-R|-r|--recursive": {
         "#desc": "copy directories recursively"
     },
-    "--reflink[=WHEN]": {
-        "#desc": "control clone/CoW copies. See below"
+    "--reflink|--reflink=": {
+        "#desc": "control clone/CoW copies. See below",
+        "#1": {
+            "#desc": "WHEN"
+        }
     },
     "--remove-destination": {
         "#desc": "remove each existing destination file before attempting to open it (contrast with --force)"
     },
-    "--sparse=WHEN": {
-        "#desc": "control creation of sparse files. See below"
+    "--sparse=": {
+        "#desc": "control creation of sparse files. See below",
+        "#1": {
+            "#desc": "WHEN"
+        }
     },
     "--strip-trailing-slashes": {
         "#desc": "remove any trailing slashes from each SOURCE argument"
@@ -65,11 +80,17 @@
     "-s|--symbolic-link": {
         "#desc": "make symbolic links instead of copying"
     },
-    "-S|--suffix=SUFFIX": {
-        "#desc": "override the usual backup suffix"
+    "-S|--suffix=": {
+        "#desc": "override the usual backup suffix",
+        "#1": {
+            "#desc": "SUFFIX"
+        }
     },
-    "-t|--target-directory=DIRECTORY": {
-        "#desc": "copy all SOURCE arguments into DIRECTORY"
+    "-t|--target-directory=": {
+        "#desc": "copy all SOURCE arguments into DIRECTORY",
+        "#1": {
+            "#desc": "DIRECTORY"
+        }
     },
     "-T|--no-target-directory": {
         "#desc": "treat DEST as a normal file"
@@ -86,8 +107,11 @@
     "-Z": {
         "#desc": "set SELinux security context of destination file to default type"
     },
-    "--context[=CTX]": {
-        "#desc": "like -Z|or if CTX is specified then set the SELinux or SMACK security context to CTX"
+    "--context|--context=": {
+        "#desc": "like -Z|or if CTX is specified then set the SELinux or SMACK security context to CTX",
+        "#1": {
+            "#desc": "CTX"
+        }
     },
     "--help": {
         "#desc": "display this help and exit"
