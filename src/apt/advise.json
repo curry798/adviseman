@@ -18,15 +18,37 @@
         "--save-exact": null,
         "--no-save": null
     },
-    "list": {},
-    "search": {},
-    "show": {},
-    "reinstall": {},
-    "remove": {},
-    "autoremove": {},
-    "update": {},
-    "upgrade": {},
-    "full-upgrade": {},
-    "edit-sources": {},
-    "satisfy": {}
+    "list": {
+        "#desc": "list packages based on package names"
+    },
+    "search": {
+        "#desc": "search in package descriptions"
+    },
+    "show": {
+        "#desc": "show package details"
+    },
+    "reinstall": {
+        "#desc": "install packages"
+    },
+    "remove": {
+        "#desc": "reinstall packages"
+    },
+    "autoremove": {
+        "#desc": "Remove automatically all unused packages"
+    },
+    "update": {
+        "#desc": "update list of available packages"
+    },
+    "upgrade": {
+        "#desc": "upgrade the system by installing/upgrading packages"
+    },
+    "full-upgrade": {
+        "#desc": "upgrade the system by removing/installing/upgrading packages"
+    },
+    "edit-sources": {
+        "#desc": "edit the source information file"
+    },
+    "satisfy": {
+        "#desc": "satisfy dependency strings"
+    }
 }
