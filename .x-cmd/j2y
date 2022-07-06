@@ -1,0 +1,10 @@
+
+cd $(x wsroot)
+find src -name advise.json | while read -r line; do
+    dst="dst${line#src}"
+    dst="${dst%.json}.yml"
+    mkdir -p ${dst%/*}
+    x j2y $line $dst
+    # echo $line $dst
+done
+
