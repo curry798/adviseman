@@ -24,7 +24,7 @@
         "#desc": "class method names to ignore for coverage"
     },
     "--auto-wrap": {
-        "#desc": "allow \`return\` statements outside of functions"
+        "#desc": "allow `return` statements outside of functions"
     },
     "--es-modules": {
         "#desc": "should files be treated as ES Modules"
