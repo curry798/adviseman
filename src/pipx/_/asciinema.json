@@ -1,5 +1,9 @@
 {
   "#1": ["rec", "play", "cat", "upload", "auth"],
-  "-h|--help": null,
-  "--version": null
+  "-h|--help": {
+    "#desc": "show this help message and exit"
+  },
+  "--version": {
+    "#desc": "show program's version number and exit"
+  }
 }
