@@ -48,6 +48,7 @@
         "#desc": ""
     },
     "#n": {
-        "#desc": ""
+        "#desc": "",
+        "#exec": "___x_cmd_advise_man__list npx"
     }
 }
