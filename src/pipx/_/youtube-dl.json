@@ -1,159 +1,467 @@
 {
-    "#1": [],
-    "-h|--help": "--- Print this help text and exit",
-    "--version": "--- Print program version and exit",
-    "-U|--update": "--- Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)",
-    "-i|--ignore-errors": "--- Continue on download errors, for example to skip unavailable videos in a playlist",
-    "--abort-on-error": "--- Abort downloading of further videos (in the playlist or the command line) if an error occurs",
-    "--dump-user-agent": "--- Display the current browser identification",
-    "--list-extractors": "--- List all supported extractors",
-    "--extractor-descriptions": "--- Output descriptions of all supported extractors",
-    "--force-generic-extractor": "--- Force extraction to use the generic extractor",
-    "--default-search": [],
+    "#1": {
+        "#desc": ""
+    },
+    "-h|--help": {
+        "#desc": "Print this help text and exit"
+    },
+    "--version": {
+        "#desc": "Print program version and exit"
+    },
+    "-U|--update": {
+        "#desc": "Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)"
+    },
+    "-i|--ignore-errors": {
+        "#desc": "Continue on download errors, for example to skip unavailable videos in a playlist"
+    },
+    "--abort-on-error": {
+        "#desc": "Abort downloading of further videos (in the playlist or the command line) if an error occurs"
+    },
+    "--dump-user-agent": {
+        "#desc": "Display the current browser identification"
+    },
+    "--list-extractors": {
+        "#desc": "List all supported extractors"
+    },
+    "--extractor-descriptions": {
+        "#desc": "Output descriptions of all supported extractors"
+    },
+    "--force-generic-extractor": {
+        "#desc": "Force extraction to use the generic extractor"
+    },
+    "--default-search": {
+        "#desc": ""
+    },
     "--ignore-config": null,
-    "--config-location": [],
-    "--flat-playlist": "--- Do not extract the videos of a playlist, only list them.",
-    "--mark-watched": "--- Mark videos watched (YouTube only)",
-    "--no-mark-watched": "--- Do not mark videos watched (YouTube only)",
-    "--no-color": "--- Do not emit color codes in output",
-    "--proxy": [],
-    "--socket-timeout": [],
-    "--source-address": [],
-    "-4|--force-ipv4": "--- Make all connections via IPv4",
-    "-6|--force-ipv6": "--- Make all connections via IPv6",
-    "--geo-verification-proxy": [],
-    "--geo-bypass": "--- Bypass geographic restriction via faking X-Forwarded-For HTTP header",
-    "--no-geo-bypass": "--- Do not bypass geographic restriction via faking X-Forwarded-For HTTP header",
-    "--geo-bypass-country": [],
-    "--geo-bypass-ip-block": [],
-    "--playlist-start": [],
-    "--playlist-end": [],
-    "--playlist-items": [],
-    "--match-title": [],
-    "--reject-title": [],
-    "--max-downloads": [],
-    "--min-filesize": [],
-    "--max-filesize": [],
-    "--date": [],
-    "--datebefore": [],
-    "--dateafter": [],
-    "--min-views": [],
-    "--max-views": [],
-    "--match-filter ": [],
-    "--no-playlist": "--- Download only the video, if the URL refers to a video and a playlist.",
-    "--yes-playlist": "--- Download the playlist, if the URL refers to a video and a playlist.",
-    "--age-limit": [],
-    "--download-archive": [],
-    "--include-ads": "--- Download advertisements as well (experimental)",
-    "-r|--limit-rate": [],
-    "-R|--retries": [],
-    "--fragment-retries": [],
-    "--skip-unavailable-fragments": "--- Skip unavailable fragments (DASH, hlsnative and ISM)",
-    "--abort-on-unavailable-fragment": "--- Abort downloading when some fragment is not available",
-    "--keep-fragments": "--- Keep downloaded fragments on disk after downloading is finished; fragments are erased by default",
-    "--buffer-size": [],
-    "--no-resize-buffer": "--- Do not automatically adjust the buffer size. By default, the buffer size is automatically resized from an initial value of SIZE.",
-    "--http-chunk-size": [],
-    "--playlist-reverse": "--- Download playlist videos in reverse order",
-    "--playlist-random": "--- Download playlist videos in random order",
-    "--xattr-set-filesize": "--- Set file xattribute ytdl.filesize with expected file size",
-    "--hls-prefer-native": "--- Use the native HLS downloader instead of ffmpeg",
-    "--hls-prefer-ffmpeg": "--- Use ffmpeg instead of the native HLS downloader",
-    "--hls-use-mpegts": "--- Use the mpegts container for HLS videos, allowing to play the video while downloading (some players may not be able to play it)",
-    "--external-downloader": [],
-    "--external-downloader-args": [],
-    "-a|--batch-file": [],
-    "--id": "--- Use only video ID in file name",
-    "-o|--output": [],
-    "--output-na-placeholder": [],
-    "--autonumber-start": [],
-    "--restrict-filenames": "--- Restrict filenames to only ASCII characters, and avoid \" & \" and spaces in filenames",
-    "-w|--no-overwrites": "--- Do not overwrite files",
-    "-c|--continue": "--- Force resume of partially downloaded files. By default, youtube-dl will resume downloads if possible.",
-    "--no-continue": "--- Do not resume partially downloaded files (restart from beginning)",
-    "--no-part": "--- Do not use .part files - write directly into output file",
-    "--no-mtime": "--- Do not use the Last-modified header to set the file modification time",
-    "--write-description": "--- Write video description to a .description file",
-    "--write-info-json": "--- Write video metadata to a .info.json file",
-    "--write-annotations": "--- Write video annotations to a .annotations.xml file",
-    "--load-info-json": [],
-    "--cookies": [],
-    "--cache-dir": [],
-    "--no-cache-dir": "--- Disable filesystem caching",
-    "--rm-cache-dir": "--- Delete all filesystem cache files",
-    "--write-thumbnail": "--- Write thumbnail image to disk",
-    "--write-all-thumbnails": "--- Write all thumbnail image formats to disk",
-    "--list-thumbnails": "--- Simulate and list all available thumbnail formats",
-    "-q|--quiet": "--- Activate quiet mode",
-    "--no-warnings": "--- Ignore warnings",
-    "-s|--simulate": "--- Do not download the video and do not write anything to disk",
-    "--skip-download": "--- Do not download the video",
-    "-g|--get-url": "--- Simulate, quiet but print URL",
-    "-e|--get-title": "--- Simulate, quiet but print title",
-    "--get-id": "--- Simulate, quiet but print id",
-    "--get-thumbnail": "--- Simulate, quiet but print thumbnail URL",
-    "--get-description": "--- Simulate, quiet but print video description",
-    "--get-duration": "--- Simulate, quiet but print video length",
-    "--get-filename": "--- Simulate, quiet but print output filename",
-    "--get-format": "--- Simulate, quiet but print output format",
-    "-j|--dump-json": "--- Simulate, quiet but print JSON information.",
+    "--config-location": {
+        "#desc": ""
+    },
+    "--flat-playlist": {
+        "#desc": "Do not extract the videos of a playlist, only list them."
+    },
+    "--mark-watched": {
+        "#desc": "Mark videos watched (YouTube only)"
+    },
+    "--no-mark-watched": {
+        "#desc": "Do not mark videos watched (YouTube only)"
+    },
+    "--no-color": {
+        "#desc": "Do not emit color codes in output"
+    },
+    "--proxy": {
+        "#desc": ""
+    },
+    "--socket-timeout": {
+        "#desc": ""
+    },
+    "--source-address": {
+        "#desc": ""
+    },
+    "-4|--force-ipv4": {
+        "#desc": "Make all connections via IPv4"
+    },
+    "-6|--force-ipv6": {
+        "#desc": "Make all connections via IPv6"
+    },
+    "--geo-verification-proxy": {
+        "#desc": ""
+    },
+    "--geo-bypass": {
+        "#desc": "Bypass geographic restriction via faking X-Forwarded-For HTTP header"
+    },
+    "--no-geo-bypass": {
+        "#desc": "Do not bypass geographic restriction via faking X-Forwarded-For HTTP header"
+    },
+    "--geo-bypass-country": {
+        "#desc": ""
+    },
+    "--geo-bypass-ip-block": {
+        "#desc": ""
+    },
+    "--playlist-start": {
+        "#desc": ""
+    },
+    "--playlist-end": {
+        "#desc": ""
+    },
+    "--playlist-items": {
+        "#desc": ""
+    },
+    "--match-title": {
+        "#desc": ""
+    },
+    "--reject-title": {
+        "#desc": ""
+    },
+    "--max-downloads": {
+        "#desc": ""
+    },
+    "--min-filesize": {
+        "#desc": ""
+    },
+    "--max-filesize": {
+        "#desc": ""
+    },
+    "--date": {
+        "#desc": ""
+    },
+    "--datebefore": {
+        "#desc": ""
+    },
+    "--dateafter": {
+        "#desc": ""
+    },
+    "--min-views": {
+        "#desc": ""
+    },
+    "--max-views": {
+        "#desc": ""
+    },
+    "--match-filter ": {
+        "#desc": ""
+    },
+    "--no-playlist": {
+        "#desc": "Download only the video, if the URL refers to a video and a playlist."
+    },
+    "--yes-playlist": {
+        "#desc": "Download the playlist, if the URL refers to a video and a playlist."
+    },
+    "--age-limit": {
+        "#desc": ""
+    },
+    "--download-archive": {
+        "#desc": ""
+    },
+    "--include-ads": {
+        "#desc": "Download advertisements as well (experimental)"
+    },
+    "-r|--limit-rate": {
+        "#desc": ""
+    },
+    "-R|--retries": {
+        "#desc": ""
+    },
+    "--fragment-retries": {
+        "#desc": ""
+    },
+    "--skip-unavailable-fragments": {
+        "#desc": "Skip unavailable fragments (DASH, hlsnative and ISM)"
+    },
+    "--abort-on-unavailable-fragment": {
+        "#desc": "Abort downloading when some fragment is not available"
+    },
+    "--keep-fragments": {
+        "#desc": "Keep downloaded fragments on disk after downloading is finished; fragments are erased by default"
+    },
+    "--buffer-size": {
+        "#desc": ""
+    },
+    "--no-resize-buffer": {
+        "#desc": "Do not automatically adjust the buffer size. By default, the buffer size is automatically resized from an initial value of SIZE."
+    },
+    "--http-chunk-size": {
+        "#desc": ""
+    },
+    "--playlist-reverse": {
+        "#desc": "Download playlist videos in reverse order"
+    },
+    "--playlist-random": {
+        "#desc": "Download playlist videos in random order"
+    },
+    "--xattr-set-filesize": {
+        "#desc": "Set file xattribute ytdl.filesize with expected file size"
+    },
+    "--hls-prefer-native": {
+        "#desc": "Use the native HLS downloader instead of ffmpeg"
+    },
+    "--hls-prefer-ffmpeg": {
+        "#desc": "Use ffmpeg instead of the native HLS downloader"
+    },
+    "--hls-use-mpegts": {
+        "#desc": "Use the mpegts container for HLS videos, allowing to play the video while downloading (some players may not be able to play it)"
+    },
+    "--external-downloader": {
+        "#desc": ""
+    },
+    "--external-downloader-args": {
+        "#desc": ""
+    },
+    "-a|--batch-file": {
+        "#desc": ""
+    },
+    "--id": {
+        "#desc": "Use only video ID in file name"
+    },
+    "-o|--output": {
+        "#desc": ""
+    },
+    "--output-na-placeholder": {
+        "#desc": ""
+    },
+    "--autonumber-start": {
+        "#desc": ""
+    },
+    "--restrict-filenames": {
+        "#desc": "Restrict filenames to only ASCII characters, and avoid \" & \" and spaces in filenames"
+    },
+    "-w|--no-overwrites": {
+        "#desc": "Do not overwrite files"
+    },
+    "-c|--continue": {
+        "#desc": "Force resume of partially downloaded files. By default, youtube-dl will resume downloads if possible."
+    },
+    "--no-continue": {
+        "#desc": "Do not resume partially downloaded files (restart from beginning)"
+    },
+    "--no-part": {
+        "#desc": "Do not use .part files - write directly into output file"
+    },
+    "--no-mtime": {
+        "#desc": "Do not use the Last-modified header to set the file modification time"
+    },
+    "--write-description": {
+        "#desc": "Write video description to a .description file"
+    },
+    "--write-info-json": {
+        "#desc": "Write video metadata to a .info.json file"
+    },
+    "--write-annotations": {
+        "#desc": "Write video annotations to a .annotations.xml file"
+    },
+    "--load-info-json": {
+        "#desc": ""
+    },
+    "--cookies": {
+        "#desc": ""
+    },
+    "--cache-dir": {
+        "#desc": ""
+    },
+    "--no-cache-dir": {
+        "#desc": "Disable filesystem caching"
+    },
+    "--rm-cache-dir": {
+        "#desc": "Delete all filesystem cache files"
+    },
+    "--write-thumbnail": {
+        "#desc": "Write thumbnail image to disk"
+    },
+    "--write-all-thumbnails": {
+        "#desc": "Write all thumbnail image formats to disk"
+    },
+    "--list-thumbnails": {
+        "#desc": "Simulate and list all available thumbnail formats"
+    },
+    "-q|--quiet": {
+        "#desc": "Activate quiet mode"
+    },
+    "--no-warnings": {
+        "#desc": "Ignore warnings"
+    },
+    "-s|--simulate": {
+        "#desc": "Do not download the video and do not write anything to disk"
+    },
+    "--skip-download": {
+        "#desc": "Do not download the video"
+    },
+    "-g|--get-url": {
+        "#desc": "Simulate, quiet but print URL"
+    },
+    "-e|--get-title": {
+        "#desc": "Simulate, quiet but print title"
+    },
+    "--get-id": {
+        "#desc": "Simulate, quiet but print id"
+    },
+    "--get-thumbnail": {
+        "#desc": "Simulate, quiet but print thumbnail URL"
+    },
+    "--get-description": {
+        "#desc": "Simulate, quiet but print video description"
+    },
+    "--get-duration": {
+        "#desc": "Simulate, quiet but print video length"
+    },
+    "--get-filename": {
+        "#desc": "Simulate, quiet but print output filename"
+    },
+    "--get-format": {
+        "#desc": "Simulate, quiet but print output format"
+    },
+    "-j|--dump-json": {
+        "#desc": "Simulate, quiet but print JSON information."
+    },
     "-J|--dump-single-json": null,
-    "--print-json": "--- Be quiet and print the video information as JSON",
-    "--newline": "--- Output progress bar as new lines",
-    "--no-progress": "--- Do not print progress bar",
-    "--console-title": "--- Display progress in console titlebar",
-    "-v|--verbose": "--- Print various debugging information",
-    "--dump-pages": "--- Print downloaded pages encoded using base64 to debug problems",
-    "--write-pages": "--- Write downloaded intermediary pages to files in the current directory to debug problems",
-    "--print-traffic": "--- Display sent and read HTTP traffic",
-    "-C|--call-home": "--- Contact the youtube-dl server for debugging",
-    "--no-call-home": "--- Do NOT contact the youtube-dl server for debugging",
-    "--encoding": [],
-    "--no-check-certificate": "--- Suppress HTTPS certificate validation",
-    "--prefer-insecure": "--- Use an unencrypted connection to retrieve information about the video.",
-    "--user-agent": [],
-    "--referer": [],
-    "--add-header": [],
-    "--bidi-workaround": "--- Work around terminals that lack bidirectional text support. Requires bidiv or fribidi executable in PATH",
-    "--sleep-interval": [],
-    "--max-sleep-interval": [],
-    "-f|--format": [],
-    "--all-formats": "--- Download all available video formats",
-    "--prefer-free-formats": "--- Prefer free video formats unless a specific one is requested",
-    "-F|--list-formats": "--- List all available formats of requested videos",
-    "--youtube-skip-dash-manifest": "--- Do not download the DASH manifests and related data on YouTube videos",
-    "--merge-output-format": [],
-    "--write-sub": "--- Write subtitle file",
-    "--write-auto-sub": "--- Write automatically generated subtitle file (YouTube only)",
-    "--all-subs": "--- Download all the available subtitles of the video",
-    "--list-subs": "--- List all available subtitles for the video",
-    "--sub-format": [],
-    "--sub-lang": [],
-    "-u|--username": [],
-    "-p|--password": [],
-    "-2|--twofactor": [],
-    "-n|--netrc": "--- Use .netrc authentication data",
-    "--video-password": [],
-    "--ap-mso": [],
-    "--ap-username": [],
-    "--ap-password": [],
-    "--ap-list-mso": "--- List all supported multiple-system operators",
-    "-x|--extract-audio": "--- Convert video files to audio-only files",
-    "--audio-format": [],
-    "--audio-quality": [],
-    "--recode-video": [],
-    "--postprocessor-args": [],
-    "-k|--keep-video": "--- Keep the video file on disk after the post-processing; the video is erased by default",
-    "--no-post-overwrites": "--- Do not overwrite post-processed files; the post-processed files are overwritten by default",
-    "--embed-subs": "--- Embed subtitles in the video",
-    "--embed-thumbnail": "--- Embed thumbnail in the audio as cover art",
-    "--add-metadata": "--- Write metadata to the video file",
-    "--metadata-from-title": [],
-    "--xattrs": "--- Write metadata to the video files xattrs",
-    "--fixup": [],
-    "--prefer-avconv": "--- Prefer avconv over ffmpeg for running the postprocessors",
-    "--prefer-ffmpeg": "--- Prefer ffmpeg over avconv for running the postprocessors (default)",
-    "--ffmpeg-location": [],
-    "--exec": [],
+    "--print-json": {
+        "#desc": "Be quiet and print the video information as JSON"
+    },
+    "--newline": {
+        "#desc": "Output progress bar as new lines"
+    },
+    "--no-progress": {
+        "#desc": "Do not print progress bar"
+    },
+    "--console-title": {
+        "#desc": "Display progress in console titlebar"
+    },
+    "-v|--verbose": {
+        "#desc": "Print various debugging information"
+    },
+    "--dump-pages": {
+        "#desc": "Print downloaded pages encoded using base64 to debug problems"
+    },
+    "--write-pages": {
+        "#desc": "Write downloaded intermediary pages to files in the current directory to debug problems"
+    },
+    "--print-traffic": {
+        "#desc": "Display sent and read HTTP traffic"
+    },
+    "-C|--call-home": {
+        "#desc": "Contact the youtube-dl server for debugging"
+    },
+    "--no-call-home": {
+        "#desc": "Do NOT contact the youtube-dl server for debugging"
+    },
+    "--encoding": {
+        "#desc": ""
+    },
+    "--no-check-certificate": {
+        "#desc": "Suppress HTTPS certificate validation"
+    },
+    "--prefer-insecure": {
+        "#desc": "Use an unencrypted connection to retrieve information about the video."
+    },
+    "--user-agent": {
+        "#desc": ""
+    },
+    "--referer": {
+        "#desc": ""
+    },
+    "--add-header": {
+        "#desc": ""
+    },
+    "--bidi-workaround": {
+        "#desc": "Work around terminals that lack bidirectional text support. Requires bidiv or fribidi executable in PATH"
+    },
+    "--sleep-interval": {
+        "#desc": ""
+    },
+    "--max-sleep-interval": {
+        "#desc": ""
+    },
+    "-f|--format": {
+        "#desc": ""
+    },
+    "--all-formats": {
+        "#desc": "Download all available video formats"
+    },
+    "--prefer-free-formats": {
+        "#desc": "Prefer free video formats unless a specific one is requested"
+    },
+    "-F|--list-formats": {
+        "#desc": "List all available formats of requested videos"
+    },
+    "--youtube-skip-dash-manifest": {
+        "#desc": "Do not download the DASH manifests and related data on YouTube videos"
+    },
+    "--merge-output-format": {
+        "#desc": ""
+    },
+    "--write-sub": {
+        "#desc": "Write subtitle file"
+    },
+    "--write-auto-sub": {
+        "#desc": "Write automatically generated subtitle file (YouTube only)"
+    },
+    "--all-subs": {
+        "#desc": "Download all the available subtitles of the video"
+    },
+    "--list-subs": {
+        "#desc": "List all available subtitles for the video"
+    },
+    "--sub-format": {
+        "#desc": ""
+    },
+    "--sub-lang": {
+        "#desc": ""
+    },
+    "-u|--username": {
+        "#desc": ""
+    },
+    "-p|--password": {
+        "#desc": ""
+    },
+    "-2|--twofactor": {
+        "#desc": ""
+    },
+    "-n|--netrc": {
+        "#desc": "Use .netrc authentication data"
+    },
+    "--video-password": {
+        "#desc": ""
+    },
+    "--ap-mso": {
+        "#desc": ""
+    },
+    "--ap-username": {
+        "#desc": ""
+    },
+    "--ap-password": {
+        "#desc": ""
+    },
+    "--ap-list-mso": {
+        "#desc": "List all supported multiple-system operators"
+    },
+    "-x|--extract-audio": {
+        "#desc": "Convert video files to audio-only files"
+    },
+    "--audio-format": {
+        "#desc": ""
+    },
+    "--audio-quality": {
+        "#desc": ""
+    },
+    "--recode-video": {
+        "#desc": ""
+    },
+    "--postprocessor-args": {
+        "#desc": ""
+    },
+    "-k|--keep-video": {
+        "#desc": "Keep the video file on disk after the post-processing; the video is erased by default"
+    },
+    "--no-post-overwrites": {
+        "#desc": "Do not overwrite post-processed files; the post-processed files are overwritten by default"
+    },
+    "--embed-subs": {
+        "#desc": "Embed subtitles in the video"
+    },
+    "--embed-thumbnail": {
+        "#desc": "Embed thumbnail in the audio as cover art"
+    },
+    "--add-metadata": {
+        "#desc": "Write metadata to the video file"
+    },
+    "--metadata-from-title": {
+        "#desc": ""
+    },
+    "--xattrs": {
+        "#desc": "Write metadata to the video files xattrs"
+    },
+    "--fixup": {
+        "#desc": ""
+    },
+    "--prefer-avconv": {
+        "#desc": "Prefer avconv over ffmpeg for running the postprocessors"
+    },
+    "--prefer-ffmpeg": {
+        "#desc": "Prefer ffmpeg over avconv for running the postprocessors (default)"
+    },
+    "--ffmpeg-location": {
+        "#desc": ""
+    },
+    "--exec": {
+        "#desc": ""
+    },
     "--convert-subs": []
 }

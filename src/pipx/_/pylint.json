@@ -1,151 +1,429 @@
 {
-    "-h|--help": "--- show this help message and exit",
-    "--rcfile": [],
-    "--output": [],
-    "--help-msg": [],
-    "--list-msgs": "--- Display a list of all pylint's messages divided by whether they are emittable with the given interpreter.",
-    "--list-msgs-enabled": "--- Display a list of what messages are enabled, disabled and non-emittable with the given configuration.",
-    "--list-groups": "--- List pylint's message groups.",
-    "--list-conf-levels": "--- Generate pylint's confidence levels.",
-    "--list-extensions": "--- List available extensions.",
-    "--full-documentation": "--- Generate pylint's full documentation.",
-    "--generate-rcfile": "--- Generate a sample configuration file according to the current configuration.",
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "--rcfile": {
+        "#desc": ""
+    },
+    "--output": {
+        "#desc": ""
+    },
+    "--help-msg": {
+        "#desc": ""
+    },
+    "--list-msgs": {
+        "#desc": "Display a list of all pylint's messages divided by whether they are emittable with the given interpreter."
+    },
+    "--list-msgs-enabled": {
+        "#desc": "Display a list of what messages are enabled, disabled and non-emittable with the given configuration."
+    },
+    "--list-groups": {
+        "#desc": "List pylint's message groups."
+    },
+    "--list-conf-levels": {
+        "#desc": "Generate pylint's confidence levels."
+    },
+    "--list-extensions": {
+        "#desc": "List available extensions."
+    },
+    "--full-documentation": {
+        "#desc": "Generate pylint's full documentation."
+    },
+    "--generate-rcfile": {
+        "#desc": "Generate a sample configuration file according to the current configuration."
+    },
     "--generate-toml-config": null,
-    "--long-help": "--- Show more verbose help.",
-    "--init-hook": [],
-    "--errors-only|-E": "--- In error mode, checkers without error messages are disabled and for others, only the ERROR messages are displayed, and no reports are done by default.",
-    "--verbose |-v": "--- In verbose mode, extra non-checker-related info will be displayed.",
+    "--long-help": {
+        "#desc": "Show more verbose help."
+    },
+    "--init-hook": {
+        "#desc": ""
+    },
+    "--errors-only|-E": {
+        "#desc": "In error mode, checkers without error messages are disabled and for others, only the ERROR messages are displayed, and no reports are done by default."
+    },
+    "--verbose |-v": {
+        "#desc": "In verbose mode, extra non-checker-related info will be displayed."
+    },
     "--enable-all-extensions": null,
-    "--ignore": [],
-    "--ignore-patterns": [],
-    "--ignore-paths": [],
-    "--persistent": [],
-    "--load-plugins": [],
-    "--fail-under": [],
-    "--fail-on": [],
-    "--jobs|-j": [],
-    "--limit-inference-results": [],
-    "--extension-pkg-allow-list": [],
-    "--extension-pkg-whitelist": [],
-    "--suggestion-mode": [],
-    "--exit-zero": "--- Always return a 0 (non-error) status code, even if lint errors are found.",
-    "--from-stdin": "--- Interpret the stdin as a python script, whose filename needs to be passed as the module_or_package argument.",
-    "--recursive": [],
-    "--py-version": [],
-    "--ignored-modules": [],
-    "--analyse-fallback-blocks": [],
-    "--output-format|-f": [],
-    "--reports|-r": [],
-    "--evaluation": [],
-    "--score|-s": [],
-    "--msg-template": [],
-    "--confidence ": [],
-    "--enable|-e": [],
-    "--disable|-d": [],
-    "--check-str-concat-over-line-jumps": [],
-    "--check-quote-consistency": [],
-    "--min-similarity-lines": [],
-    "--ignore-comments": [],
-    "--ignore-docstrings": [],
-    "--ignore-imports": [],
-    "--ignore-signatures": [],
+    "--ignore": {
+        "#desc": ""
+    },
+    "--ignore-patterns": {
+        "#desc": ""
+    },
+    "--ignore-paths": {
+        "#desc": ""
+    },
+    "--persistent": {
+        "#desc": ""
+    },
+    "--load-plugins": {
+        "#desc": ""
+    },
+    "--fail-under": {
+        "#desc": ""
+    },
+    "--fail-on": {
+        "#desc": ""
+    },
+    "--jobs|-j": {
+        "#desc": ""
+    },
+    "--limit-inference-results": {
+        "#desc": ""
+    },
+    "--extension-pkg-allow-list": {
+        "#desc": ""
+    },
+    "--extension-pkg-whitelist": {
+        "#desc": ""
+    },
+    "--suggestion-mode": {
+        "#desc": ""
+    },
+    "--exit-zero": {
+        "#desc": "Always return a 0 (non-error) status code, even if lint errors are found."
+    },
+    "--from-stdin": {
+        "#desc": "Interpret the stdin as a python script, whose filename needs to be passed as the module_or_package argument."
+    },
+    "--recursive": {
+        "#desc": ""
+    },
+    "--py-version": {
+        "#desc": ""
+    },
+    "--ignored-modules": {
+        "#desc": ""
+    },
+    "--analyse-fallback-blocks": {
+        "#desc": ""
+    },
+    "--output-format|-f": {
+        "#desc": ""
+    },
+    "--reports|-r": {
+        "#desc": ""
+    },
+    "--evaluation": {
+        "#desc": ""
+    },
+    "--score|-s": {
+        "#desc": ""
+    },
+    "--msg-template": {
+        "#desc": ""
+    },
+    "--confidence ": {
+        "#desc": ""
+    },
+    "--enable|-e": {
+        "#desc": ""
+    },
+    "--disable|-d": {
+        "#desc": ""
+    },
+    "--check-str-concat-over-line-jumps": {
+        "#desc": ""
+    },
+    "--check-quote-consistency": {
+        "#desc": ""
+    },
+    "--min-similarity-lines": {
+        "#desc": ""
+    },
+    "--ignore-comments": {
+        "#desc": ""
+    },
+    "--ignore-docstrings": {
+        "#desc": ""
+    },
+    "--ignore-imports": {
+        "#desc": ""
+    },
+    "--ignore-signatures": {
+        "#desc": ""
+    },
     "--good-names": ["i", "j", "k", "ex", "Run", "_"],
-    "--good-names-rgxs": [],
+    "--good-names-rgxs": {
+        "#desc": ""
+    },
     "--bad-names": ["foo", "bar", "baz", "toto", "tutu", "tata"],
-    "--bad-names-rgxs": [],
-    "--name-group": [],
-    "--include-naming-hint": [],
-    "--property-classes": [],
-    "--argument-naming-style": [],
-    "--argument-rgx": [],
-    "--attr-naming-style": [],
-    "--attr-rgx": [],
-    "--class-naming-style": [],
-    "--class-rgx": [],
-    "--class-attribute-naming-style": [],
-    "--class-attribute-rgx": [],
-    "--class-const-naming-style": [],
-    "--class-const-rgx": [],
-    "--const-naming-style": [],
-    "--const-rgx": [],
-    "--function-naming-style": [],
-    "--function-rgx": [],
-    "--inlinevar-naming-style": [],
-    "--inlinevar-rgx": [],
-    "--method-naming-style": [],
-    "--method-rgx": [],
-    "--module-naming-style": [],
-    "--module-rgx": [],
-    "--typevar-rgx": [],
-    "--variable-naming-style": [],
-    "--variable-rgx": [],
-    "--no-docstring-rgx": [],
-    "--docstring-min-length": [],
-    "--init-import": [],
-    "--dummy-variables-rgx": [],
-    "--additional-builtins": [],
-    "--callbacks": [],
+    "--bad-names-rgxs": {
+        "#desc": ""
+    },
+    "--name-group": {
+        "#desc": ""
+    },
+    "--include-naming-hint": {
+        "#desc": ""
+    },
+    "--property-classes": {
+        "#desc": ""
+    },
+    "--argument-naming-style": {
+        "#desc": ""
+    },
+    "--argument-rgx": {
+        "#desc": ""
+    },
+    "--attr-naming-style": {
+        "#desc": ""
+    },
+    "--attr-rgx": {
+        "#desc": ""
+    },
+    "--class-naming-style": {
+        "#desc": ""
+    },
+    "--class-rgx": {
+        "#desc": ""
+    },
+    "--class-attribute-naming-style": {
+        "#desc": ""
+    },
+    "--class-attribute-rgx": {
+        "#desc": ""
+    },
+    "--class-const-naming-style": {
+        "#desc": ""
+    },
+    "--class-const-rgx": {
+        "#desc": ""
+    },
+    "--const-naming-style": {
+        "#desc": ""
+    },
+    "--const-rgx": {
+        "#desc": ""
+    },
+    "--function-naming-style": {
+        "#desc": ""
+    },
+    "--function-rgx": {
+        "#desc": ""
+    },
+    "--inlinevar-naming-style": {
+        "#desc": ""
+    },
+    "--inlinevar-rgx": {
+        "#desc": ""
+    },
+    "--method-naming-style": {
+        "#desc": ""
+    },
+    "--method-rgx": {
+        "#desc": ""
+    },
+    "--module-naming-style": {
+        "#desc": ""
+    },
+    "--module-rgx": {
+        "#desc": ""
+    },
+    "--typevar-rgx": {
+        "#desc": ""
+    },
+    "--variable-naming-style": {
+        "#desc": ""
+    },
+    "--variable-rgx": {
+        "#desc": ""
+    },
+    "--no-docstring-rgx": {
+        "#desc": ""
+    },
+    "--docstring-min-length": {
+        "#desc": ""
+    },
+    "--init-import": {
+        "#desc": ""
+    },
+    "--dummy-variables-rgx": {
+        "#desc": ""
+    },
+    "--additional-builtins": {
+        "#desc": ""
+    },
+    "--callbacks": {
+        "#desc": ""
+    },
     "--redefining-builtins-modules": ["six.moves", "past.builtins", "future.builtins", "builtins", "io"],
-    "--ignored-argument-names": [],
-    "--allow-global-unused-variables": [],
-    "--allowed-redefined-builtins": [],
-    "--max-line-length": [],
-    "--ignore-long-lines": [],
-    "--single-line-if-stmt": [],
-    "--single-line-class-stmt": [],
-    "--max-module-lines": [],
-    "--indent-string": [],
-    "--indent-after-paren": [],
-    "--expected-line-ending-format": [],
-    "--notes": [],
-    "--notes-rgx": [],
+    "--ignored-argument-names": {
+        "#desc": ""
+    },
+    "--allow-global-unused-variables": {
+        "#desc": ""
+    },
+    "--allowed-redefined-builtins": {
+        "#desc": ""
+    },
+    "--max-line-length": {
+        "#desc": ""
+    },
+    "--ignore-long-lines": {
+        "#desc": ""
+    },
+    "--single-line-if-stmt": {
+        "#desc": ""
+    },
+    "--single-line-class-stmt": {
+        "#desc": ""
+    },
+    "--max-module-lines": {
+        "#desc": ""
+    },
+    "--indent-string": {
+        "#desc": ""
+    },
+    "--indent-after-paren": {
+        "#desc": ""
+    },
+    "--expected-line-ending-format": {
+        "#desc": ""
+    },
+    "--notes": {
+        "#desc": ""
+    },
+    "--notes-rgx": {
+        "#desc": ""
+    },
     "--defining-attr-methods": ["__init__", "__new__", "setUp", "__post_init__"],
-    "--valid-classmethod-first-arg": [],
-    "--valid-metaclass-classmethod-first-arg": [],
+    "--valid-classmethod-first-arg": {
+        "#desc": ""
+    },
+    "--valid-metaclass-classmethod-first-arg": {
+        "#desc": ""
+    },
     "--exclude-protected": ["_asdict", "_fields", "_replace", "_source", "_make"],
-    "--check-protected-access-in-special-methods": [],
-    "--spelling-dict": [],
-    "--spelling-ignore-words": [],
-    "--spelling-private-dict-file": [],
-    "--spelling-store-unknown-words": [],
-    "--max-spelling-suggestions": [],
-    "--spelling-ignore-comment-directives": [],
-    "--max-nested-blocks": [],
-    "--never-returning-functions": [],
-    "--overgeneral-exceptions": [],
-    "--max-args": [],
-    "--max-locals": [],
-    "--max-returns": [],
-    "--max-branches": [],
-    "--max-statements": [],
-    "--max-parents": [],
-    "--ignored-parents": [],
-    "--max-attributes": [],
-    "--min-public-methods": [],
-    "--max-public-methods": [],
-    "--max-bool-expr": [],
-    "--exclude-too-few-public-methods": [],
-    "--deprecated-modules": [],
-    "--preferred-modules": [],
-    "--import-graph": [],
-    "--ext-import-graph": [],
-    "--int-import-graph": [],
-    "--known-standard-library": [],
-    "--known-third-party": [],
-    "--allow-any-import-level": [],
-    "--allow-wildcard-with-all": [],
-    "--logging-modules": [],
-    "--logging-format-style": [],
-    "--ignore-on-opaque-inference": [],
-    "--mixin-class-rgx": [],
-    "--ignore-mixin-members": [],
+    "--check-protected-access-in-special-methods": {
+        "#desc": ""
+    },
+    "--spelling-dict": {
+        "#desc": ""
+    },
+    "--spelling-ignore-words": {
+        "#desc": ""
+    },
+    "--spelling-private-dict-file": {
+        "#desc": ""
+    },
+    "--spelling-store-unknown-words": {
+        "#desc": ""
+    },
+    "--max-spelling-suggestions": {
+        "#desc": ""
+    },
+    "--spelling-ignore-comment-directives": {
+        "#desc": ""
+    },
+    "--max-nested-blocks": {
+        "#desc": ""
+    },
+    "--never-returning-functions": {
+        "#desc": ""
+    },
+    "--overgeneral-exceptions": {
+        "#desc": ""
+    },
+    "--max-args": {
+        "#desc": ""
+    },
+    "--max-locals": {
+        "#desc": ""
+    },
+    "--max-returns": {
+        "#desc": ""
+    },
+    "--max-branches": {
+        "#desc": ""
+    },
+    "--max-statements": {
+        "#desc": ""
+    },
+    "--max-parents": {
+        "#desc": ""
+    },
+    "--ignored-parents": {
+        "#desc": ""
+    },
+    "--max-attributes": {
+        "#desc": ""
+    },
+    "--min-public-methods": {
+        "#desc": ""
+    },
+    "--max-public-methods": {
+        "#desc": ""
+    },
+    "--max-bool-expr": {
+        "#desc": ""
+    },
+    "--exclude-too-few-public-methods": {
+        "#desc": ""
+    },
+    "--deprecated-modules": {
+        "#desc": ""
+    },
+    "--preferred-modules": {
+        "#desc": ""
+    },
+    "--import-graph": {
+        "#desc": ""
+    },
+    "--ext-import-graph": {
+        "#desc": ""
+    },
+    "--int-import-graph": {
+        "#desc": ""
+    },
+    "--known-standard-library": {
+        "#desc": ""
+    },
+    "--known-third-party": {
+        "#desc": ""
+    },
+    "--allow-any-import-level": {
+        "#desc": ""
+    },
+    "--allow-wildcard-with-all": {
+        "#desc": ""
+    },
+    "--logging-modules": {
+        "#desc": ""
+    },
+    "--logging-format-style": {
+        "#desc": ""
+    },
+    "--ignore-on-opaque-inference": {
+        "#desc": ""
+    },
+    "--mixin-class-rgx": {
+        "#desc": ""
+    },
+    "--ignore-mixin-members": {
+        "#desc": ""
+    },
     "--ignored-checks-for-mixins": ["no-member", "not-async-context-manager", "not-context-manager", "attribute-defined-outside-init"],
-    "--ignore-none": [],
+    "--ignore-none": {
+        "#desc": ""
+    },
     "--ignored-classes": ["optparse.Values", "thread._local", "_thread._local", "argparse.Namespace"],
-    "--generated-members": [],
-    "--contextmanager-decorators": [],
-    "--missing-member-hint-distance": [],
-    "--missing-member-max-choices": [],
-    "--missing-member-hint": [],
+    "--generated-members": {
+        "#desc": ""
+    },
+    "--contextmanager-decorators": {
+        "#desc": ""
+    },
+    "--missing-member-hint-distance": {
+        "#desc": ""
+    },
+    "--missing-member-max-choices": {
+        "#desc": ""
+    },
+    "--missing-member-hint": {
+        "#desc": ""
+    },
     "--signature-mutators": []
 }

@@ -1,10 +1,22 @@
 {
-    "#1": [],
-    "--version": "--- show program's version number and exit",
-    "-h|--help": "--- show this help message and exit",
-    "--list-locales": "--- print all known locales and exit",
-    "-v|--verbose": "--- print as much as possible",
-    "-q|--quiet": "--- print as little as possible",
+    "#1": {
+        "#desc": ""
+    },
+    "--version": {
+        "#desc": "show program's version number and exit"
+    },
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "--list-locales": {
+        "#desc": "print all known locales and exit"
+    },
+    "-v|--verbose": {
+        "#desc": "print as much as possible"
+    },
+    "-q|--quiet": {
+        "#desc": "print as little as possible"
+    },
     "compile": {
         "#desc": "compile message catalogs to MO files"
     },

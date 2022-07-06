@@ -1,22 +1,61 @@
 {
-    "#1": [],
-    "--where": "--- Output project home information.",
-    "--venv": "--- Output virtualenv information.",
-    "--py": "--- Output Python interpreter information.",
-    "--envs": "--- Output Environment Variable options.",
-    "--rm": "--- Remove the virtualenv.",
-    "--bare": "--- Minimal output.",
-    "--man": "--- Display manpage.",
-    "--support": "--- Output diagnostic information for use in GitHub issues.",
-    "--site-packages|--no-site-packages": [],
-    "--python": [],
-    "--three": "--- Use Python 3 when creating virtualenv.",
-    "--clear": "--- Clears caches",
-    "-q|--quiet": "--- Quiet mode.",
-    "-v|--verbose": "--- Verbose mode.",
-    "--pypi-mirror": [],
-    "--version": "--- Show the version and exit.",
-    "-h|--help": "--- Show this message and exit.",
+    "--where": {
+        "#desc": "Output project home information."
+    },
+    "--venv": {
+        "#desc": "Output virtualenv information."
+    },
+    "--py": {
+        "#desc": "Output Python interpreter information."
+    },
+    "--envs": {
+        "#desc": "Output Environment Variable options."
+    },
+    "--rm": {
+        "#desc": "Remove the virtualenv."
+    },
+    "--bare": {
+        "#desc": "Minimal output."
+    },
+    "--man": {
+        "#desc": "Display manpage."
+    },
+    "--support": {
+        "#desc": "Output diagnostic information for use in GitHub issues."
+    },
+    "--site-packages|--no-site-packages": {
+        "#desc": "Enable site-packages for the virtualenv.[env var: PIPENV_SITE_PACKAGES]"
+    },
+    "--python": {
+        "#desc": "Specify which version of Python virtualenv should use.",
+        "#1": {
+            "#desc": "TEXT"
+        }
+    },
+    "--three": {
+        "#desc": "Use Python 3 when creating virtualenv."
+    },
+    "--clear": {
+        "#desc": "Clears caches (pipenv, pip).  [env var:PIPENV_CLEAR]"
+    },
+    "-q|--quiet": {
+        "#desc": "Quiet mode."
+    },
+    "-v|--verbose": {
+        "#desc": "Verbose mode."
+    },
+    "--pypi-mirror": {
+        "#desc": "Specify a PyPI mirror.",
+        "#1": {
+            "#desc": "TEXT"
+        }
+    },
+    "--version": {
+        "#desc": "Show the version and exit."
+    },
+    "-h|--help": {
+        "#desc": "Show this message and exit."
+    },
     "check": {
         "#desc": "Checks for PyUp Safety security vulnerabilities and against PEP 508 markers provided in Pipfile."
     },

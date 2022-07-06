@@ -1,44 +1,108 @@
 {
-    "#1": [],
-    "-h|--host": [],
-    "-P|--port": [],
-    "-u|--user": [],
-    "-S|--socket": [],
-    "-p|--password": [],
-    "--pass": [],
-    "--ssh-user": [],
-    "--ssh-host": [],
-    "--ssh-port": [],
-    "--ssh-password": [],
-    "--ssh-key-filename": [],
-    "--ssh-config-path": [],
-    "--ssh-config-host": [],
-    "--ssl-ca": [],
-    "--ssl-capath": [],
-    "--ssl-cert": [],
-    "--ssl-key": [],
-    "--ssl-cipher": [],
+    "#1": {
+        "#desc": ""
+    },
+    "-h|--host": {
+        "#desc": ""
+    },
+    "-P|--port": {
+        "#desc": ""
+    },
+    "-u|--user": {
+        "#desc": ""
+    },
+    "-S|--socket": {
+        "#desc": ""
+    },
+    "-p|--password": {
+        "#desc": ""
+    },
+    "--pass": {
+        "#desc": ""
+    },
+    "--ssh-user": {
+        "#desc": ""
+    },
+    "--ssh-host": {
+        "#desc": ""
+    },
+    "--ssh-port": {
+        "#desc": ""
+    },
+    "--ssh-password": {
+        "#desc": ""
+    },
+    "--ssh-key-filename": {
+        "#desc": ""
+    },
+    "--ssh-config-path": {
+        "#desc": ""
+    },
+    "--ssh-config-host": {
+        "#desc": ""
+    },
+    "--ssl-ca": {
+        "#desc": ""
+    },
+    "--ssl-capath": {
+        "#desc": ""
+    },
+    "--ssl-cert": {
+        "#desc": ""
+    },
+    "--ssl-key": {
+        "#desc": ""
+    },
+    "--ssl-cipher": {
+        "#desc": ""
+    },
     "--ssl-verify-server-cert": null,
     "-V|--version": "--- Output mycli's version.",
     "-v|--verbose": "--- Verbose output.",
-    "-D|--database": [],
-    "-d|--dsn": [],
+    "-D|--database": {
+        "#desc": ""
+    },
+    "-d|--dsn": {
+        "#desc": ""
+    },
     "--list-dsn": "--- list of DSN configured into the [alias_dsn] section of myclirc file.",
     "--list-ssh-config": "--- list ssh configurations in the ssh config",
-    "-R|--prompt": [],
-    "-l|--logfile": [],
-    "--defaults-group-suffix": [],
-    "--defaults-file": [],
-    "--myclirc": [],
+    "-R|--prompt": {
+        "#desc": ""
+    },
+    "-l|--logfile": {
+        "#desc": ""
+    },
+    "--defaults-group-suffix": {
+        "#desc": ""
+    },
+    "--defaults-file": {
+        "#desc": ""
+    },
+    "--myclirc": {
+        "#desc": ""
+    },
     "--auto-vertical-output": null,
     "-t|--table": "--- Display batch output in table format.",
     "--csv": "--- Display batch output in CSV format.",
     "--warn|--no-warn": "--- Warn before running a destructive query.",
-    "--local-infile": [],
-    "-g|--login-path": [],
-    "-e|--execute": [],
-    "--init-command": [],
-    "--charset": [],
-    "--password-file": [],
+    "--local-infile": {
+        "#desc": ""
+    },
+    "-g|--login-path": {
+        "#desc": ""
+    },
+    "-e|--execute": {
+        "#desc": ""
+    },
+    "--init-command": {
+        "#desc": ""
+    },
+    "--charset": {
+        "#desc": ""
+    },
+    "--password-file": {
+        "#desc": ""
+    },
     "--help": "--- Show this message and exit."
 }

@@ -1,55 +1,147 @@
 {
-    "#1": [],
-    "-h|--help": "--- show this help message and exit",
-    "-v|--version": "--- Show program version info and exit.",
-    "--distpath": [],
-    "--workpath": [],
-    "-y|--noconfirm": "--- Replace output directory without asking for confirmation",
-    "--upx-dir": [],
-    "-a|--ascii": "--- Do not include unicode encoding support",
-    "--clean": "--- Clean PyInstaller cache and remove temporary files before building.",
-    "--log-level": [],
-    "-D|--onedir": "--- Create a one-folder bundle containing an executable",
-    "-F|--onefile": "--- Create a one-file bundled executable.",
-    "--specpath": [],
-    "-n|--name": [],
-    "--add-data": [],
-    "--add-binary": [],
-    "-p DIR|--paths": [],
-    "--hidden-import|--hiddenimport": [],
-    "--collect-submodules": [],
-    "--collect-data|--collect-datas": [],
-    "--collect-binaries": [],
-    "--collect-all": [],
-    "--copy-metadata": [],
-    "--recursive-copy-metadata": [],
-    "--additional-hooks-dir": [],
-    "--runtime-hook": [],
-    "--exclude-module": [],
-    "--key KEY": "--- The key used to encrypt Python bytecode.",
-    "--splash IMAGE_FILE": [],
+    "#1": {
+        "#desc": ""
+    },
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "-v|--version": {
+        "#desc": "Show program version info and exit."
+    },
+    "--distpath": {
+        "#desc": ""
+    },
+    "--workpath": {
+        "#desc": ""
+    },
+    "-y|--noconfirm": {
+        "#desc": "Replace output directory without asking for confirmation"
+    },
+    "--upx-dir": {
+        "#desc": ""
+    },
+    "-a|--ascii": {
+        "#desc": "Do not include unicode encoding support"
+    },
+    "--clean": {
+        "#desc": "Clean PyInstaller cache and remove temporary files before building."
+    },
+    "--log-level": {
+        "#desc": ""
+    },
+    "-D|--onedir": {
+        "#desc": "Create a one-folder bundle containing an executable"
+    },
+    "-F|--onefile": {
+        "#desc": "Create a one-file bundled executable."
+    },
+    "--specpath": {
+        "#desc": ""
+    },
+    "-n|--name": {
+        "#desc": ""
+    },
+    "--add-data": {
+        "#desc": ""
+    },
+    "--add-binary": {
+        "#desc": ""
+    },
+    "-p DIR|--paths": {
+        "#desc": ""
+    },
+    "--hidden-import|--hiddenimport": {
+        "#desc": ""
+    },
+    "--collect-submodules": {
+        "#desc": ""
+    },
+    "--collect-data|--collect-datas": {
+        "#desc": ""
+    },
+    "--collect-binaries": {
+        "#desc": ""
+    },
+    "--collect-all": {
+        "#desc": ""
+    },
+    "--copy-metadata": {
+        "#desc": ""
+    },
+    "--recursive-copy-metadata": {
+        "#desc": ""
+    },
+    "--additional-hooks-dir": {
+        "#desc": ""
+    },
+    "--runtime-hook": {
+        "#desc": ""
+    },
+    "--exclude-module": {
+        "#desc": ""
+    },
+    "--key KEY": {
+        "#desc": "The key used to encrypt Python bytecode."
+    },
+    "--splash IMAGE_FILE": {
+        "#desc": ""
+    },
     "-d|--debug": ["all", "imports", "bootloader", "noarchive"],
-    "--python-option": [],
-    "-s|--strip": "--- Apply a symbol-table strip to the executable and shared libs",
-    "--noupx": "--- Do not use UPX even if it is available",
-    "--upx-exclude": [],
-    "-c|--console|--nowindowed": "--- Open a console window for standard i/o",
+    "--python-option": {
+        "#desc": ""
+    },
+    "-s|--strip": {
+        "#desc": "Apply a symbol-table strip to the executable and shared libs"
+    },
+    "--noupx": {
+        "#desc": "Do not use UPX even if it is available"
+    },
+    "--upx-exclude": {
+        "#desc": ""
+    },
+    "-c|--console|--nowindowed": {
+        "#desc": "Open a console window for standard i/o"
+    },
     "-w|--windowed|--noconsole": null,
-    "-i|--icon": [],
+    "-i|--icon": {
+        "#desc": ""
+    },
     "--disable-windowed-traceback": null,
-    "--version-file": [],
-    "-m|--manifest": [],
-    "--no-embed-manifest": "--- Generate an external",
-    "-r RESOURCE|--resource": [],
-    "--uac-admin": "--- Using this option creates a Manifest that will request elevation upon application start.",
-    "--uac-uiaccess": "--- Using this option allows an elevated application to work with Remote Desktop.",
+    "--version-file": {
+        "#desc": ""
+    },
+    "-m|--manifest": {
+        "#desc": ""
+    },
+    "--no-embed-manifest": {
+        "#desc": "Generate an external"
+    },
+    "-r RESOURCE|--resource": {
+        "#desc": ""
+    },
+    "--uac-admin": {
+        "#desc": "Using this option creates a Manifest that will request elevation upon application start."
+    },
+    "--uac-uiaccess": {
+        "#desc": "Using this option allows an elevated application to work with Remote Desktop."
+    },
     "--win-private-assemblies": null,
     "--win-no-prefer-redirects": null,
     "--argv-emulation": null,
-    "--osx-bundle-identifier": [],
-    "--target-architecture|--target-arch": [],
-    "--codesign-identity": [],
-    "--osx-entitlements-file": [],
-    "--runtime-tmpdir": [],
+    "--osx-bundle-identifier": {
+        "#desc": ""
+    },
+    "--target-architecture|--target-arch": {
+        "#desc": ""
+    },
+    "--codesign-identity": {
+        "#desc": ""
+    },
+    "--osx-entitlements-file": {
+        "#desc": ""
+    },
+    "--runtime-tmpdir": {
+        "#desc": ""
+    },
     "--bootloader-ignore-signals": null
 }
