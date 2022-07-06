@@ -1,32 +1,144 @@
 {
-    "#1": ["a", "b", "d", "e", "h", "i", "l", "rn", "t", "u", "x"],
-    "--": null,
-    "@listfile": null,
-    "-ai!|-air!|-air-!|-air0!": null,
-    "-ai@|-air-@!|-air0@|-air@": "___advise_ls",
-    "-ax!|-axr!|-axr-!|-axr0!": null,
-    "-ax@|-axr-@!|-axr0@|-axr@": "___advise_ls",
-    "-ao": ["a", "s", "t", "u"],
-    "-an": null,
-    "-bb0|-bb1|-bb2|-bb3": null,
-    "-bd": null,
-    "-bs": {
-        "#1": ["o", "e", "p"],
-        "#2": [0, 1, 2]
+    "#1": {
+        "#exec": [
+            "a --- Add files to archive",
+            "b --- Benchmark",
+            "d --- Delete files from archive",
+            "e --- Extract files from archive (without using directory names)",
+            "h --- Calculate hash values for files",
+            "i --- Show information about supported formats",
+            "l --- List contents of archive",
+            "r ---  Rename files in archive",
+            "t --- Test integrity of archive",
+            "u --- Update files to archive",
+            "x --- eXtract files with full paths"
+        ]
     },
-    "-bt": null,
-    "-i!|-ir!|-ir-!|-ir0!": null,
-    "-i@|-ir@|-ir-@|-ir0@": "___advise_ls",
-    "-mmt": null,
-    "-mx=": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-    "-o": "___advise_ls",
-    "-p": ["Password"],
-    "-r-|-r0": null,
-    "-sa": ["a", "e", "s"],
-    "-scc": ["UTF-8", "WIN", "DOS"],
-    "-scs": ["UTF-8", "UTF-16LE", "UTF-16BE", "WIN", "DOS"],
-    "-scrc": ["CRC32", "CRC63", "SHA1", "SHA256"],
-    "-sdel": "___advise_ls",
+    "#n": {
+        "#exec": "___x_cmd_advise__file"
+    },
+    "--": {
+        "#desc": "Stop switches parsing"
+    },
+    "-ai!|-air!|-air-!|-air0!": {
+        "#desc": "Include archives"
+    },
+    "-ai@|-air-@!|-air0@|-air@": {
+        "#desc": "Include archives",
+        "#exec": "___x_cmd_advise__file"
+    },
+    "-ax!|-axr!|-axr-!|-axr0!": {
+        "#desc": "eXclude archives"
+    },
+    "-ax@|-axr-@!|-axr0@|-axr@": {
+        "#desc": "eXclude archives",
+        "#exec": "___x_cmd_advise__file"
+    },
+    "-ao": {
+        "#desc": "set Overwrite mode",
+        "#1": {
+            "#cand": [
+                "a",
+                "s",
+                "t",
+                "u"
+            ]
+        }
+    },
+    "-an": {
+        "#desc": "disable archive_name field"
+    },
+    "-bb0|-bb1|-bb2|-bb3": {
+        "#desc": "set output log level"
+    },
+    "-bd": {
+        "#desc": "disable progress indicator"
+    },
+    "-bs": {
+        "#desc": "set output stream for output/error/progress line",
+        "#1": {
+            "#cand": [
+                "o",
+                "e",
+                "p"
+            ]
+        },
+        "#2": {
+            "#cand": [
+                "0",
+                "1",
+                "2"
+            ]
+        }
+    },
+    "-bt": {
+        "#desc": ""
+    },
+    "-i!|-ir!|-ir-!|-ir0!": {
+        "#desc": ""
+    },
+    "-i@|-ir@|-ir-@|r0@": {
+        "#desc": "",
+        "#exec": "___x_cmd_advise__file"
+    },
+    "-m": {
+        "#desc": ""
+    },
+    "-mmt": {
+        "#desc": ""
+    },
+    "-o": {
+        "#desc": "",
+        "#exec": "___x_cmd_advise__dir"
+    },
+    "-p": {
+        "#desc": ""
+    },
+    "-r-|-r0": {
+        "#desc": ""
+    },
+    "-sa": {
+        "#desc": "xxx",
+        "#cand": [
+            "a",
+            "e",
+            "s"
+        ]
+    },
+    "-scc": {
+        "#desc": "",
+        "#1": {
+            "#cand": [
+                "UTF-8",
+                "WIN",
+                "DOS"
+            ]
+        }
+    },
+    "-scs": {
+        "#desc": "",
+        "#1": {
+            "#cand": [
+                "UTF-8",
+                "UTF-16LE",
+                "UTF-16BE",
+                "WIN",
+                "DOS"
+            ]
+        }
+    },
+    "-scrc": {
+        "#desc": "",
+        "#1": {
+            "#cand": [
+                "CRC32",
+                "CRC63",
+                "SHA1",
+                "SHA256"
+            ]
+        }
+    },
+    "-sdel": "___x_cmd_advise__file",
     "-ssc": null,
     "-seml|-seml.": null,
     "-sfx|-sfxname": null,
@@ -46,11 +158,79 @@
     "-stl": null,
     "-stmHexMask": null,
     "-stxType": null,
-    "-t": ["7z", "apm", "arj", "bzip2", "cab", "chm", "cpio", "cramfs", "deb", "dmg", "elf", "fat", "flv", "gzip", "hfs", "iso", "lzh", "lzma", "lzma86", "macho", "mbr", "mslz", "mub", "nsis", "ntfs", "pe", "ppmd", "rar", "rpm", "squashfs", "swf", "swfc", "tar", "udf", "vhd", "wim", "xar", "xz", "z", "zip"],
+    "-aaa": {
+        "a1": null,
+        "a2": null
+    },
+    "-t": {
+        "#1": {
+            "#cand": [
+                "7z",
+                "apm",
+                "arj",
+                "bzip2",
+                "cab",
+                "chm",
+                "cpio",
+                "cramfs",
+                "deb",
+                "dmg",
+                "elf",
+                "fat",
+                "flv",
+                "gzip",
+                "hfs",
+                "iso",
+                "lzh",
+                "lzma",
+                "lzma86",
+                "macho",
+                "mbr",
+                "mslz",
+                "mub",
+                "nsis",
+                "ntfs",
+                "pe",
+                "ppmd",
+                "rar",
+                "rpm",
+                "squashfs",
+                "swf",
+                "swfc",
+                "tar",
+                "udf",
+                "vhd",
+                "wim",
+                "xar",
+                "xz",
+                "z",
+                "zip"
+            ]
+        }
+    },
     "-u|-u-|-up#|-ur#|-ux#|-uy#|-uz#": null,
-    "-v|-vb|-vk|-vm|-vg": ["Size"],
-    "-w": ["path"],
+    "-v|-vb|-vk|-vm|-vg": {
+        "#desc": "",
+        "#1": {
+            "#cand": [
+                "Size"
+            ]
+        }
+    },
+    "-w": {
+        "#desc": "",
+        "#1": {
+            "#cand": [
+                "path"
+            ]
+        }
+    },
     "-x!|-xr!|-xr-!|-xr0!": null,
-    "-x@|-xr@|-xr-@|-xr0@": "___advise_ls",
+    "-x@|-xr@|-xr-@|-xr0@": {
+        "#desc": "",
+        "#1": {
+            "#exec": "___x_cmd_advise__file"
+        }
+    },
     "-y": null
 }
