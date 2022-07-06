@@ -11,5 +11,7 @@
     "-v|--verbose": null,
     "--help": null,
     "--version": null,
-    "#n": "___advise_ls"
+    "#n": {
+        "#exec": "___x_cmd_advise__file"
+    }
 }

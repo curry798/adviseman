@@ -118,5 +118,8 @@
     },
     "--version": {
         "#desc": "output version information and exit"
+    },
+    "#n": {
+        "#exec": "___x_cmd_advise__dir"
     }
 }

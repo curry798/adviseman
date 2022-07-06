@@ -101,10 +101,7 @@
     "--version": {
         "#desc": "output version information and exit"
     },
-    "#1": {
-        "#exec": "___x_cmd_advise__file"
-    },
     "#n": {
-        "#exec": "___x_cmd_advise__dir"
+        "#exec": "___x_cmd_advise__file"
     }
 }
