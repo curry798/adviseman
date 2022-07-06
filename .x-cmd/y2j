@@ -4,7 +4,7 @@ find src -name advise.yml | while read -r line; do
     dst="dst${line#src}"
     dst="${dst%.yml}.json"
     mkdir -p "${dst%/*}"
-    x j2y "$line" "$dst"
+    x y2j "$line" | x ja t > "$dst"
     # echo $line $dst
 done
 
