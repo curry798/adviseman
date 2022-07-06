@@ -23,13 +23,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local \\`vercel.json\\` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global \\`.vercel\\` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -122,13 +122,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local \\`vercel.json\\` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global \\`.vercel\\` directory",
       "#1": {
         "#desc": "DIR"
       }
