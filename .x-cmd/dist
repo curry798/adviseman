@@ -21,6 +21,7 @@ dist_wc()(
 
 dist_tar()(
     cd "$WSROOT/src" &&
+    cp ../LICENSE ./LICENSE &&
     mkdir -p "$WSROOT/dist" &&
         eval "tar cvf all.tar LICENSE $(dist_ls | tr '\n' ' ')" &&
         mv all.tar "$WSROOT/dist/all.tar" &&
@@ -28,7 +29,8 @@ dist_tar()(
 )
 
 dist_tgz()(
-    cd "$WSROOT/src" &&
+    cd "$WSROOT/${1:-dst}" &&
+    cp ../LICENSE ./LICENSE &&
     mkdir -p "$WSROOT/dist" &&
         eval "tar czvf all.tgz LICENSE $(dist_ls | tr '\n' ' ')" &&
         mv all.tgz "$WSROOT/dist/all.tgz" &&

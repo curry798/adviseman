@@ -1,0 +1,10 @@
+
+cd $(x wsroot)
+find src -name advise.json | while read -r line; do
+    dst="dst${line#src}"
+    dst="${dst%.json}.json"
+    mkdir -p ${dst%/*}
+    x ja t <$line >$dst
+    # echo $line $dst
+done
+
