@@ -4,5 +4,10 @@
     "-w|--workspace": [],
     "-ws|--workspaces": null,
     "--include-workspace-root": null,
-    "#n": null
+    "#1": {
+        "#exec": "___x_cmd_advise_man__list npx"
+    },
+    "#n": {
+        "#exec": "___x_cmd_advise__get_result"
+    }
 }
