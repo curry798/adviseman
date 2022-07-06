@@ -23,13 +23,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \\`vercel.json\\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \\`.vercel\\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -122,13 +122,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \\`vercel.json\\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \\`.vercel\\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -173,13 +173,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -206,13 +206,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -245,13 +245,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -263,13 +263,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -284,13 +284,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -329,13 +329,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -443,13 +443,13 @@
       "#desc": "Force a domain on a project and remove it from an existing one"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -536,13 +536,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -590,13 +590,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -674,13 +674,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -710,13 +710,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -785,13 +785,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -809,13 +809,13 @@
       "#desc": "Output usage information"
     },
     "-A|--local-config=": {
-      "#desc": "Path to the local \`vercel.json\` file",
+      "#desc": "Path to the local `vercel.json` file",
       "#1": {
         "#desc": "FILE"
       }
     },
     "-Q|--global-config=": {
-      "#desc": "Path to the global \`.vercel\` directory",
+      "#desc": "Path to the global `.vercel` directory",
       "#1": {
         "#desc": "DIR"
       }
@@ -843,13 +843,13 @@
     "#desc": "Set the platform version to deploy to"
   },
   "-A|--local-config=": {
-    "#desc": "Path to the local \`vercel.json\` file",
+    "#desc": "Path to the local `vercel.json` file",
     "#1": {
       "#desc": "FILE"
     }
   },
   "-Q|--global-config=": {
-    "#desc": "Path to the global \`.vercel\` directory",
+    "#desc": "Path to the global `.vercel` directory",
     "#1": {
       "#desc": "DIR"
     }
@@ -870,16 +870,16 @@
     }
   },
   "-p|--public": {
-    "#desc": "Deployment is public (\`/_src\` is exposed)"
+    "#desc": "Deployment is public (`/_src` is exposed)"
   },
   "-e|--env": {
-    "#desc": "Include an env var during run time (e.g.: \`-e KEY=value\`). Can appear many times."
+    "#desc": "Include an env var during run time (e.g.: `-e KEY=value`). Can appear many times."
   },
   "-b|--build-env": {
-    "#desc": "Similar to \`--env\` but for build time only."
+    "#desc": "Similar to `--env` but for build time only."
   },
   "-m|--meta": {
-    "#desc": "Add metadata for the deployment (e.g.: \`-m KEY=value\`). Can appear many times."
+    "#desc": "Add metadata for the deployment (e.g.: `-m KEY=value`). Can appear many times."
   },
   "-C|--no-clipboard": {
     "#desc": "Do not attempt to copy URL to clipboard"

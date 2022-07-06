@@ -1,31 +1,117 @@
 {
-    "init": {},
-    "new_post": {},
-    "build": {},
-    "serve": {},
-    "auto": {},
-    "check": {},
-    "clean": {},
-    "console": {},
-    "default_config": {},
-    "deploy": {},
-    "dumpdb": {},
-    "forget": {},
-    "github_deploy": {},
-    "help": {},
-    "ignore": {},
-    "import_wordpress": {},
-    "info": {},
-    "list": {},
-    "new_page": {},
-    "orphans": {},
-    "plugin": {},
-    "reset-dep": {},
-    "rst2html": {},
-    "status": {},
-    "strace": {},
-    "subtheme": {},
-    "tabcompletion": {},
-    "theme": {},
-    "version": {}
+    "auto": {
+        "#desc": {
+            "#desc": "builds and serves a site; automatically detects site changes, rebuilds, and optionally refreshes a browser"
+        },
+        "-p|--port=": {
+            "#desc": "Port number [default: 8000]",
+            "#1": "ARG"
+        },
+        "-a|--address=": {
+            "#desc": "Address to bind [default: 127.0.0.1]",
+            "#1": "ARG"
+        },
+        "-b|--browser": {
+            "#desc": "Start a web browser"
+        },
+        "-6|--ipv6": {
+            "#desc": "Use IPv6"
+        },
+        "--no-server": {
+            "#desc": "Disable the server, automate rebuilds only"
+        }
+    },
+    "build": {
+        "#desc": "run tasks"
+    },
+    "check": {
+        "#desc": "check links and files in the generated site"
+    },
+    "clean": {
+        "#desc": "clean action / remove targets"
+    },
+    "console": {
+        "#desc": "start an interactive Python console with access to your site"
+    },
+    "default_config": {
+        "#desc": "Print the default Nikola configuration."
+    },
+    "deploy": {
+        "#desc": "deploy the site"
+    },
+    "dumpdb": {
+        "#desc": "dump dependency DB"
+    },
+    "forget": {
+        "#desc": "clear successful run status from internal DB"
+    },
+    "github_deploy": {
+        "#desc": "deploy the site to GitHub Pages"
+    },
+    "help": {
+        "#desc": "show help"
+    },
+    "ignore": {
+        "#desc": "ignore task (skip) on subsequent runs"
+    },
+    "import_wordpress": {
+        "#desc": "import a WordPress dump"
+    },
+    "info": {
+        "#desc": "show info about a task"
+    },
+    "init": {
+        "#desc": "create a Nikola site in the specified folder"
+    },
+    "list": {
+        "#desc": "list tasks from dodo file"
+    },
+    "new_page": {
+        "#desc": "create a new page in the site"
+    },
+    "new_post": {
+        "#desc": "create a new blog post or site page"
+    },
+    "orphans": {
+        "#desc": "list all orphans"
+    },
+    "plugin": {
+        "#desc": "manage plugins"
+    },
+    "reset-dep": {
+        "#desc": "recompute and save the state of file dependencies without executing actions"
+    },
+    "rst2html": {
+        "#desc": "compile reStructuredText to HTML files"
+    },
+    "serve": {
+        "#desc": "start the test webserver"
+    },
+    "status": {
+        "#desc": "display site status"
+    },
+    "strace": {
+        "#desc": "use strace to list file_deps and targets"
+    },
+    "subtheme": {
+        "#desc": "given a swatch name from bootswatch.com or hackerthemes.com and a parent theme, creates a custom theme"
+    },
+    "tabcompletion": {
+        "#desc": "generate script for tab-completion"
+    },
+    "theme": {
+        "#desc": "manage themes"
+    },
+    "version": {
+        "#desc": "print the Nikola version number"
+    },
+    "help": {
+        "#desc": "show help / reference"
+    },
+    "help <command>": {
+        "#desc": "show command usage"
+    },
+    "help <task-name>": {
+        "#desc": "show task usage"
+    }
 }

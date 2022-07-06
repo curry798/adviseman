@@ -1,6 +1,10 @@
 {
     "--help|-h": null,
     "--version|-v": null,
-    "create": {},
-    "list": {}
+    "create": {
+        "#desc": ""
+    },
+    "list": {
+        "#desc": ""
+    }
 }

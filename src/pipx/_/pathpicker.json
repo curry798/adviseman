@@ -1,14 +1,32 @@
 {
-    "#1": [],
-    "-h|--help": "--- show this help message and exit",
-    "-r|--record": "--- Record input and output.",
-    "--version": "--- Print the version of fpp and exit.",
-    "--clean": "--- Remove the state files that fpp uses when starting up, including the previous input used and selection pickle.",
-    "-ko|--keep-open": "--- keep PathPicker open once a file selection or command is performed.",
-    "-c|--command": [],
-    "-e|--execute-keys": [],
+    "#1": {
+        "#desc": ""
+    },
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "-r|--record": {
+        "#desc": "Record input and output."
+    },
+    "--version": {
+        "#desc": "Print the version of fpp and exit."
+    },
+    "--clean": {
+        "#desc": "Remove the state files that fpp uses when starting up, including the previous input used and selection pickle."
+    },
+    "-ko|--keep-open": {
+        "#desc": "keep PathPicker open once a file selection or command is performed."
+    },
+    "-c|--command": {
+        "#desc": ""
+    },
+    "-e|--execute-keys": {
+        "#desc": ""
+    },
     "-nfc|--no-file-checks": null,
     "-ai|--all-input": null,
     "-ni|--non-interactive": null,
-    "-a|--all": "--- Automatically select all available lines once the interactive editor has been entered."
+    "-a|--all": {
+        "#desc": "Automatically select all available lines once the interactive editor has been entered."
+}
 }

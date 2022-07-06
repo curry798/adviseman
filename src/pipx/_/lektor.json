@@ -1,9 +1,22 @@
 {
-    "#1": [],
-    "--project PATH": "--- The path to the lektor project to work with.",
-    "--language TEXT": "--- The UI language to use.",
-    "--version": "--- Show the version and exit.",
-    "--help": "--- Show this message and exit.",
+    "--project": {
+        "#desc": "The path to the lektor project to work with.",
+        "#1": {
+            "#desc": "PATH"
+        }
+    },
+    "--language": {
+        "#desc": "The UI language to use (overrides autodetection).",
+        "#1": {
+            "#desc": "TEXT"
+        }
+    },
+    "--version": {
+        "#desc": "Show the version and exit."
+    },
+    "--help": {
+        "#desc": "Show this message and exit."
+    },
     "build": {
         "#desc": "Builds the entire project into the final artifacts."
     },

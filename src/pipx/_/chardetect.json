@@ -1,5 +1,9 @@
 {
   "input": {},
-  "-h|--help": "--- show this help message and exit",
-  "--version": "--- show program's version number and exit"
+  "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "--version": {
+        "#desc": "show program's version number and exit"
+}
 }

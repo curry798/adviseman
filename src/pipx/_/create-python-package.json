@@ -1,5 +1,12 @@
 {
-    "-h, --help": "--- show this help message and exit",
-    "--template": "--- Template name or url.",
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "--template": {
+        "#desc": "Template name or url. (default: https://github.com/cs01/cookiecutter-pypackage)",
+        "#1": {
+            "#desc": "TEMPLATE"
+        }
+    },
     "--version": null
 }

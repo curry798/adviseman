@@ -1,11 +1,29 @@
 {
-    "-h|--host": [],
-    "-p|--port": [],
-    "-U|--user": [],
-    "-W|--password": "--- Force password prompt.",
-    "-w|--no-password": "--- Never prompt for password.",
-    "-v|--version": "--- Version of pgcli.",
-    "-d|--dbname": [],
-    "--pgclirc": [],
-    "--help": "--- Show this message and exit."
+    "-h|--host": {
+        "#desc": ""
+    },
+    "-p|--port": {
+        "#desc": ""
+    },
+    "-U|--user": {
+        "#desc": ""
+    },
+    "-W|--password": {
+        "#desc": "Force password prompt."
+    },
+    "-w|--no-password": {
+        "#desc": "Never prompt for password."
+    },
+    "-v|--version": {
+        "#desc": "Version of pgcli."
+    },
+    "-d|--dbname": {
+        "#desc": ""
+    },
+    "--pgclirc": {
+        "#desc": ""
+    },
+    "--help": {
+        "#desc": "Show this message and exit."
+}
 }

@@ -1,5 +1,7 @@
 {
-    "#1": [],
+    "#1": {
+        "#desc": ""
+    },
     "profile": {
         "#desc": "Create and manage IPython profiles."
     },
@@ -12,253 +14,689 @@
     "history": {
         "#desc": "Manage the IPython history database."
     },
-    "--debug": [],
-    "--show-config": [],
-    "--show-config-json": [],
-    "--quiet": [],
-    "--init": [],
-    "--autoindent": "--- Turn on autoindenting.",
-    "--no-autoindent": "--- Turn off autoindenting.",
-    "--automagic": "--- Turn on the auto calling of magic commands.",
-    "--no-automagic": "--- Turn off the auto calling of magic commands.",
-    "--pdb": "--- Enable auto calling the pdb debugger after every exception.",
-    "--no-pdb": "--- Disable auto calling the pdb debugger after every exception.",
-    "--pprint": "--- Enable auto pretty printing of results.",
-    "--no-pprint": "--- Disable auto pretty printing of results.",
+    "--debug": {
+        "#desc": ""
+    },
+    "--show-config": {
+        "#desc": ""
+    },
+    "--show-config-json": {
+        "#desc": ""
+    },
+    "--quiet": {
+        "#desc": ""
+    },
+    "--init": {
+        "#desc": ""
+    },
+    "--autoindent": {
+        "#desc": "Turn on autoindenting."
+    },
+    "--no-autoindent": {
+        "#desc": "Turn off autoindenting."
+    },
+    "--automagic": {
+        "#desc": "Turn on the auto calling of magic commands."
+    },
+    "--no-automagic": {
+        "#desc": "Turn off the auto calling of magic commands."
+    },
+    "--pdb": {
+        "#desc": "Enable auto calling the pdb debugger after every exception."
+    },
+    "--no-pdb": {
+        "#desc": "Disable auto calling the pdb debugger after every exception."
+    },
+    "--pprint": {
+        "#desc": "Enable auto pretty printing of results."
+    },
+    "--no-pprint": {
+        "#desc": "Disable auto pretty printing of results."
+    },
     "--color-info": null,
-    "--no-color-info": "--- Disable using colors for info related things.",
-    "--ignore-cwd": "--- Exclude the current working directory from sys.path",
-    "--no-ignore-cwd": "--- Include the current working directory in sys.path",
-    "--nosep": "--- Eliminate all spacing between prompts.",
-    "--pylab": "--- Pre-load matplotlib and numpy for interactive use with the default matplotlib backend.",
-    "--matplotlib": "--- Configure matplotlib for interactive use with the default matplotlib backend.",
-    "--autoedit-syntax": "--- Turn on auto editing of files with syntax errors.",
-    "--no-autoedit-syntax": "--- Turn off auto editing of files with syntax errors.",
-    "--simple-prompt": "--- Force simple minimal prompt using raw_input",
-    "--no-simple-prompt": "--- Use a rich interactive prompt with prompt_toolkit",
-    "--banner": "--- Display a banner upon starting IPython.",
-    "--no-banner": "--- Don't display a banner upon starting IPython.",
+    "--no-color-info": {
+        "#desc": "Disable using colors for info related things."
+    },
+    "--ignore-cwd": {
+        "#desc": "Exclude the current working directory from sys.path"
+    },
+    "--no-ignore-cwd": {
+        "#desc": "Include the current working directory in sys.path"
+    },
+    "--nosep": {
+        "#desc": "Eliminate all spacing between prompts."
+    },
+    "--pylab": {
+        "#desc": "Pre-load matplotlib and numpy for interactive use with the default matplotlib backend."
+    },
+    "--matplotlib": {
+        "#desc": "Configure matplotlib for interactive use with the default matplotlib backend."
+    },
+    "--autoedit-syntax": {
+        "#desc": "Turn on auto editing of files with syntax errors."
+    },
+    "--no-autoedit-syntax": {
+        "#desc": "Turn off auto editing of files with syntax errors."
+    },
+    "--simple-prompt": {
+        "#desc": "Force simple minimal prompt using raw_input"
+    },
+    "--no-simple-prompt": {
+        "#desc": "Use a rich interactive prompt with prompt_toolkit"
+    },
+    "--banner": {
+        "#desc": "Display a banner upon starting IPython."
+    },
+    "--no-banner": {
+        "#desc": "Don't display a banner upon starting IPython."
+    },
     "--confirm-exit": null,
-    "--no-confirm-exit": "--- Don't prompt the user when exiting.",
-    "--term-title": "--- Enable auto setting the terminal title.",
-    "--no-term-title": "--- Disable auto setting the terminal title.",
-    "--classic": "--- Gives IPython a similar feel to the classic Python prompt.",
-    "--quick": "--- Enable quick startup with no config files.",
+    "--no-confirm-exit": {
+        "#desc": "Don't prompt the user when exiting."
+    },
+    "--term-title": {
+        "#desc": "Enable auto setting the terminal title."
+    },
+    "--no-term-title": {
+        "#desc": "Disable auto setting the terminal title."
+    },
+    "--classic": {
+        "#desc": "Gives IPython a similar feel to the classic Python prompt."
+    },
+    "--quick": {
+        "#desc": "Enable quick startup with no config files."
+    },
     "-i": null,
-    "--log-level": [],
-    "--profile-dir": [],
-    "--profile": [],
-    "--ipython-dir": [],
-    "--config": [],
-    "--autocall": [],
+    "--log-level": {
+        "#desc": ""
+    },
+    "--profile-dir": {
+        "#desc": ""
+    },
+    "--profile": {
+        "#desc": ""
+    },
+    "--ipython-dir": {
+        "#desc": ""
+    },
+    "--config": {
+        "#desc": ""
+    },
+    "--autocall": {
+        "#desc": ""
+    },
     "--colors": ["Neutral", "NoColor", "LightBG", "Linux"],
-    "--logfile": [],
-    "--logappend": [],
-    "-c": [],
-    "-m": [],
-    "--ext": [],
+    "--logfile": {
+        "#desc": ""
+    },
+    "--logappend": {
+        "#desc": ""
+    },
+    "-c": {
+        "#desc": ""
+    },
+    "-m": {
+        "#desc": ""
+    },
+    "--ext": {
+        "#desc": ""
+    },
     "--gui": ["asyncio", "glut", "gtk", "gtk2", "gtk3", "gtk4", "osx", "pyglet", "qt", "qt4", "qt5", "qt6", "tk", "wx", "gtk2", "qt4"],
     "--pylab": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
     "--matplotlib": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
-    "--cache-size": [],
-    "--InteractiveShellApp.code_to_run": []
-    "--InteractiveShellApp.exec_PYTHONSTARTUP": [],
-    "--InteractiveShellApp.exec_files": [],
-    "--InteractiveShellApp.exec_lines": [],
-    "--InteractiveShellApp.extensions": [],
-    "--InteractiveShellApp.extra_extensions": [],
-    "--InteractiveShellApp.file_to_run": [],
+    "--cache-size": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.code_to_run": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.exec_PYTHONSTARTUP": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.exec_files": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.exec_lines": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.extensions": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.extra_extensions": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.file_to_run": {
+        "#desc": ""
+    },
     "--InteractiveShellApp.gui": ["asyncio", "glut", "gtk", "gtk2", "gtk3", "gtk4", "osx", "pyglet", "qt", "qt4", "qt5", "qt6", "tk", "wx", "gtk2", "qt4"],
-    "--InteractiveShellApp.hide_initial_ns": [],
-    "--InteractiveShellApp.ignore_cwd": [],
+    "--InteractiveShellApp.hide_initial_ns": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.ignore_cwd": {
+        "#desc": ""
+    },
     "--InteractiveShellApp.matplotlib": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
-    "--InteractiveShellApp.module_to_run": [],
+    "--InteractiveShellApp.module_to_run": {
+        "#desc": ""
+    },
     "--InteractiveShellApp.pylab": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
-    "--InteractiveShellApp.pylab_import_all": [],
-    "--InteractiveShellApp.reraise_ipython_extension_failures": [],
-    "--Application.log_datefmt": [],
-    "--Application.log_format": [],
+    "--InteractiveShellApp.pylab_import_all": {
+        "#desc": ""
+    },
+    "--InteractiveShellApp.reraise_ipython_extension_failures": {
+        "#desc": ""
+    },
+    "--Application.log_datefmt": {
+        "#desc": ""
+    },
+    "--Application.log_format": {
+        "#desc": ""
+    },
     "--Application.log_level": [0, 10, 20, 30, 40, 50, "DEBUG", "INFO", "WARN", "ERROR", "CRITICAL"],
-    "--Application.logging_config": [],
-    "--Application.show_config": [],
-    "--Application.show_config_json": [],
-    "--BaseIPythonApplication.add_ipython_dir_to_sys_path": [],
-    "--BaseIPythonApplication.auto_create": [],
-    "--BaseIPythonApplication.copy_config_files": [],
-    "--BaseIPythonApplication.extra_config_file": [],
-    "--BaseIPythonApplication.ipython_dir": [],
-    "--BaseIPythonApplication.log_datefmt": [],
-    "--BaseIPythonApplication.log_format": [],
+    "--Application.logging_config": {
+        "#desc": ""
+    },
+    "--Application.show_config": {
+        "#desc": ""
+    },
+    "--Application.show_config_json": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.add_ipython_dir_to_sys_path": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.auto_create": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.copy_config_files": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.extra_config_file": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.ipython_dir": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.log_datefmt": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.log_format": {
+        "#desc": ""
+    },
     "--BaseIPythonApplication.log_level": [0, 10, 20, 30, 40, 50, "DEBUG", "INFO", "WARN", "ERROR", "CRITICAL"],
-    "--BaseIPythonApplication.logging_config": [],
-    "--BaseIPythonApplication.overwrite": [],
-    "--BaseIPythonApplication.profile": [],
-    "--BaseIPythonApplication.show_config": [],
-    "--BaseIPythonApplication.show_config_json": [],
-    "--BaseIPythonApplication.verbose_crash": [],
-    "--TerminalIPythonApp.add_ipython_dir_to_sys_path": [],
-    "--TerminalIPythonApp.code_to_run": [],
-    "--TerminalIPythonApp.copy_config_files": [],
-    "--TerminalIPythonApp.display_banner": [],
-    "--TerminalIPythonApp.exec_PYTHONSTARTUP": [],
-    "--TerminalIPythonApp.exec_files": [],
-    "--TerminalIPythonApp.exec_lines": [],
-    "--TerminalIPythonApp.extensions": [],
-    "--TerminalIPythonApp.extra_config_file": [],
-    "--TerminalIPythonApp.extra_extensions": [],
-    "--TerminalIPythonApp.file_to_run": [],
-    "--TerminalIPythonApp.force_interact": [],
+    "--BaseIPythonApplication.logging_config": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.overwrite": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.profile": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.show_config": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.show_config_json": {
+        "#desc": ""
+    },
+    "--BaseIPythonApplication.verbose_crash": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.add_ipython_dir_to_sys_path": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.code_to_run": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.copy_config_files": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.display_banner": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.exec_PYTHONSTARTUP": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.exec_files": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.exec_lines": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.extensions": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.extra_config_file": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.extra_extensions": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.file_to_run": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.force_interact": {
+        "#desc": ""
+    },
     "--TerminalIPythonApp.gui": ["asyncio", "glut", "gtk", "gtk2", "gtk3", "gtk4", "osx", "pyglet", "qt", "qt4", "qt5", "qt6", "tk", "wx", "gtk2", "qt4"],
-    "--TerminalIPythonApp.hide_initial_ns": [],
-    "--TerminalIPythonApp.ignore_cwd": [],
-    "--TerminalIPythonApp.interactive_shell_class": [],
-    "--TerminalIPythonApp.ipython_dir": [],
-    "--TerminalIPythonApp.log_datefmt": [],
-    "--TerminalIPythonApp.log_format": [],
+    "--TerminalIPythonApp.hide_initial_ns": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.ignore_cwd": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.interactive_shell_class": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.ipython_dir": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.log_datefmt": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.log_format": {
+        "#desc": ""
+    },
     "--TerminalIPythonApp.log_level": [0, 10, 20, 30, 40, 50, "DEBUG", "INFO", "WARN", "ERROR", "CRITICAL"],
-    "--TerminalIPythonApp.logging_config": [],
+    "--TerminalIPythonApp.logging_config": {
+        "#desc": ""
+    },
     "--TerminalIPythonApp.matplotlib": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
-    "--TerminalIPythonApp.module_to_run": [],
-    "--TerminalIPythonApp.overwrite": [],
-    "--TerminalIPythonApp.profile": [],
+    "--TerminalIPythonApp.module_to_run": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.overwrite": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.profile": {
+        "#desc": ""
+    },
     "--TerminalIPythonApp.pylab": ["auto", "agg", "gtk", "gtk3", "gtk4", "inline", "ipympl", "nbagg", "notebook", "osx", "pdf", "ps", "qt", "qt4", "qt5", "qt6", "svg", "tk", "widget", "wx"],
-    "--TerminalIPythonApp.pylab_import_all": [],
-    "--TerminalIPythonApp.quick": [],
-    "--TerminalIPythonApp.reraise_ipython_extension_failures": [],
-    "--TerminalIPythonApp.show_config": [],
-    "--TerminalIPythonApp.show_config_json": [],
-    "--TerminalIPythonApp.verbose_crash": [],
+    "--TerminalIPythonApp.pylab_import_all": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.quick": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.reraise_ipython_extension_failures": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.show_config": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.show_config_json": {
+        "#desc": ""
+    },
+    "--TerminalIPythonApp.verbose_crash": {
+        "#desc": ""
+    },
     "--InteractiveShell.ast_node_interactivity": ["all", "last", "last_expr", "none", "last_expr_or_assign"],
-    "--InteractiveShell.ast_transformers": [],
-    "--InteractiveShell.autoawait": [],
-    "--InteractiveShell.autocall": [],
-    "--InteractiveShell.autoindent": [],
-    "--InteractiveShell.automagic": [],
-    "--InteractiveShell.banner1": [],
-    "--InteractiveShell.banner2": [],
-    "--InteractiveShell.cache_size": [],
-    "--InteractiveShell.color_info": [],
-    "--InteractiveShell.colors": ["Neutral", "NoColor", "LightBG", "Linux"]
-    "--InteractiveShell.debug": [],
-    "--InteractiveShell.disable_failing_post_execute": [],
-    "--InteractiveShell.display_page": [],
-    "--InteractiveShell.enable_html_pager": [],
-    "--InteractiveShell.history_length": [],
-    "--InteractiveShell.history_load_length": []
-    "--InteractiveShell.ipython_dir": []
-    "--InteractiveShell.logappend": [],
-    "--InteractiveShell.logfile": [],
-    "--InteractiveShell.logstart": [],
-    "--InteractiveShell.loop_runner": [],
+    "--InteractiveShell.ast_transformers": {
+        "#desc": ""
+    },
+    "--InteractiveShell.autoawait": {
+        "#desc": ""
+    },
+    "--InteractiveShell.autocall": {
+        "#desc": ""
+    },
+    "--InteractiveShell.autoindent": {
+        "#desc": ""
+    },
+    "--InteractiveShell.automagic": {
+        "#desc": ""
+    },
+    "--InteractiveShell.banner1": {
+        "#desc": ""
+    },
+    "--InteractiveShell.banner2": {
+        "#desc": ""
+    },
+    "--InteractiveShell.cache_size": {
+        "#desc": ""
+    },
+    "--InteractiveShell.color_info": {
+        "#desc": ""
+    },
+    "--InteractiveShell.colors": ["Neutral", "NoColor", "LightBG", "Linux"],
+    "--InteractiveShell.debug": {
+        "#desc": ""
+    },
+    "--InteractiveShell.disable_failing_post_execute": {
+        "#desc": ""
+    },
+    "--InteractiveShell.display_page": {
+        "#desc": ""
+    },
+    "--InteractiveShell.enable_html_pager": {
+        "#desc": ""
+    },
+    "--InteractiveShell.history_length": {
+        "#desc": ""
+    },
+    "--InteractiveShell.history_load_length": {
+        "#desc": ""
+    },
+    "--InteractiveShell.ipython_dir": {
+        "#desc": ""
+    },
+    "--InteractiveShell.logappend": {
+        "#desc": ""
+    },
+    "--InteractiveShell.logfile": {
+        "#desc": ""
+    },
+    "--InteractiveShell.logstart": {
+        "#desc": ""
+    },
+    "--InteractiveShell.loop_runner": {
+        "#desc": ""
+    },
     "--InteractiveShell.object_info_string_level": [0, 1, 2],
-    "--InteractiveShell.pdb": [],
-    "--InteractiveShell.quiet": [],
-    "--InteractiveShell.separate_in": [],
-    "--InteractiveShell.separate_out": [],
-    "--InteractiveShell.separate_out2": [],
-    "--InteractiveShell.show_rewritten_input": [],
-    "--InteractiveShell.sphinxify_docstring": [],
-    "--InteractiveShell.wildcards_case_sensitive": [],
+    "--InteractiveShell.pdb": {
+        "#desc": ""
+    },
+    "--InteractiveShell.quiet": {
+        "#desc": ""
+    },
+    "--InteractiveShell.separate_in": {
+        "#desc": ""
+    },
+    "--InteractiveShell.separate_out": {
+        "#desc": ""
+    },
+    "--InteractiveShell.separate_out2": {
+        "#desc": ""
+    },
+    "--InteractiveShell.show_rewritten_input": {
+        "#desc": ""
+    },
+    "--InteractiveShell.sphinxify_docstring": {
+        "#desc": ""
+    },
+    "--InteractiveShell.wildcards_case_sensitive": {
+        "#desc": ""
+    },
     "--InteractiveShell.xmode": ["Context", "Plain", "Verbose", "Minimal"],
     "--TerminalInteractiveShell.ast_node_interactivity": ["all", "last", "last_expr", "none", "last_expr_or_assign"],
-    "--TerminalInteractiveShell.ast_transformers": [],
-    "--TerminalInteractiveShell.auto_match": [],
-    "--TerminalInteractiveShell.autoawait": [],
+    "--TerminalInteractiveShell.ast_transformers": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.auto_match": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.autoawait": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.autocall": [0, 1, 2],
     "--TerminalInteractiveShell.autoformatter": ["black", "yapf", "None"],
-    "--TerminalInteractiveShell.autoindent": [],
-    "--TerminalInteractiveShell.automagic": [],
+    "--TerminalInteractiveShell.autoindent": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.automagic": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.autosuggestions_provider": ["AutoSuggestFromHistory", "None"],
-    "--TerminalInteractiveShell.banner1": [],
-    "--TerminalInteractiveShell.banner2": [],
-    "--TerminalInteractiveShell.cache_size": [],
-    "--TerminalInteractiveShell.color_info": [],
+    "--TerminalInteractiveShell.banner1": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.banner2": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.cache_size": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.color_info": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.colors": ["Neutral", "NoColor", "LightBG", "Linux"],
-    "--TerminalInteractiveShell.confirm_exit": [],
-    "--TerminalInteractiveShell.debug": [],
-    "--TerminalInteractiveShell.debugger_history_file": [],
-    "--TerminalInteractiveShell.disable_failing_post_execute": [],
+    "--TerminalInteractiveShell.confirm_exit": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.debug": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.debugger_history_file": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.disable_failing_post_execute": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.display_completions": ["column", "multicolumn", "readlinelike"],
-    "--TerminalInteractiveShell.display_page": [],
+    "--TerminalInteractiveShell.display_page": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.editing_mode": ["vi", "emacs "],
-    "--TerminalInteractiveShell.editor": [],
-    "--TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode": [],
-    "--TerminalInteractiveShell.enable_history_search": [],
-    "--TerminalInteractiveShell.enable_html_pager": [],
-    "--TerminalInteractiveShell.extra_open_editor_shortcuts": [],
-    "--TerminalInteractiveShell.handle_return": [],
-    "--TerminalInteractiveShell.highlight_matching_brackets": [],
-    "--TerminalInteractiveShell.highlighting_style": [],
-    "--TerminalInteractiveShell.highlighting_style_overrides": [],
-    "--TerminalInteractiveShell.history_length": [],
-    "--TerminalInteractiveShell.history_load_length": [],
-    "--TerminalInteractiveShell.ipython_dir": [],
-    "--TerminalInteractiveShell.logappend": [],
-    "--TerminalInteractiveShell.logfile": [],
-    "--TerminalInteractiveShell.logstart": [],
-    "--TerminalInteractiveShell.loop_runner": [],
-    "--TerminalInteractiveShell.mime_renderers": [],
-    "--TerminalInteractiveShell.modal_cursor": [],
-    "--TerminalInteractiveShell.mouse_support": [],
+    "--TerminalInteractiveShell.editor": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.enable_history_search": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.enable_html_pager": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.extra_open_editor_shortcuts": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.handle_return": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.highlight_matching_brackets": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.highlighting_style": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.highlighting_style_overrides": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.history_length": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.history_load_length": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.ipython_dir": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.logappend": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.logfile": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.logstart": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.loop_runner": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.mime_renderers": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.modal_cursor": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.mouse_support": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.object_info_string_level": [0, 1, 2],
-    "--TerminalInteractiveShell.pdb": [],
-    "--TerminalInteractiveShell.prompt_includes_vi_mode": [],
-    "--TerminalInteractiveShell.prompts_class": [],
-    "--TerminalInteractiveShell.quiet": [],
-    "--TerminalInteractiveShell.separate_in": [],
-    "--TerminalInteractiveShell.separate_out": [],
-    "--TerminalInteractiveShell.separate_out2": [],
-    "--TerminalInteractiveShell.show_rewritten_input": [],
-    "--TerminalInteractiveShell.simple_prompt": [],
-    "--TerminalInteractiveShell.space_for_menu": [],
-    "--TerminalInteractiveShell.sphinxify_docstring": [],
-    "--TerminalInteractiveShell.term_title": [],
-    "--TerminalInteractiveShell.term_title_format": [],
-    "--TerminalInteractiveShell.timeoutlen": [],
-    "--TerminalInteractiveShell.true_color": [],
-    "--TerminalInteractiveShell.ttimeoutlen": [],
-    "--TerminalInteractiveShell.wildcards_case_sensitive": [],
+    "--TerminalInteractiveShell.pdb": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.prompt_includes_vi_mode": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.prompts_class": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.quiet": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.separate_in": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.separate_out": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.separate_out2": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.show_rewritten_input": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.simple_prompt": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.space_for_menu": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.sphinxify_docstring": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.term_title": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.term_title_format": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.timeoutlen": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.true_color": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.ttimeoutlen": {
+        "#desc": ""
+    },
+    "--TerminalInteractiveShell.wildcards_case_sensitive": {
+        "#desc": ""
+    },
     "--TerminalInteractiveShell.xmode": ["Context", "Plain", "Verbose", "Minimal"],
-    "--HistoryAccessor.connection_options": [],
-    "--HistoryAccessor.enabled": [],
-    "--HistoryAccessor.hist_file": [],
-    "--HistoryManager.connection_options": [],
-    "--HistoryManager.db_cache_size": [],
-    "--HistoryManager.db_log_output": [],
-    "--HistoryManager.enabled": [],
-    "--HistoryManager.hist_file": [],
-    "--MagicsManager.auto_magic": [],
-    "--MagicsManager.lazy_magics": [],
-    "--ProfileDir.location": [],
-    "--BaseFormatter.deferred_printers": [],
-    "--BaseFormatter.enabled": [],
-    "--BaseFormatter.singleton_printers": [],
-    "--BaseFormatter.type_printers": [],
-    "--PlainTextFormatter.deferred_printers": [],
-    "--PlainTextFormatter.float_precision": [],
-    "--PlainTextFormatter.max_seq_length": [],
-    "--PlainTextFormatter.max_width": [],
-    "--PlainTextFormatter.newline": [],
-    "--PlainTextFormatter.pprint": [],
-    "--PlainTextFormatter.singleton_printers": [],
-    "--PlainTextFormatter.type_printers": [],
-    "--PlainTextFormatter.verbose": [],
-    "--Completer.backslash_combining_completions": [],
-    "--Completer.debug": [],
-    "--Completer.greedy": [],
-    "--Completer.jedi_compute_type_timeout": [],
-    "--Completer.use_jedi": [],
-    "--IPCompleter.backslash_combining_completions": [],
-    "--IPCompleter.debug": [],
-    "--IPCompleter.greedy": [],
-    "--IPCompleter.jedi_compute_type_timeout": [],
-    "--IPCompleter.limit_to__all__": [],
-    "--IPCompleter.merge_completions": [],
+    "--HistoryAccessor.connection_options": {
+        "#desc": ""
+    },
+    "--HistoryAccessor.enabled": {
+        "#desc": ""
+    },
+    "--HistoryAccessor.hist_file": {
+        "#desc": ""
+    },
+    "--HistoryManager.connection_options": {
+        "#desc": ""
+    },
+    "--HistoryManager.db_cache_size": {
+        "#desc": ""
+    },
+    "--HistoryManager.db_log_output": {
+        "#desc": ""
+    },
+    "--HistoryManager.enabled": {
+        "#desc": ""
+    },
+    "--HistoryManager.hist_file": {
+        "#desc": ""
+    },
+    "--MagicsManager.auto_magic": {
+        "#desc": ""
+    },
+    "--MagicsManager.lazy_magics": {
+        "#desc": ""
+    },
+    "--ProfileDir.location": {
+        "#desc": ""
+    },
+    "--BaseFormatter.deferred_printers": {
+        "#desc": ""
+    },
+    "--BaseFormatter.enabled": {
+        "#desc": ""
+    },
+    "--BaseFormatter.singleton_printers": {
+        "#desc": ""
+    },
+    "--BaseFormatter.type_printers": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.deferred_printers": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.float_precision": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.max_seq_length": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.max_width": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.newline": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.pprint": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.singleton_printers": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.type_printers": {
+        "#desc": ""
+    },
+    "--PlainTextFormatter.verbose": {
+        "#desc": ""
+    },
+    "--Completer.backslash_combining_completions": {
+        "#desc": ""
+    },
+    "--Completer.debug": {
+        "#desc": ""
+    },
+    "--Completer.greedy": {
+        "#desc": ""
+    },
+    "--Completer.jedi_compute_type_timeout": {
+        "#desc": ""
+    },
+    "--Completer.use_jedi": {
+        "#desc": ""
+    },
+    "--IPCompleter.backslash_combining_completions": {
+        "#desc": ""
+    },
+    "--IPCompleter.debug": {
+        "#desc": ""
+    },
+    "--IPCompleter.greedy": {
+        "#desc": ""
+    },
+    "--IPCompleter.jedi_compute_type_timeout": {
+        "#desc": ""
+    },
+    "--IPCompleter.limit_to__all__": {
+        "#desc": ""
+    },
+    "--IPCompleter.merge_completions": {
+        "#desc": ""
+    },
     "--IPCompleter.omit__names": [0, 1, 2],
-    "--IPCompleter.profile_completions": [],
-    "--IPCompleter.profiler_output_dir": [],
-    "--ScriptMagics.script_magics": [],
-    "--ScriptMagics.script_paths": [],
-    "--LoggingMagics.quiet": [],
+    "--IPCompleter.profile_completions": {
+        "#desc": ""
+    },
+    "--IPCompleter.profiler_output_dir": {
+        "#desc": ""
+    },
+    "--ScriptMagics.script_magics": {
+        "#desc": ""
+    },
+    "--ScriptMagics.script_paths": {
+        "#desc": ""
+    },
+    "--LoggingMagics.quiet": {
+        "#desc": ""
+    },
     "--StoreMagics.autorestore": []
 }

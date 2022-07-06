@@ -1,13 +1,35 @@
 {
-    "#1": [],
-    "-h|--help": "--- show this help message and exit",
-    "-r|--remote": "--- launch in remote mode",
-    "-i|--input-file": [],
-    "-c|--config": [],
-    "-H|--host": [],
-    "-p|--port": [],
-    "-n|--no-browser": "--- don't start browser automatically",
-    "-o|--output-file": [],
-    "--debug": "--- don't suppress error messages",
-    "--version": "--- show program's version number and exit"
+    "#1": {
+        "#desc": ""
+    },
+    "-h|--help": {
+        "#desc": "show this help message and exit"
+    },
+    "-r|--remote": {
+        "#desc": "launch in remote mode"
+    },
+    "-i|--input-file": {
+        "#desc": ""
+    },
+    "-c|--config": {
+        "#desc": ""
+    },
+    "-H|--host": {
+        "#desc": ""
+    },
+    "-p|--port": {
+        "#desc": ""
+    },
+    "-n|--no-browser": {
+        "#desc": "don't start browser automatically"
+    },
+    "-o|--output-file": {
+        "#desc": ""
+    },
+    "--debug": {
+        "#desc": "don't suppress error messages"
+    },
+    "--version": {
+        "#desc": "show program's version number and exit"
+}
 }

@@ -1,3 +1,5 @@
 {
-    "--help":"--- Show this message and exit."
+    "--help":{
+        "#desc": "Show this message and exit."
+}
 }

@@ -1,19 +1,54 @@
 {
-    "install": {},
-    "inject": {},
-    "upgrade": {},
-    "upgrade-all": {},
-    "uninstall": {},
-    "uninstall-all": {},
-    "reinstall": {},
-    "reinstall-all": {},
-    "list": {},
-    "run": {},
-    "runpip": {},
-    "ensurepath": {},
-    "environment": {},
-    "completions": {},
-    "-h|--help": {},
-    "--version": {},
-    "#n": {}
+    "install": {
+        "#desc": ""
+    },
+    "inject": {
+        "#desc": ""
+    },
+    "upgrade": {
+        "#desc": ""
+    },
+    "upgrade-all": {
+        "#desc": ""
+    },
+    "uninstall": {
+        "#desc": ""
+    },
+    "uninstall-all": {
+        "#desc": ""
+    },
+    "reinstall": {
+        "#desc": ""
+    },
+    "reinstall-all": {
+        "#desc": ""
+    },
+    "list": {
+        "#desc": ""
+    },
+    "run": {
+        "#desc": ""
+    },
+    "runpip": {
+        "#desc": ""
+    },
+    "ensurepath": {
+        "#desc": ""
+    },
+    "environment": {
+        "#desc": ""
+    },
+    "completions": {
+        "#desc": ""
+    },
+    "-h|--help": {
+        "#desc": ""
+    },
+    "--version": {
+        "#desc": ""
+    },
+    "#n": {
+        "#desc": "",
+        "#exec": "___x_cmd_advise_man__list npx"
+    }
 }
