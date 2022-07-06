@@ -14,5 +14,6 @@
     "environment": {},
     "completions": {},
     "-h|--help": {},
-    "--version"
+    "--version": {},
+    "#n": {}
 }
