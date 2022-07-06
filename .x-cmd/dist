@@ -22,7 +22,7 @@ dist_wc()(
 dist_tar()(
     cd "$WSROOT/src" &&
     mkdir -p "$WSROOT/dist" &&
-        eval "tar cvf all.tar $(dist_ls | tr '\n' ' ')" &&
+        eval "tar cvf all.tar LICENSE $(dist_ls | tr '\n' ' ')" &&
         mv all.tar "$WSROOT/dist/all.tar" &&
         ls -alh "$WSROOT/dist/all.tar"
 )
@@ -30,7 +30,7 @@ dist_tar()(
 dist_tgz()(
     cd "$WSROOT/src" &&
     mkdir -p "$WSROOT/dist" &&
-        eval "tar czvf all.tgz $(dist_ls | tr '\n' ' ')" &&
+        eval "tar czvf all.tgz LICENSE $(dist_ls | tr '\n' ' ')" &&
         mv all.tgz "$WSROOT/dist/all.tgz" &&
         ls -alh "$WSROOT/dist/all.tgz"
 )
