@@ -1,6 +1,10 @@
 {
-  "-v|--version": "--- Show the version and exit.",
-  "-h|--help": "--- Show this message and exit.",
+  "-v|--version": {
+    "#desc": "Show the version and exit."
+  },
+  "-h|--help": {
+    "#desc": "Show this message and exit."
+  },
   "completion": {
     "#desc": "Output completion (to be eval'd)."
   },
