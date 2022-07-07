@@ -9,22 +9,37 @@
         "#desc": "launch in remote mode"
     },
     "-i|--input-file": {
-        "#desc": ""
+        "#desc": "render UI from file",
+        "#1": {
+            "#desc": "INPUT_FILE"
+        }
     },
     "-c|--config": {
-        "#desc": ""
+        "#desc": "profile program SRC with configuration CONFIG available CONFIG options c - flame graph m - memory graph h - code heatmap",
+        "#1": {
+            "#desc": "CONFIG SRC"
+        }
     },
     "-H|--host": {
-        "#desc": ""
+        "#desc": "set internal webserver host",
+        "#1": {
+            "#desc": "HOST"
+        }
     },
     "-p|--port": {
-        "#desc": ""
+        "#desc": "set internal webserver port",
+        "#1": {
+            "#desc": "PORT"
+        }
     },
     "-n|--no-browser": {
         "#desc": "don't start browser automatically"
     },
     "-o|--output-file": {
-        "#desc": ""
+        "#desc": "save profile to file",
+        "#1": {
+            "#desc": "OUTPUT_FILE"
+        }
     },
     "--debug": {
         "#desc": "don't suppress error messages"

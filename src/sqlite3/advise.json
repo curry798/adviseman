@@ -1,34 +1,155 @@
 {
-    "-A": null,
-    "-append": null,
-    "-ascii": null,
-    "-bail": null,
-    "-batch": null,
-    "-column": null,
-    "-cmd": null,
-    "-csv": null,
-    "-deserialize": null,
-    "-echo": null,
-    "-init": "___advise_ls",
-    "-header": null,
-    "-help": null,
-    "-html": null,
-    "-interactive": null,
-    "-line": null,
-    "-list": null,
-    "-lookaside": null,
-    "-maxsize": null,
-    "-memtrace": null,
-    "-mmap": null,
-    "-newline": null,
-    "-nofollow": null,
-    "-nullvalue": null,
-    "-pagecache": null,
-    "-qoute": null,
-    "-readonly": null,
-    "-separator": null,
-    "stats": null,
-    "-version": null,
-    "-vfs": null,
-    "-zip": null
+    "-A": {
+        "#desc": "run \".archive ARGS\" and exit",
+        "#1": {
+            "#desc": "ARGS..."
+        }
+    },
+    "-append": {
+        "#desc": "append the database to the end of the file"
+    },
+    "-ascii": {
+        "#desc": "set output mode to 'ascii'"
+    },
+    "-bail": {
+        "#desc": "stop after hitting an error"
+    },
+    "-batch": {
+        "#desc": "force batch I/O"
+    },
+    "-box": {
+        "#desc": "set output mode to 'box'"
+    },
+    "-column": {
+        "#desc": "set output mode to 'column'"
+    },
+    "-cmd": {
+        "#desc": "run \"COMMAND\" before reading stdin",
+        "#1": {
+            "#desc": "COMMAND"
+        }
+    },
+    "-csv": {
+        "#desc": "set output mode to 'csv'"
+    },
+    "-deserialize": {
+        "#desc": "open the database using sqlite3_deserialize()"
+    },
+    "-echo": {
+        "#desc": "print commands before execution"
+    },
+    "-init": {
+        "#desc": "read/process named file",
+        "#1": {
+            "#desc": "FILENAME"
+        }
+    },
+    "-[no]header ": {
+        "#desc": "turn headers on or off"
+    },
+    "-help": {
+        "#desc": "show this message"
+    },
+    "-html": {
+        "#desc": "set output mode to HTML"
+    },
+    "-interactive": {
+        "#desc": "force interactive I/O"
+    },
+    "-json": {
+        "#desc": "set output mode to 'json'"
+    },
+    "-line": {
+        "#desc": "set output mode to 'line'"
+    },
+    "-list": {
+        "#desc": "set output mode to 'list'"
+    },
+    "-lookaside": {
+        "#desc": "use N entries of SZ bytes for lookaside memory",
+        "#1": {
+            "#desc": "SIZE N"
+        }
+    },
+    "-markdown": {
+        "#desc": "set output mode to 'markdown'"
+    },
+    "-maxsize": {
+        "#desc": "maximum size for a --deserialize database",
+        "#1": {
+            "#desc": "N"
+        }
+    },
+    "-memtrace": {
+        "#desc": "trace all memory allocations and deallocations"
+    },
+    "-mmap": {
+        "#desc": "default mmap size set to N",
+        "#1": {
+            "#desc": "N"
+        }
+    },
+    "-newline": {
+        "#desc": "set output row separator. Default: '\n'",
+        "#1": {
+            "#desc": "SEP"
+        }
+    },
+    "-nofollow": {
+        "#desc": "refuse to open symbolic links to database files"
+    },
+    "-nonce": {
+        "#desc": "set the safe-mode escape nonce",
+        "#1": {
+            "#desc": "STRING"
+        }
+    },
+    "-nullvalue": {
+        "#desc": "set text string for NULL values. Default ''",
+        "#1": {
+            "#desc": "TEXT"
+        }
+    },
+    "-pagecache": {
+        "#desc": "use N slots of SZ bytes each for page cache memory",
+        "#1": {
+            "#desc": "SIZE N"
+        }
+    },
+    "-qoute": {
+        "#desc": "set output mode to 'quote'"
+    },
+    "-readonly": {
+        "#desc": "open the database read-only"
+    },
+    "-safe": {
+        "#desc": "enable safe-mode"
+    },
+    "-separator": {
+        "#desc": "set output column separator. Default: '|'",
+        "#1": {
+            "#desc": "SEP"
+        }
+    },
+    "stats": {
+        "#desc": "print memory stats before each finalize"
+    },
+    "-table": {
+        "#desc": "set output mode to 'table'"
+    },
+    "-tabs": {
+        "#desc": "set output mode to 'tabs'"
+    },
+    "-version": {
+        "#desc": "show SQLite version"
+    },
+    "-vfs": {
+        "#desc": "use NAME as the default VFS",
+        "#1": {
+            "#desc": "NAME"
+        }
+    },
+    "-zip": {
+        "#desc": "open the file as a ZIP Archive"
+    }
 }
