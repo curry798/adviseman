@@ -47,8 +47,10 @@
     "--version": {
         "#desc": ""
     },
+    "#1": {
+        "#exec": "___x_cmd_advise_man__list pipx"
+    },
     "#n": {
-        "#desc": "",
-        "#exec": "___x_cmd_advise_man__list npx"
+        "#exec": "___x_cmd_advise__offset"
     }
 }
