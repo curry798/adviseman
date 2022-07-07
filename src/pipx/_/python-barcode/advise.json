@@ -1,10 +1,14 @@
 {
-    "--help|-h": null,
-    "--version|-v": null,
+    "--help|-h": {
+        "#desc": "show this help message and exit"
+    },
+    "--version|-v": {
+        "#desc": "show program's version number and exit"
+    },
     "create": {
-        "#desc": ""
+        "#desc": "Create a barcode with the given options."
     },
     "list": {
-        "#desc": ""
+        "#desc": "List available image and code types."
     }
 }

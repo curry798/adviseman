@@ -18,10 +18,16 @@
         "#desc": "Run on a dark background"
     },
     "--config-file": {
-        "#desc": ""
+        "#desc": "Location of configuration file.",
+        "#1": {
+            "#desc": "CONFIG_FILE"
+        }
     },
     "--history-file": {
-        "#desc": ""
+        "#desc": "Location of history file.",
+        "#1": {
+            "#desc": "HISTORY_FILE"
+        }
     },
     "-V|--version": {
         "#desc": "show program's version number and exit"
