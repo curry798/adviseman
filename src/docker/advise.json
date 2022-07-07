@@ -549,7 +549,13 @@
     "-w|--workdir": {
       "#desc": "Working directory inside the container"
     },
-    "#desc": "Run a command in a running container"
+    "#desc": "Run a command in a running container",
+    "#1": {
+      "#exec": "___x_cmd_advise_man__list docker"
+    },
+    "#n": {
+      "#exec": "___x_cmd_advise__offset docker"
+    }
   },
   "export": {
     "-o|--output": {
@@ -1059,7 +1065,13 @@
     "-w|--workdir": {
       "#desc": "Working directory inside the container"
     },
-    "#desc": "Run a command in a new container"
+    "#desc": "Run a command in a new container",
+    "#1": {
+      "#exec": "___x_cmd_advise_man__list docker"
+    },
+    "#n": {
+      "#exec": "___x_cmd_advise__offset docker"
+    }
   },
   "save": {
     "-o|--output": {
