@@ -15,7 +15,10 @@
         "#desc": "Show version information and exit."
     },
     "-c": {
-        "#desc": ""
+        "#desc": "Run a single command and exit.",
+        "#1": {
+            "#desc": "COMMAND"
+        }
     },
     "-i|--interactive": {
         "#desc": "Force running in interactive mode."
@@ -24,7 +27,10 @@
         "#desc": "Run as a login shell."
     },
     "--rc": {
-        "#desc": ""
+        "#desc": "The xonshrc files to load, these may be either xonsh files or directories containing xonsh files",
+        "#1": {
+            "#desc": "RC [RC ...]"
+        }
     },
     "--no-rc": {
         "#desc": "Do not load any xonsh RC files."
@@ -36,10 +42,16 @@
         "#desc": "Use a cache, even for interactive commands."
     },
     "-D": {
-        "#desc": ""
+        "#desc": "Define an environment variable, in the form of -DNAME=VAL. May be used many times.",
+        "#1": {
+            "#desc": "ITEM"
+        }
     },
     "--shell-type": {
-        "#desc": ""
+        "#desc": "What kind of shell should be used. Possible options: b, best, d, dumb, ptk, prompt-toolkit, prompt_toolkit, rand, random, rl, readline. Warning! If set this overrides $SHELL_TYPE variable.",
+        "#1": {
+            "#desc": "SHELL_TYPE"
+        }
     },
     "--timings": {
         "#desc": "Prints timing information before the prompt is shown."

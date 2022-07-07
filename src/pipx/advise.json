@@ -1,51 +1,51 @@
 {
     "install": {
-        "#desc": ""
+        "#desc": "Install a package"
     },
     "inject": {
-        "#desc": ""
+        "#desc": "Install packages into an existing Virtual Environment"
     },
     "upgrade": {
-        "#desc": ""
+        "#desc": "Upgrade a package"
     },
     "upgrade-all": {
-        "#desc": ""
+        "#desc": "Upgrade all packages. Runs `pip install -U <pkgname>` for each package."
     },
     "uninstall": {
-        "#desc": ""
+        "#desc": "Uninstall a package"
     },
     "uninstall-all": {
-        "#desc": ""
+        "#desc": "Uninstall all packages"
     },
     "reinstall": {
-        "#desc": ""
+        "#desc": "Reinstall a package"
     },
     "reinstall-all": {
-        "#desc": ""
+        "#desc": "Reinstall all packages"
     },
     "list": {
-        "#desc": ""
+        "#desc": "List installed packages"
     },
     "run": {
-        "#desc": ""
+        "#desc": "Download the latest version of a package to a temporary virtual environment, then run an app from it. Also compatible with local `__pypackages__` directory (experimental)."
     },
     "runpip": {
-        "#desc": ""
+        "#desc": "Run pip in an existing pipx-managed Virtual Environment"
     },
     "ensurepath": {
-        "#desc": ""
+        "#desc": "Ensure directories necessary for pipx operation are in your PATH environment variable."
     },
     "environment": {
-        "#desc": ""
+        "#desc": "Print a list of variables used in pipx.constants."
     },
     "completions": {
-        "#desc": ""
+        "#desc": "Print instructions on enabling shell completions for pipx"
     },
     "-h|--help": {
-        "#desc": ""
+        "#desc": "show this help message and exit"
     },
     "--version": {
-        "#desc": ""
+        "#desc": "Print version and exit"
     },
     "#1": {
         "#exec": "___x_cmd_advise_man__list pipx"
