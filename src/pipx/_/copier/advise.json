@@ -57,9 +57,30 @@
         }
     },
     "copy": {
-        "#desc": "Copy from a template source to a destination."
+        "#desc": "Copy from a template source to a destination.",
+        "-h|--help": {
+            "#desc": "Prints this help message and quits"
+        },
+        "--help-all": {
+            "#desc": "Prints help messages of all sub-commands and quits"
+        },
+        "-v|--version": {
+            "#desc": "Prints the program's version and quits"
+        },
+        "-C|--no-cleanup": {
+            "#desc": "On error, do not delete destination if it was created by Copier."
+        }
     },
     "update": {
-        "#desc": "Update a copy from its original template."
+        "#desc": "Update a copy from its original template.",
+        "-h|--help": {
+            "#desc": "Prints this help message and quits"
+        },
+        "--help-all": {
+            "#desc": "Prints help messages of all sub-commands and quits"
+        },
+        "-v|--version": {
+            "#desc": "Prints the program's version and quits"
+        }
     }
 }
