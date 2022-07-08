@@ -1,6 +1,6 @@
 {
     "#1": {
-        "#exec": [
+        "#cand": [
             "a --- Add files to archive",
             "b --- Benchmark",
             "d --- Delete files from archive",
@@ -37,12 +37,7 @@
     "-ao": {
         "#desc": "set Overwrite mode",
         "#1": {
-            "#cand": [
-                "a",
-                "s",
-                "t",
-                "u"
-            ]
+            "#cand": [ "a", "s", "t", "u" ]
         }
     },
     "-an": {
@@ -57,18 +52,10 @@
     "-bs": {
         "#desc": "set output stream for output/error/progress line",
         "#1": {
-            "#cand": [
-                "o",
-                "e",
-                "p"
-            ]
+            "#cand": [ "o", "e", "p" ]
         },
         "#2": {
-            "#cand": [
-                "0",
-                "1",
-                "2"
-            ]
+            "#cand": [ "0", "1", "2" ]
         }
     },
     "-bt": {
@@ -99,43 +86,26 @@
     },
     "-sa": {
         "#desc": "xxx",
-        "#cand": [
-            "a",
-            "e",
-            "s"
-        ]
+        "#1": {
+            "#cand": [ "a", "e", "s" ]
+        }
     },
     "-scc": {
         "#desc": "",
         "#1": {
-            "#cand": [
-                "UTF-8",
-                "WIN",
-                "DOS"
-            ]
+            "#cand": [ "UTF-8", "WIN", "DOS" ]
         }
     },
     "-scs": {
         "#desc": "",
         "#1": {
-            "#cand": [
-                "UTF-8",
-                "UTF-16LE",
-                "UTF-16BE",
-                "WIN",
-                "DOS"
-            ]
+            "#cand": [ "UTF-8", "UTF-16LE", "UTF-16BE", "WIN", "DOS" ]
         }
     },
     "-scrc": {
         "#desc": "",
         "#1": {
-            "#cand": [
-                "CRC32",
-                "CRC63",
-                "SHA1",
-                "SHA256"
-            ]
+            "#cand": [ "CRC32", "CRC63", "SHA1", "SHA256" ]
         }
     },
     "-sdel": "___x_cmd_advise__file",
@@ -164,64 +134,21 @@
     },
     "-t": {
         "#1": {
-            "#cand": [
-                "7z",
-                "apm",
-                "arj",
-                "bzip2",
-                "cab",
-                "chm",
-                "cpio",
-                "cramfs",
-                "deb",
-                "dmg",
-                "elf",
-                "fat",
-                "flv",
-                "gzip",
-                "hfs",
-                "iso",
-                "lzh",
-                "lzma",
-                "lzma86",
-                "macho",
-                "mbr",
-                "mslz",
-                "mub",
-                "nsis",
-                "ntfs",
-                "pe",
-                "ppmd",
-                "rar",
-                "rpm",
-                "squashfs",
-                "swf",
-                "swfc",
-                "tar",
-                "udf",
-                "vhd",
-                "wim",
-                "xar",
-                "xz",
-                "z",
-                "zip"
-            ]
+            "#cand": [ "7z", "apm", "arj", "bzip2", "cab", "chm", "cpio", "cramfs", "deb", "dmg", "elf", "fat", "flv", "gzip", "hfs", "iso", "lzh", "lzma", "lzma86", "macho", "mbr", "mslz", "mub", "nsis", "ntfs", "pe", "ppmd", "rar", "rpm", "squashfs", "swf", "swfc", "tar", "udf", "vhd", "wim", "xar", "xz", "z", "zip" ]
         }
     },
     "-u|-u-|-up#|-ur#|-ux#|-uy#|-uz#": null,
     "-v|-vb|-vk|-vm|-vg": {
         "#desc": "",
         "#1": {
-            "#cand": [
-                "Size"
+            "#cand": [ "Size"
             ]
         }
     },
     "-w": {
         "#desc": "",
         "#1": {
-            "#cand": [
-                "path"
+            "#cand": [ "path"
             ]
         }
     },
