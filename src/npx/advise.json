@@ -8,6 +8,6 @@
         "#exec": "___x_cmd_advise_man__list npx"
     },
     "#n": {
-        "#exec": "___x_cmd_advise__offset npx"
+        "#exec": "___x_cmd_advise__command_completion_from_x_cmd"
     }
 }

@@ -557,7 +557,7 @@
       "#exec": "___x_cmd_advise_man__list"
     },
     "#n": {
-      "#exec": "___x_cmd_advise__offset docker 1"
+      "#exec": "___x_cmd_advise__command_completion 1"
     }
   },
   "export": {
@@ -1076,7 +1076,7 @@
       "#exec": "___x_cmd_advise_man__list"
     },
     "#n": {
-      "#exec": "___x_cmd_advise__offset docker 1"
+      "#exec": "___x_cmd_advise__command_completion 1"
     }
   },
   "save": {

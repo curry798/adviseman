@@ -51,6 +51,6 @@
         "#exec": "___x_cmd_advise_man__list pipx"
     },
     "#n": {
-        "#exec": "___x_cmd_advise__offset pipx"
+        "#exec": "___x_cmd_advise__command_completion_from_x_cmd"
     }
 }
