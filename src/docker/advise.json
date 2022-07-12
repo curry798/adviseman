@@ -557,7 +557,7 @@
       "#exec": "___x_cmd_advise_man__list"
     },
     "#n": {
-      "#exec": "___x_cmd_advise__comp_from_xcmd_and_origin $((offset+1))"
+      "#exec": "___x_cmd_advise__comp_from_xcmd_or_origin $((offset+1))"
     }
   },
   "export": {
@@ -1076,7 +1076,7 @@
       "#exec": "___x_cmd_advise_man__list"
     },
     "#n": {
-      "#exec": "___x_cmd_advise__comp_from_xcmd_and_origin $((offset+1))"
+      "#exec": "___x_cmd_advise__comp_from_xcmd_or_origin $((offset+1))"
     }
   },
   "save": {
