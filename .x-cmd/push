@@ -1,34 +1,28 @@
 
 
+WSROOT="$(x wsroot)"
+update_xcmd_advise()(
+    x mkdirp "$WSROOT/tmp"
+    if [ -d "$WSROOT/tmp/advise" ]; then
+        cd "$WSROOT/tmp/advise" || return
+        git stash
+        git pull origin main
+    else
+        cd "$WSROOT/tmp" || return
+        git clone git@github.com:x-cmd/advise
+    fi
+)
 
 f()(
-    local WSROOT=
-    WSROOT="$(x wsroot)"
     xws pub
+    update_xcmd_advise || return
 
-    set -o errexit
-    x mkdirp tmp/
-    cd tmp || return
-    if [ -d advise ]; then
-        cd advise || return
-        git stash
-        git clean -fd
-        git config pull.rebase false
-        git pull git@github.com:x-cmd/advise
-    else
-        git clone git@github.com:x-cmd/advise
-        cd advise || return
-    fi
-
-    cp -r "$WSROOT/dist" ./
+    x:info "Copy $WSROOT/dist to $WSROOT/tmp/advise"
+    cp -r "$WSROOT/dist" "$WSROOT/tmp/advise"
+    cd "$WSROOT/tmp/advise" || return
     git add dist/all.tgz
     git commit -m "update: dist/all.tgz"
-
-    x:info git push ${force+-f} git@gitee.com:"$(x git meta name)"
-    git push ${force+-f} git@gitee.com:"$(x git meta name)"
-
-    x:info git push ${force+-f} git@github.com:"$(x git meta name)"
-    git push ${force+-f} git@github.com:"$(x git meta name)"
+    xws push
 )
 
 f
