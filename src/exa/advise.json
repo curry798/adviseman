@@ -127,5 +127,5 @@
     },
     "-@|--extended": {
         "#desc": "list each file's extended attributes and sizes"
-}
+    }
 }

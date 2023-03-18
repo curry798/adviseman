@@ -40,5 +40,5 @@
     },
     "-w|--terminal_width": {
         "#desc": "Specify width of output overriding the auto detection of terminal width"
-}
+    }
 }

@@ -7,5 +7,7 @@
     "-m": null,
     "-r": "___x_cmd_advise__file",
     "-t": [ "[[CC]YY]MMDDhhmm[.SS]" ],
-    "#1": "___x_cmd_advise__file"
+    "#1": {
+        "#exec:": "___x_cmd_advise__file"
+    }
 }
