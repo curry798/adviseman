@@ -1,11 +1,15 @@
 
-cd $(x wsroot)
-find src -name advise.json | while read -r line; do
-    dst="dst${line#src}"
-    dst="${dst%.json}.t.json"
-    mkdir -p ${dst%/*}
-    x ja t <$line >$dst
-    # echo $line $dst
-    # cp $line $dst
-done
+f(){
+    local dst; local line
+    cd $(x wsroot)
+    find src -name advise.json | while read -r line; do
+        dst="dst${line#src}"
+        dst="${dst%.json}.t.json"
+        mkdir -p ${dst%/*}
+        x ja t <$line >$dst
+        # echo $line $dst
+        # cp $line $dst
+    done
+}
 
+f
