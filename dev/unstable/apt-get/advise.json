@@ -92,7 +92,7 @@
     "--allow-unauthenticated": null,
     "--help|-h": null,
     "--version|-v": null,
-    "--config-file|-c": "___x_cmd_advise__ls",
+    "--config-file|-c": "___x_cmd_advise__file",
     "--no-allow-insecure-repositories": null,
     "--allow-releaseinfo-change": null,
     "--show-progress": null,

@@ -83,5 +83,5 @@
     "-X": {
         "#desc": "disable all warnings"
     },
-    "#1": "___x_cmd_advise__ls"
+    "#1": "___x_cmd_advise__file"
 }

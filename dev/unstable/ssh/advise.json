@@ -183,7 +183,7 @@
         "#desc": "Specifies the location of a control socket for connection sharing, or the string “none” to disable connection sharing.  Refer to the description of ControlPath and ControlMaster in ssh_config(5) for details.",
         "#1": {
             "#desc": "ctl_path",
-            "#exec":"___x_cmd_advise__ls"
+            "#exec":"___x_cmd_advise__file"
         }
     },
     "-W": {

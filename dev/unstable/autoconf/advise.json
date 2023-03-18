@@ -5,7 +5,7 @@
     "--verbose|-v": null,
     "--debug|-d": null,
     "--force|-f": null,
-    "--output|-o": "___x_cmd_advise__ls",
+    "--output|-o": "___x_cmd_advise__file",
     "--warnings|-W": ["all", "error", "no-obsolete", "none", "syntax", "cross", "no-cross", "no-syntax", "obsolete"],
     "--prepend-include|-B|--include|-I": "___x_cmd_advise__dir"
 }

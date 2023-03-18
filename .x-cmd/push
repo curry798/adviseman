@@ -3,7 +3,7 @@
 push_git(){
     git remote remove "$1" 2>/dev/null
     git remote add "$1" git@"$1".com:x-cmd/advise.git
-    git push "$1"
+    git push "git@$1.com:x-cmd/advise"
 }
 
 xws pub

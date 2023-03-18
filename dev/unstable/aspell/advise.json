@@ -15,7 +15,7 @@
     "norm": [],
     "dicts|filters|modes": null,
     "dump|create|merge": ["master", "personal", "repl"],
-    "check|--conf|--repl|--per-conf|--personal|-c|-p": "___x_cmd_advise__ls",
+    "check|--conf|--repl|--per-conf|--personal|-c|-p": "___x_cmd_advise__file",
     "--conf-dir|--data-dir|--dict-dir|--home-dir|--local-data-dir|--prefix": "___x_cmd_advise__dir",
     "--encoding": null,
     "--add-filter|--rem-filter": "aspell filters 2>/dev/null | awk '{ print $1 }'",

@@ -1,4 +1,4 @@
 {
-    "--config|--datafile": "___x_cmd_advise__ls",
+    "--config|--datafile": "___x_cmd_advise__file",
     "--informat|--outformat|--infile|--outfile": null
 }

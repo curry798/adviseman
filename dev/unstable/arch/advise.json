@@ -1,7 +1,7 @@
 {
-    "#1": "___x_cmd_advise__ls",
+    "#1": "___x_cmd_advise__file",
     "-w|-g|-d|--welcome-msg|--goodbye-msg|--digest": ["y","n"],
-    "--file": "___x_cmd_advise__ls",
+    "--file": "___x_cmd_advise__file",
     "--help": {
         "#desc": "display this help and exit"
     },

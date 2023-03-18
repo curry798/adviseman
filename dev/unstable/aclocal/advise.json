@@ -1,14 +1,14 @@
 {
-    "--automake-acdir": "___x_cmd_advise__ls",
-    "--system-acdir": "___x_cmd_advise__ls",
+    "--automake-acdir": "___x_cmd_advise__file",
+    "--system-acdir": "___x_cmd_advise__file",
     "--diff": null,
     "--dry-run": null,
     "--help": null,
     "-I": "___x_cmd_advise__dir",
     "--install": null,
     "--force": null,
-    "--output": "___x_cmd_advise__ls",
-    "--print-ac-dir": "___x_cmd_advise__ls",
+    "--output": "___x_cmd_advise__file",
+    "--print-ac-dir": "___x_cmd_advise__file",
     "--verbose": null,
     "--version": null,
     "--warnings|-W": ["all", "no-unsupported", "unsupported", "error", "none", "no-syntax", "syntax"]

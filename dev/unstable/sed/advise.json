@@ -56,5 +56,5 @@
     "--version": {
         "#desc": "output version information and exit"
     },
-    "#1": "___x_cmd_advise__ls"
+    "#1": "___x_cmd_advise__file"
 }

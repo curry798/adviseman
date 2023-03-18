@@ -29,7 +29,7 @@
     "minimize-manual": {
         "#desc": "Mark all dependencies of meta packages as automatically installed."
     },
-    "--file|-f": "___x_cmd_advise__ls",
+    "--file|-f": "___x_cmd_advise__file",
     "--version|-v": null,
     "--config-file|-c": [],
     "--option|-o": null,
