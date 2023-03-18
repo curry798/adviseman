@@ -8,6 +8,6 @@
     "-e": null,
     "--device|-i": null,
     "--ser|-s": null,
-    "--file|-f": "___advise_ls",
+    "--file|-f": "___x_cmd_advise__ls",
     "--protocol|-A|-p": null
 }

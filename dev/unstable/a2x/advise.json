@@ -1,6 +1,6 @@
 {
     "--attribute|--asciidoc-opts|--dblatex-opts|--fop-opts|--help|--version|--xsltproc-opts|-a|-h": null,
-    "--destination-dir|--icons-dir|-D": "___advise_lsd",
+    "--destination-dir|--icons-dir|-D": "___x_cmd_advise__dir",
     "--doctype|-d": null,
-    "--stylesheet": "___advise_ls css$"
+    "--stylesheet": "___x_cmd_advise__ls css$"
 }

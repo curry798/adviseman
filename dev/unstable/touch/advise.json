@@ -5,7 +5,7 @@
     "-f": null,
     "-h": null,
     "-m": null,
-    "-r": "___advise_ls",
+    "-r": "___x_cmd_advise__ls",
     "-t": [ "[[CC]YY]MMDDhhmm[.SS]" ],
-    "#1": "___advise_ls"
+    "#1": "___x_cmd_advise__ls"
 }

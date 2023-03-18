@@ -2,6 +2,6 @@
     "#n": "compgen -A binding",
     "-l|-p|-P|-s|-S|-v|-V|-r|-x|-X": null,
     "-m": ["emacs", "emacs-standard", "emacs-meta", "emacs-ctlx", "vi", "vi-move", "vi-command", "vi-insert"],
-    "-f": "___advise_ls",
+    "-f": "___x_cmd_advise__ls",
     "-q|-u": "bind -l"
 }

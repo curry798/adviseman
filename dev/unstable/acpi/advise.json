@@ -1,4 +1,4 @@
 {
     "--help|--version|-|-hv": null,
-    "--directory|-d": "___advise_lsd"
+    "--directory|-d": "___x_cmd_advise__dir"
 }

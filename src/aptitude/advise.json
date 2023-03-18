@@ -17,7 +17,7 @@
     "--full-resolver": null,
     "--group-by": [],
     "--help|-h": null,
-    "--log-file": "___advise_ls",
+    "--log-file": "___x_cmd_advise__ls",
     "--log-level": [],
     "--log-resolver": null,
     "--no-new-installs": null,
@@ -50,6 +50,6 @@
     "--autoclean-on-startup": null,
     "--clean-on-startup": null,
     "-i": null,
-    "-S": "___advise_ls",
+    "-S": "___x_cmd_advise__ls",
     "-u": null
 }
