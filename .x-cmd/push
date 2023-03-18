@@ -6,7 +6,7 @@ push_git(){
     git push "$1"
 }
 
-x dist tgz
+xws pub
 git add dist/all.tgz
 git commit -m "dist/all.tgz"
 case "$1" in
