@@ -15,10 +15,11 @@ update_xcmd_advise()(
 
 f()(
     xws pub
-    update_xcmd_advise || return
 
+    update_xcmd_advise || return
     x:info "Copy $WSROOT/dist to $WSROOT/tmp/advise"
     cp -r "$WSROOT/dist" "$WSROOT/tmp/advise"
+
     cd "$WSROOT/tmp/advise" || return
     git add dist/all.tgz
     git commit -m "update: dist/all.tgz"

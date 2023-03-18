@@ -13,6 +13,6 @@ if [ "$#" -gt 0 ]; then
     op="$1"
     shift
     # echo "$WSROOT/dev/unstable/$op"
-    mv -f "$WSROOT/dev/unstable/$op/advise.json" "$WSROOT/src/$op/advise.json"
-    rm -rf "$WSROOT/dev/unstable/$op"
+    rm -rf "$WSROOT/src/$op"
+    mv -f "$WSROOT/dev/unstable/$op" "$WSROOT/src/"
 fi
