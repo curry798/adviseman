@@ -1,14 +1,4 @@
-#! /usr/bin/env bash
-
-WSROOT="${BASH_SOURCE[0]}"
-
-if [ "${WSROOT#/}" = "$WSROOT" ]; then
-    WSROOT="$(pwd)/${BASH_SOURCE[0]}"
-fi
-
-# printf "%s\n" "$WSROOT"
-
-WSROOT="${WSROOT%/.x-cmd/*}"
+WSROOT="$(x wsroot)"
 
 dist_ls()(
     cd "$WSROOT/src" && ls
