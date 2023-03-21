@@ -17,7 +17,12 @@ f()(
 
     cd "$WSROOT/tmp/advise" || return
     git add dist/all.tgz
-    git commit -m "update: dist/all.tgz"
+
+    if [ "$git_user" = "agent-zero" ]; then
+        git commit -m "build: release x-cmd advise bundle"
+    else
+        git commit -m "update: dist/all.tgz"
+    fi
     xws push
 )
 
