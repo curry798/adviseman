@@ -1,22 +1,17 @@
 
 
 WSROOT="$(x wsroot)"
-update_xcmd_advise()(
+clone_xcmd_advise()(
+    x rmrf "$WSROOT/tmp"
     x mkdirp "$WSROOT/tmp"
-    if [ -d "$WSROOT/tmp/advise" ]; then
-        cd "$WSROOT/tmp/advise" || return
-        git stash
-        git pull origin main
-    else
-        cd "$WSROOT/tmp" || return
-        git clone git@github.com:x-cmd/advise
-    fi
+    cd "$WSROOT/tmp" || return
+    git clone git@github.com:x-cmd/advise
 )
 
 f()(
     xws pub
 
-    update_xcmd_advise || return
+    clone_xcmd_advise || return
     x:info "Copy $WSROOT/dist to $WSROOT/tmp/advise"
     cp -r "$WSROOT/dist" "$WSROOT/tmp/advise"
 
