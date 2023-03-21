@@ -2,11 +2,11 @@
 f(){
     local dst; local line
     cd $(x wsroot)
-    find src -name advise.json | while read -r line; do
+    find src -name '*.json' | while read -r line; do
         dst="dst${line#src}"
-        dst="${dst%.json}.t.json"
-        mkdir -p ${dst%/*}
-        x ja t <$line >$dst
+        dst="${dst%.json}.t.jso"
+        x ensurefp "$dst"
+        x ja t < "$line" > "$dst"
     done
 }
 

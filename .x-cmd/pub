@@ -1,2 +1,6 @@
+
+
+rm -rf dst
 xws j2j
+xws y2j
 xws dist tgz
