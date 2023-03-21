@@ -1,2 +1,2 @@
-[ -n "$(x gh token)" ] || M='Not found gh token' log:ret:1
+[ -n "$(x gh token)" ] || M='Not found gh token' N="adviseman" log:ret:1
 x gh action workflow dispatch --repo x-cmd/adviseman 51832268
